@@ -153,7 +153,9 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
           (list (format "~a/lib/racket" racket))))
 
       (define system-lib-dirs
-        (string-split (or (getenv "LD_LIBRARY_PATH") '()) ":"))
+        (string-split (string-join
+          (filter-map getenv '("LD_LIBRARY_PATH" "DYLD_LIBRARY_PATH"))
+        ":") ":"))
 
       (define config-rktd
         `#hash(
