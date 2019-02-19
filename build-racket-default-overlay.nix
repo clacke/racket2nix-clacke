@@ -20,4 +20,12 @@ lib.optionalAttrs (super ? "compatibility+compatibility-doc+data-doc+db-doc+dist
   buildInputs = oldAttrs.buildInputs or [] ++ builtins.attrValues {
     inherit (self.pkgs) glib cairo fontconfig gmp gtk3 gsettings-desktop-schemas libedit libjpeg_turbo libpng mpfr openssl pango poppler readline sqlite;
   }; });
+} //
+lib.optionalAttrs (super ? "csexp") {
+  csexp = super.csexp.overrideRacketDerivation (oldAttrs: {
+    postPatch = ''
+      sed -i -e "s/(define deps '())/(define deps '(\"base\" \"rackunit-lib\"))/" csexp/info.rkt
+    '';
+    racketThinBuildInputs = [ self.base self.rackunit-lib ];
+  });
 }
