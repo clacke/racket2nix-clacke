@@ -12,6 +12,13 @@ lib.optionalAttrs (super ? "deinprogramm-signature+htdp-lib" && super ? "icons")
 lib.optionalAttrs (super ? "gui-lib" && super ? "icons") {
   gui-lib = super.gui-lib.overrideRacketDerivation (oldAttrs: { racketBuildInputs = oldAttrs.racketBuildInputs ++ [ self.icons ]; });
 } //
+lib.optionalAttrs (super ? "htdp-doc") {
+  htdp-doc = super.htdp-doc.overrideRacketDerivation (oldAttrs: {
+    FONTCONFIG_FILE = let inherit (super.pkgs) makeFontsConf freefont_ttf; in makeFontsConf {
+      fontDirectories = [ freefont_ttf ];
+    };
+  });
+} //
 lib.optionalAttrs (super ? "htdp-lib" && super ? "icons") {
   htdp-lib = super.htdp-lib.overrideRacketDerivation (oldAttrs: { racketBuildInputs = oldAttrs.racketBuildInputs ++ [ self.icons ]; });
 } //

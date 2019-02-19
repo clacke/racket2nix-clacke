@@ -12,6 +12,7 @@
 (define never-dependency-names '("racket"))
 (define terminal-package-names '("racket-lib"))
 (define force-reverse-circular-build-inputs #hash(
+  ["htdp-doc" . ("racket-index" "scribble-lib")]
   ["make" . ("scribble-lib")]
   ["memoize" . ("scribble-lib")]
   ["racket-index" . ("scribble-lib")]
