@@ -83082,66 +83082,19 @@
        .
        #hasheq((author . "cwebber@dustycloud.org")
                (authors . ("cwebber@dustycloud.org"))
-               (build
-                .
-                #hash((conflicts-log . #f)
-                      (dep-failure-log . #f)
-                      (docs . ())
-                      (failure-log . #f)
-                      (min-failure-log . #f)
-                      (success-log . #f)
-                      (test-failure-log . #f)
-                      (test-success-log . #f)))
                (checksum . "79245b4e2e7558f3de289bd0e6243eb70b8f67a9")
-               (checksum-error . #f)
-               (conflicts . ())
-               (dependencies . ("crypto" "csexp" "sql"))
-               (dependency-names . ("crypto" "csexp" "sql"))
+               (dependencies . ("crypto-lib" "csexp" "sql"))
+               (dependency-names . ("crypto-lib" "csexp" "sql"))
                (description
                 .
                 "Symmetric encryption for magnet URIs (code and docs)")
-               (implies . ())
-               (last-checked . 1550429527)
-               (last-edit . 1536087294)
-               (last-updated . 1550253125)
-               (modules
-                .
-                ((lib "magenc/sqlite-store.rkt")
-                 (lib "magenc/hungry-store.rkt")
-                 (lib "magenc/memory-store.rkt")
-                 (lib "magenc/install-factory.rkt")
-                 (lib "magenc/url-base64.rkt")
-                 (lib "magenc/web-store.rkt")
-                 (lib "magenc/cas-server.rkt")
-                 (lib "magenc/debug-store.rkt")
-                 (lib "magenc/client.rkt")
-                 (lib "magenc/get-put.rkt")))
                (name . "magenc")
                (nix-sha256
                 .
                 "0r7zancmq40395zwl18ibrcsfh1xgaj7a8ns2dq7lpmcpa3r7vmw")
-               (ring . 2)
-               (search-terms
+               (source
                 .
-                #hasheq((author:cwebber@dustycloud.org . #t)
-                        (crypto . #t)
-                        (demos . #t)
-                        (ring:2 . #t)))
-               (source . "https://gitlab.com/dustyweb/magenc.git?path=magenc")
-               (tags . ("crypto" "demos"))
-               (versions
-                .
-                #hash((default
-                       .
-                       #hasheq((checksum
-                                .
-                                "79245b4e2e7558f3de289bd0e6243eb70b8f67a9")
-                               (source
-                                .
-                                "https://gitlab.com/dustyweb/magenc.git?path=magenc")
-                               (source_url
-                                .
-                                "https://gitlab.com/dustyweb/magenc.git?path=magenc")))))))
+                "https://gitlab.com/dustyweb/magenc.git?path=magenc")))
       ("sdraw"
        .
        #hasheq((author . "jack@rosenth.al")

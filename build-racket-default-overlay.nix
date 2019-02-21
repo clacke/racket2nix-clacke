@@ -28,4 +28,13 @@ lib.optionalAttrs (super ? "csexp") {
     '';
     racketThinBuildInputs = [ self.base self.rackunit-lib ];
   });
+} //
+lib.optionalAttrs (super ? "magenc") {
+  magenc = super.magenc.overrideRacketDerivation (oldAttrs: {
+    postPatch = ''
+      sed -i magenc/info.rkt \
+        -e 's/"crypto"/"crypto-lib"/' \
+        -e '/scribblings/d'
+    '';
+  });
 }
