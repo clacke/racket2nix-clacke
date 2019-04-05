@@ -22,8 +22,8 @@ lib.optionalAttrs (super ? "compatibility+compatibility-doc+data-doc+db-doc+dist
   }; });
 } //
 lib.optionalAttrs (super ? "compiler-lib") (let
-  mergeAttrs = lib.lists.fold (acc: attrs: acc // attrs) {};
+  mergeAttrs = builtins.foldl' (acc: attrs: acc // attrs) {};
   wordsToList = words: builtins.filter (s: (builtins.isString s) && s != "") (builtins.split "[ \n]+" words);
-in mergeAttrs (map (package: lib.optionalAttrs (super ? package) {
+in mergeAttrs (map (package: lib.optionalAttrs (super ? "${package}") {
   "${package}" = super."${package}".overrideRacketDerivation (oldAttrs: { doInstallCheck = true; });
-}) (wordsToList "br-parser-tools-lib data-lib")))
+}) (wordsToList "br-parser-tools-lib data-lib pict-lib scribble-lib srfi-lib typed-racket-lib")))
