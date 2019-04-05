@@ -1,6 +1,10 @@
 br-parser-tools-lib
 data-lib
+graph
+peg
 pict-lib
+reed-solomon
 scribble-lib
+simple-qr
 srfi-lib
 typed-racket-lib
