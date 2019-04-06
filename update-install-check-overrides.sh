@@ -10,7 +10,7 @@ packages=($(nix-instantiate --eval -E  'builtins.concatStringsSep " " (builtins.
 i=1
 for package in ${packages[@]}; do
   echo >&2 $((i++))/${#packages[@]} $package
-  nix-build 2> >(sed -ue 's,/nix/store/.\{33\},,' | stdbuf -o0 gawk '
+  timeout 20m nix-build 2> >(sed -ue 's,/nix/store/.\{33\},,' | stdbuf -o0 gawk '
     BEGIN { start = systime() }
     { printf "\r%s %s\033[K", strftime("%H:%M:%S", systime() - start, 1), substr($0, 1, 68) }
     END { printf "\r\033[K" }
@@ -22,4 +22,6 @@ for package in ${packages[@]}; do
   echo $package
 done > build-racket-install-check-overrides.txt.new
 
-mv build-racket-install-check-overrides.txt{.new,}
+sort -u build-racket-install-check-overrides.txt{,.new} | grep -v '^$' > build-racket-install-check-overrides.txt.new2
+rm build-racket-install-check-overrides.txt.new
+mv build-racket-install-check-overrides.txt{.new2,}
