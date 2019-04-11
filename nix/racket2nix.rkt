@@ -90,12 +90,16 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
   inherit (attrs) pname;
   racketBuildInputs = attrs.racketBuildInputs or [] ++ self.lib.resolveThinInputs attrs.racketThinBuildInputs or [];
   buildInputs = [ cacert unzip racket ] ++ racketBuildInputs;
+  ldLibraryPath = lib.makeLibraryPath [ buildInputs ];
   circularBuildInputs = attrs.circularBuildInputs or [];
   circularBuildInputsStr = lib.concatStringsSep " " circularBuildInputs;
   racketBuildInputsStr = lib.concatStringsSep " " racketBuildInputs;
   racketConfigBuildInputs = builtins.filter (input: ! builtins.elem input reverseCircularBuildInputs) racketBuildInputs;
   racketConfigBuildInputsStr = lib.concatStringsSep " " (map (drv: drv.env) racketConfigBuildInputs);
   reverseCircularBuildInputs = attrs.reverseCircularBuildInputs or [];
+  setupHook = builtins.toFile "setup-hook.sh" ''
+    addToSearchPath LD_LIBRARY_PATH @ldLibraryPath@
+  '';
   src = attrs.src or null;
   srcs = [ src ] ++ attrs.extraSrcs or (map (input: input.src) reverseCircularBuildInputs);
   doInstallCheck = attrs.doInstallCheck or false;
@@ -198,6 +202,8 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
       echo >&2 MacOS: https://superuser.com/questions/117102
       exit 2
     fi
+
+    addToSearchPath LD_LIBRARY_PATH $ldLibraryPath
 
     mkdir -p $env/etc/racket $env/share/racket $out
     # Don't use racket-cmd as config.rktd doesn't exist yet.
