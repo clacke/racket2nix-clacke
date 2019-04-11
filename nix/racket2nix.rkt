@@ -90,7 +90,7 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
   inherit (attrs) pname;
   racketBuildInputs = attrs.racketBuildInputs or [] ++ self.lib.resolveThinInputs attrs.racketThinBuildInputs or [];
   buildInputs = [ cacert unzip racket ] ++ racketBuildInputs;
-  ldLibraryPath = lib.makeLibraryPath [ buildInputs ];
+  ldLibraryPath = lib.makeLibraryPath buildInputs;
   circularBuildInputs = attrs.circularBuildInputs or [];
   circularBuildInputsStr = lib.concatStringsSep " " circularBuildInputs;
   racketBuildInputsStr = lib.concatStringsSep " " racketBuildInputs;
