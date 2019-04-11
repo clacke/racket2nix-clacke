@@ -10,15 +10,14 @@ lib.optionalAttrs (super ? "deinprogramm-signature+htdp-lib" && super ? "icons")
   "deinprogramm-signature+htdp-lib" = super."deinprogramm-signature+htdp-lib".overrideRacketDerivation (oldAttrs: { racketBuildInputs = oldAttrs.racketBuildInputs ++ [ self.icons ]; });
 } //
 lib.optionalAttrs (super ? "gui-lib" && super ? "icons") {
-  gui-lib = super.gui-lib.overrideRacketDerivation (oldAttrs: {
+  gui-lib = super.gui-lib.overrideRacketDerivation (oldAttrs: rec {
     racketBuildInputs = oldAttrs.racketBuildInputs ++ [ self.icons ];
     libPath = lib.makeLibraryPath [ super.pkgs.xlibs.libX11 ];
     setupHook = builtins.toFile "setup-hook.sh" ''
-      addRacketGuiLibLibs() {
-        LD_LIBRARY_PATH=''${LD_LIBRARY_PATH:-}''${LD_LIBRARY_PATH:+:}@libPath@
-      }
-
-      addEnvHooks "$targetOffset" addRacketGuiLibLibs
+      addToSearchPath LD_LIBRARY_PATH @libPath@
+    '';
+    preInstall = ''
+      addToSearchPath LD_LIBRARY_PATH $libPath
     '';
   });
 } //
