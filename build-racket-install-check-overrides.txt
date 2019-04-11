@@ -42,7 +42,6 @@ continued-fractions
 contract-profile
 control
 cover
-cover-coveralls
 crc32c
 crypto-test
 cs2500f16-jsonlab
