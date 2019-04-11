@@ -1,5 +1,5 @@
 #! /usr/bin/env nix-shell
-#! nix-shell --pure -p bash nix racket-minimal -i bash
+#! nix-shell --pure -p bash nix racket-minimal cacert -i bash
 
 set -e
 set -u
