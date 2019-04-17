@@ -3,6 +3,9 @@ let
   inherit (super.pkgs) lib;
 in
 
+lib.optionalAttrs (super ? "cover" && super ? "cover-coveralls") {
+  cover-coveralls = builtins.trace "yeah we're here" super.cover-coveralls.overrideRacketDerivation (oldAttrs: { reverseCircularBuildInputs = [ super.cover ]; });
+} //
 lib.optionalAttrs (super ? "deinprogramm-signature" && super ? "icons") {
   deinprogramm-signature = super.deinprogramm-signature.overrideRacketDerivation (oldAttrs: { racketBuildInputs = oldAttrs.racketBuildInputs ++ [ self.icons ]; });
 } //
