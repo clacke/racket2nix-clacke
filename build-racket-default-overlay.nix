@@ -15,8 +15,8 @@ lib.optionalAttrs (super ? "deinprogramm-signature+htdp-lib" && super ? "icons")
 lib.optionalAttrs (super ? "gui-lib" && super ? "icons") {
   gui-lib = (super.gui-lib.overrideRacketDerivation (oldAttrs: rec {
     racketBuildInputs = oldAttrs.racketBuildInputs ++ [ self.icons ];
+    buildInputs = super.gui-lib.buildInputs ++ [ self.icons super.pkgs.xlibs.libX11 ];
   })).overrideAttrs (oldAttrs: {
-    buildInputs = oldAttrs.buildInputs ++ [ super.pkgs.xlibs.libX11 ];
   });
 } //
 lib.optionalAttrs (super ? "htdp-lib" && super ? "icons") {
