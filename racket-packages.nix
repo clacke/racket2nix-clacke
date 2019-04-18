@@ -107,7 +107,7 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
       fi
     done
     chmod u+w -R .
-    find . -name '*.zo' -delete
+    find . '(' -name '*.zo' -o -name '*.dep' ')' -delete
     runHook postUnpack
   '';
 
