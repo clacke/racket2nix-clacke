@@ -1,9 +1,10 @@
 #!/usr/bin/env nix-shell
-#! nix-shell --quiet -p bash gawk git nix-prefetch-git -i bash
+#! nix-shell --quiet -p bash gawk git nix -i bash
 
 set -euo pipefail
 
-URL=https://github.com/NixOS/nixpkgs-channels.git
+OWNER=NixOS
+REPO=nixpkgs-channels
 DEFAULT_REV=refs/heads/nixpkgs-unstable
 
 cd "$(dirname "${BASH_SOURCE[0]}")"
@@ -11,8 +12,15 @@ cd "$(dirname "${BASH_SOURCE[0]}")"
 rev=${1:-$DEFAULT_REV}
 
 if (( ${#rev} != 40 )); then
-  rev=$(git ls-remote $URL | awk '$2 == "'"$rev"'" { print $1 }')
+  rev=$(git ls-remote https://github.com/$OWNER/$REPO | awk '$2 == "'"$rev"'" { print $1 }')
 fi
 
-nix-prefetch-git --no-deepClone $URL $rev > default.json.new
-mv default.json{.new,}
+url="https://github.com/$OWNER/$REPO/archive/$rev.tar.gz"
+hash=$(nix-prefetch-url --unpack "$url")
+cat > url.json.new <<EOF
+{
+  "url": "$url",
+  "sha256": "$hash"
+}
+EOF
+mv url.json{.new,}
