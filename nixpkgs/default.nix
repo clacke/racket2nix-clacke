@@ -1,1 +1,2 @@
-builtins.fetchTarball (builtins.fromJSON (builtins.readFile ./url.json))
+(import <nixpkgs> {}).fetchgit
+  (builtins.removeAttrs (builtins.fromJSON (builtins.readFile ./default.json)) [ "date" ])
