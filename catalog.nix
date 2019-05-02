@@ -16,7 +16,7 @@ attrs = rec {
     inherit outputHash;
   } ''
     cd $src
-    racket -N dump-catalogs ./dump-catalogs.rkt ${url} > $out
+    LANG=C LC_ALL=C racket -U -N dump-catalogs ./dump-catalogs.rkt ${url} > $out
   '';
   liveCatalog = fetchurl (builtins.fromJSON (builtins.readFile ./live-catalog.json));
   mergedUnfilteredCatalog = runCommand "merged-unfiltered-catalog.rktd" {
