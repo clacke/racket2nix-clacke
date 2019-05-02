@@ -4,8 +4,16 @@
 (require pkg/lib)
 (require (prefix-in pkg-private: pkg/private/params))
 
+(define (compare-string-alist a b)
+  (string<? (car a) (car b)))
+
+(define (pretty-write-sorted-string-hash h)
+  (define alist (hash->list h))
+  (define sorted-alist (sort alist compare-string-alist))
+  (define pretty-alist (pretty-format #:mode 'write sorted-alist 78))
+  (printf "#hash~a~n" pretty-alist))
+
 (command-line
   #:args catalogs
   (pkg-private:current-pkg-catalogs (map string->url catalogs))
-  (printf "#hash~a~n" ((compose (lambda (a) (pretty-format #:mode (quote write) a)) (curryr sort (compose (curry apply string<?) (curry map car) list)) hash->list)
-    (get-all-pkg-details-from-catalogs))))
+  (pretty-write-sorted-string-hash (get-all-pkg-details-from-catalogs)))
