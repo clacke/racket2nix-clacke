@@ -7,4 +7,5 @@
 (command-line
   #:args catalogs
   (pkg-private:current-pkg-catalogs (map string->url catalogs))
-  (write (get-all-pkg-details-from-catalogs)))
+  (printf "#hash~a~n" ((compose (lambda (a) (pretty-format #:mode (quote write) a)) (curryr sort (compose (curry apply string<?) (curry map car) list)) hash->list)
+    (get-all-pkg-details-from-catalogs))))
