@@ -80,18 +80,18 @@
  ("2d"
   .
   #hash((author . "robby@racket-lang.org")
-        (checksum . "9eb9277e39ff70d7760dff7dc6cc514c07a781b3")
+        (checksum . "fdaf085417cc18404e9cf8f9fb4f9f9b694aa64b")
         (dependencies . ("2d-lib" "2d-doc"))
         (dependency-names . ("2d-lib" "2d-doc"))
         (description . "robby@racket-lang.org")
         (modules . ())
         (name . "2d")
-        (source . "https://download.racket-lang.org/releases/7.1/pkgs/2d.zip")
+        (source . "https://download.racket-lang.org/releases/7.2/pkgs/2d.zip")
         (tags . ())))
  ("2d-doc"
   .
   #hash((author . "robby@racket-lang.org")
-        (checksum . "ecacfc58311398fdcae58dc7e76176fe57546f26")
+        (checksum . "80bc8365ba8f7d7b88ded856c2d75fe2adc2ad65")
         (dependencies
          .
          ("base"
@@ -113,12 +113,12 @@
         (name . "2d-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/2d-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/2d-doc.zip")
         (tags . ())))
  ("2d-lib"
   .
   #hash((author . "robby@racket-lang.org")
-        (checksum . "c91546c8323874205688e9d0db6e9f26eb3817ad")
+        (checksum . "2191d5db2b816a0b1b0256323ca746527d949430")
         (dependencies
          .
          (("base" #:version "6.90.0.19") "scribble-lib" "syntax-color-lib"))
@@ -128,12 +128,12 @@
         (name . "2d-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/2d-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/2d-lib.zip")
         (tags . ())))
  ("2d-test"
   .
   #hash((author . "robby@racket-lang.org")
-        (checksum . "12cc14acddab94063df2f72e38795e55bb061740")
+        (checksum . "947d6e3944cd335082d0d18719fc40e3b9b539a0")
         (dependencies
          .
          ("base"
@@ -159,7 +159,7 @@
         (name . "2d-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/2d-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/2d-test.zip")
         (tags . ())))
  ("2htdp-typed"
   .
@@ -3141,7 +3141,7 @@
  ("algol60"
   .
   #hash((author . "mflatt@racket-lang.org robby@racket-lang.org")
-        (checksum . "ca12a2ecff9645259c388d2fe8ea77d6ddcf3960")
+        (checksum . "3288be870d95d0053beb8d7eb46d4c53f8e50acb")
         (dependencies
          .
          ("base"
@@ -3179,7 +3179,7 @@
         (name . "algol60")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/algol60.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/algol60.zip")
         (tags . ())))
  ("anaphoric"
   .
@@ -4735,7 +4735,7 @@
  ("at-exp-lib"
   .
   #hash((author . "eli@racket-lang.org mflatt@racket-lang.org")
-        (checksum . "a16d1a027e92475cd6e53ef3f4eb277a3a7f331d")
+        (checksum . "6e4e7cf05e3eac47f1e6e976a150ff77c0f87fe6")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "eli@racket-lang.org mflatt@racket-lang.org")
@@ -4743,7 +4743,7 @@
         (name . "at-exp-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/at-exp-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/at-exp-lib.zip")
         (tags . ())))
  ("auto-syntax-e"
   .
@@ -5832,15 +5832,15 @@
  ("base"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "ef7352febad7306fdcf91bf2b8153d941ff07620")
-        (dependencies . ("racket-lib" ("racket" #:version "7.0.0.20")))
+        (checksum . "a406bc74d583ac7a61f651e5331bcfd0ecc1f73b")
+        (dependencies . ("racket-lib" ("racket" #:version "7.1.0.11")))
         (dependency-names . ("racket-lib"))
         (description . "mflatt@racket-lang.org")
         (modules . ())
         (name . "base")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/base.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/base.zip")
         (tags . ())))
  ("base32"
   .
@@ -9436,7 +9436,7 @@
  ("cext-lib"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "031c997c7c4deb1a717ff62e5a92278c8ad2e82f")
+        (checksum . "2b7b132748f4a5f08823a8c06b37dac6f1577b25")
         (dependencies . ("base" "compiler-lib" "dynext-lib" "scheme-lib"))
         (dependency-names . ("base" "compiler-lib" "dynext-lib" "scheme-lib"))
         (description . "mflatt@racket-lang.org")
@@ -9444,7 +9444,7 @@
         (name . "cext-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/cext-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/cext-lib.zip")
         (tags . ())))
  ("chain-module-begin"
   .
@@ -10486,7 +10486,7 @@
  ("class-iop-lib"
   .
   #hash((author . "ryanc@racket-lang.org")
-        (checksum . "3aa4956b473f138e441da245a81cb3cdf254f26e")
+        (checksum . "c02c07a9cbb598eca9a3bbb7675317e60a922695")
         (dependencies . (("base" #:version "6.2.900.6")))
         (dependency-names . ("base"))
         (description . "ryanc@racket-lang.org")
@@ -10494,7 +10494,7 @@
         (name . "class-iop-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/class-iop-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/class-iop-lib.zip")
         (tags . ())))
  ("classicthesis-scribble"
   .
@@ -11677,7 +11677,7 @@
  ("com-win32-i386"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "e1581102146a44db436485e440c55bbb20e14cb7")
+        (checksum . "cdd71c6b13c416274f3b6ff76b9be6e377b82d03")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -11685,12 +11685,12 @@
         (name . "com-win32-i386")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/com-win32-i386.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/com-win32-i386.zip")
         (tags . ())))
  ("com-win32-x86_64"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "71572174b7e4fe66c05638eacb7f1455aa7315a8")
+        (checksum . "473a466cfa84b945ee46b765d7dd40e7afc58c8c")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -11698,7 +11698,7 @@
         (name . "com-win32-x86_64")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/com-win32-x86_64.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/com-win32-x86_64.zip")
         (tags . ())))
  ("combinator-parser"
   .
@@ -12093,7 +12093,7 @@
   #hash((author
          .
          "eli@racket-lang.org mflatt@racket-lang.org robby@racket-lang.org samth@racket-lang.org")
-        (checksum . "9a35df4326372d8cb814e00bc7b48e7dbc6b1dee")
+        (checksum . "f72340d49fe270fc1e485c0f41af25d7157ae30d")
         (dependencies . ("compatibility-lib" "compatibility-doc"))
         (dependency-names . ("compatibility-lib" "compatibility-doc"))
         (description
@@ -12103,14 +12103,14 @@
         (name . "compatibility")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/compatibility.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/compatibility.zip")
         (tags . ())))
  ("compatibility-doc"
   .
   #hash((author
          .
          "eli@racket-lang.org mflatt@racket-lang.org robby@racket-lang.org samth@racket-lang.org")
-        (checksum . "361c53d7fab930b6b9ffcaafaabb9c66cc54a39a")
+        (checksum . "fff14f522d74b97cfb5ae32feb4df02d1da3654d")
         (dependencies
          .
          ("base"
@@ -12144,14 +12144,14 @@
         (name . "compatibility-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/compatibility-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/compatibility-doc.zip")
         (tags . ())))
  ("compatibility-lib"
   .
   #hash((author
          .
          "eli@racket-lang.org mflatt@racket-lang.org robby@racket-lang.org samth@racket-lang.org")
-        (checksum . "2b973d1147217759fa24e55be8e847fb5eaffdca")
+        (checksum . "607a16c5817fcaf1264cdd18cdb7568dc9911207")
         (dependencies . ("scheme-lib" "base" "net-lib" "sandbox-lib"))
         (dependency-names . ("scheme-lib" "base" "net-lib" "sandbox-lib"))
         (description
@@ -12161,12 +12161,12 @@
         (name . "compatibility-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/compatibility-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/compatibility-lib.zip")
         (tags . ())))
  ("compatibility-test"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "620eaef24a9804f09ad0050bfbc8221c829f7b41")
+        (checksum . "91d792bc57de4f74f5d14bd4ab11854507654324")
         (dependencies
          .
          ("base"
@@ -12188,12 +12188,12 @@
         (name . "compatibility-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/compatibility-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/compatibility-test.zip")
         (tags . ())))
  ("compiler"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "bb5d175cb5f1540a5c29b67ce0c4c77cf63d8b83")
+        (checksum . "d42d3a3c62057e5a05408f60b490e4f834164357")
         (dependencies . ("compiler-lib"))
         (dependency-names . ("compiler-lib"))
         (description . "mflatt@racket-lang.org")
@@ -12201,7 +12201,7 @@
         (name . "compiler")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/compiler.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/compiler.zip")
         (tags . ())))
  ("compiler-goodies"
   .
@@ -12272,7 +12272,7 @@
  ("compiler-lib"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "c1649b2345173cc417751191e7ac5fa7679f2a41")
+        (checksum . "a8fbb5b648137758ea53266a92b306b6c4f87b29")
         (dependencies
          .
          (("base" #:version "6.5.0.2") "scheme-lib" "rackunit-lib" "zo-lib"))
@@ -12282,12 +12282,12 @@
         (name . "compiler-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/compiler-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/compiler-lib.zip")
         (tags . ())))
  ("compiler-test"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "b2cfdae6d0cb589ac7c654861aacbfb394c71a19")
+        (checksum . "c428937533771536cba08e2f828a4c123620349c")
         (dependencies
          .
          ("base"
@@ -12325,7 +12325,7 @@
         (name . "compiler-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/compiler-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/compiler-test.zip")
         (tags . ())))
  ("component"
   .
@@ -12793,7 +12793,7 @@
  ("contract-profile"
   .
   #hash((author . "stamourv@racket-lang.org")
-        (checksum . "be1fa18e658c7aa2453ce7854506993d919f792c")
+        (checksum . "c3ba5b53acbfd6e792c776f85007c42d87437249")
         (dependencies
          .
          (("base" #:version "6.3")
@@ -12815,7 +12815,7 @@
         (name . "contract-profile")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/contract-profile.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/contract-profile.zip")
         (tags . ())))
  ("contract-repl"
   .
@@ -15989,7 +15989,7 @@
  ("data"
   .
   #hash((author . "ryanc@racket-lang.org")
-        (checksum . "6e38164fbc84bb88444cd202dbd1405b6b8d3c66")
+        (checksum . "7e22a1737de1b67656ee1444931081a73f7c83a1")
         (dependencies . ("data-lib" "data-enumerate-lib" "data-doc"))
         (dependency-names . ("data-lib" "data-enumerate-lib" "data-doc"))
         (description . "ryanc@racket-lang.org")
@@ -15997,12 +15997,12 @@
         (name . "data")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/data.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/data.zip")
         (tags . ())))
  ("data-doc"
   .
   #hash((author . "ryanc@racket-lang.org")
-        (checksum . "fa67aaeb06498246174d8bdf9e28712605bdad63")
+        (checksum . "d5fb9d883d4e8a3c4bf1226485b516545d52b31b")
         (dependencies
          .
          ("base"
@@ -16032,12 +16032,12 @@
         (name . "data-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/data-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/data-doc.zip")
         (tags . ())))
  ("data-enumerate-lib"
   .
   #hash((author . "maxsnew@racket-lang.org jay@racket-lang.org")
-        (checksum . "56a12ce73a3d0734333ebb5f9430c4affbac34eb")
+        (checksum . "9d9553485d3306fc49a46fd42155802044ac4954")
         (dependencies
          .
          (("base" #:version "6.8.0.2") "data-lib" "math-lib" "rackunit-lib"))
@@ -16047,7 +16047,7 @@
         (name . "data-enumerate-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/data-enumerate-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/data-enumerate-lib.zip")
         (tags . ())))
  ("data-frame"
   .
@@ -16168,7 +16168,7 @@
  ("data-lib"
   .
   #hash((author . "ryanc@racket-lang.org")
-        (checksum . "9250abc82d6fcff7e626da2ac2d0d5b790d57794")
+        (checksum . "1c731a8ad28dced8518eacb3021763d4996fa2c9")
         (dependencies . (("base" #:version "6.2.900.6") "rackunit-lib"))
         (dependency-names . ("base" "rackunit-lib"))
         (description . "ryanc@racket-lang.org")
@@ -16176,7 +16176,7 @@
         (name . "data-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/data-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/data-lib.zip")
         (tags . ())))
  ("data-red-black"
   .
@@ -16357,7 +16357,7 @@
  ("data-test"
   .
   #hash((author . "ryanc@racket-lang.org")
-        (checksum . "1356d6fc423ec9863714402eaa68c23076b61193")
+        (checksum . "9a9057f8935be2867f45dedb5a368a592801d7cf")
         (dependencies
          .
          ("base"
@@ -16379,7 +16379,7 @@
         (name . "data-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/data-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/data-test.zip")
         (tags . ())))
  ("database-url"
   .
@@ -16532,7 +16532,7 @@
  ("datalog"
   .
   #hash((author . "jay@racket-lang.org")
-        (checksum . "3c7fddb0de0cada41e00e442beef620f01b0da13")
+        (checksum . "1ecded81525c61c9cf142a69a7d1da575a5a95e6")
         (dependencies
          .
          ("base"
@@ -16552,7 +16552,7 @@
         (name . "datalog")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/datalog.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/datalog.zip")
         (tags . ())))
  ("datatype"
   .
@@ -16695,18 +16695,18 @@
  ("db"
   .
   #hash((author . "ryanc@racket-lang.org")
-        (checksum . "ef560a7f2585a175d50ee735a3656a3a521fde56")
+        (checksum . "1dbd5264a1f92ef405bb7b8d2557a9dc2b88ebaa")
         (dependencies . ("db-lib" "db-doc" "base"))
         (dependency-names . ("db-lib" "db-doc" "base"))
         (description . "ryanc@racket-lang.org")
         (modules . ())
         (name . "db")
-        (source . "https://download.racket-lang.org/releases/7.1/pkgs/db.zip")
+        (source . "https://download.racket-lang.org/releases/7.2/pkgs/db.zip")
         (tags . ())))
  ("db-doc"
   .
   #hash((author . "ryanc@racket-lang.org")
-        (checksum . "01a5567da0238d83f1b1a02e182776190f3640a0")
+        (checksum . "69c0f5610f60c954538d509ccae4e0b94247e675")
         (dependencies
          .
          ("base"
@@ -16736,12 +16736,12 @@
         (name . "db-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/db-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/db-doc.zip")
         (tags . ())))
  ("db-lib"
   .
   #hash((author . "ryanc@racket-lang.org")
-        (checksum . "262256ff9bfb4e1cf5eb7febdda3d5e65af8f95a")
+        (checksum . "996184d8a7a3e97a6ff411db3a78a5bdc30b2284")
         (dependencies
          .
          ("srfi-lite-lib"
@@ -16756,12 +16756,12 @@
         (name . "db-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/db-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/db-lib.zip")
         (tags . ())))
  ("db-ppc-macosx"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "0bfcf8b33a4042b0c4e115b914f2d69e909920ce")
+        (checksum . "62de6a2f61e55a8c49196dd490e47791a2384b66")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -16769,12 +16769,12 @@
         (name . "db-ppc-macosx")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/db-ppc-macosx.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/db-ppc-macosx.zip")
         (tags . ())))
  ("db-test"
   .
   #hash((author . "ryanc@racket-lang.org")
-        (checksum . "12211391a1768128029a64c13ffe0dc87e60ffb7")
+        (checksum . "d06b6311486b4e9748a20331e0c68be929c64ec8")
         (dependencies
          .
          ("base" "db-lib" "rackunit-lib" "web-server-lib" "srfi-lite-lib"))
@@ -16786,12 +16786,12 @@
         (name . "db-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/db-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/db-test.zip")
         (tags . ())))
  ("db-win32-i386"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "c5a570a28360696819ec00dcc61bd179039a2733")
+        (checksum . "200bd5ab1184f19bb3273dd8b7dc19e013057957")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -16799,12 +16799,12 @@
         (name . "db-win32-i386")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/db-win32-i386.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/db-win32-i386.zip")
         (tags . ())))
  ("db-win32-x86_64"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "a8b3a40a9b19b08bacfcfde1a17d45d605e115e4")
+        (checksum . "54ad0b6cb228ed0a819a84cd612af34f15bfbbfe")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -16812,12 +16812,12 @@
         (name . "db-win32-x86_64")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/db-win32-x86_64.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/db-win32-x86_64.zip")
         (tags . ())))
  ("db-x86_64-linux-natipkg"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "67aec1b89ea64770f99ff49cab7927ec80029a20")
+        (checksum . "8ae0e7990bf8873c2599b5957e5ff6c2a6162ee2")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -16825,7 +16825,7 @@
         (name . "db-x86_64-linux-natipkg")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/db-x86_64-linux-natipkg.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/db-x86_64-linux-natipkg.zip")
         (tags . ())))
  ("dbm"
   .
@@ -17541,7 +17541,7 @@
  ("deinprogramm"
   .
   #hash((author . "sperber@racket-lang.org")
-        (checksum . "1296d2a9f8ac903da7efaac6f355e486f5dd2ddb")
+        (checksum . "0c59dbe4af2bb3e9acd52b1c6fcab4138ea65021")
         (dependencies
          .
          ("base"
@@ -17589,12 +17589,12 @@
         (name . "deinprogramm")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/deinprogramm.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/deinprogramm.zip")
         (tags . ())))
  ("deinprogramm-signature"
   .
   #hash((author . "sperber@racket-lang.org")
-        (checksum . "73036c5ca3ebcfa60c5469e2e54403e6a94a352a")
+        (checksum . "20a7f5db21c4677a60895f5a712791a7607d09b6")
         (dependencies
          .
          ("base"
@@ -17620,7 +17620,7 @@
         (name . "deinprogramm-signature")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/deinprogramm-signature.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/deinprogramm-signature.zip")
         (tags . ())))
  ("delay-pure"
   .
@@ -18675,7 +18675,7 @@
  ("distributed-places"
   .
   #hash((author . "tewk@racket-lang.org")
-        (checksum . "9232606f00ff9076ec5adb88a346e8db73c2f361")
+        (checksum . "4ea0b2edde868a7eb719d413ec953891af222c6c")
         (dependencies . ("distributed-places-lib" "distributed-places-doc"))
         (dependency-names
          .
@@ -18685,12 +18685,12 @@
         (name . "distributed-places")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/distributed-places.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/distributed-places.zip")
         (tags . ())))
  ("distributed-places-doc"
   .
   #hash((author . "tewk@racket-lang.org")
-        (checksum . "9df761437f61e0ae9a118a651699c06d8ebab87e")
+        (checksum . "e0bc5582ba60351de4a175936c46fbc76c832cbe")
         (dependencies
          .
          ("base"
@@ -18710,12 +18710,12 @@
         (name . "distributed-places-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/distributed-places-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/distributed-places-doc.zip")
         (tags . ())))
  ("distributed-places-lib"
   .
   #hash((author . "tewk@racket-lang.org")
-        (checksum . "2a8d862853aa0c0f3a4c405658127f9d335ae6ca")
+        (checksum . "e60eaaf07cbf3319108ae2dc113a1fc4b30c734c")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "tewk@racket-lang.org")
@@ -18723,7 +18723,7 @@
         (name . "distributed-places-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/distributed-places-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/distributed-places-lib.zip")
         (tags . ())))
  ("distributed-places-test"
   .
@@ -18897,7 +18897,7 @@
  ("distro-build-client"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "f8c5636052ae59346a9259bcf5e7f069849da744")
+        (checksum . "28c936f78703ae64385ebb23093f47313c5ecfe3")
         (dependencies
          .
          (("base" #:version "6.2.900.9") "ds-store-lib" "at-exp-lib"))
@@ -18907,7 +18907,7 @@
         (name . "distro-build-client")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/distro-build-client.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/distro-build-client.zip")
         (tags . ())))
  ("distro-build-doc"
   .
@@ -18988,7 +18988,7 @@
  ("distro-build-lib"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "fe1677f6692470554f20d674cbc1a611852785bb")
+        (checksum . "bcf598bd0fbe380264c6196ef07054324aad01b1")
         (dependencies . ("distro-build-client" "distro-build-server"))
         (dependency-names . ("distro-build-client" "distro-build-server"))
         (description . "mflatt@racket-lang.org")
@@ -18996,12 +18996,12 @@
         (name . "distro-build-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/distro-build-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/distro-build-lib.zip")
         (tags . ())))
  ("distro-build-server"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "1fac1b776617bdba835091b305b689f401ea14d9")
+        (checksum . "4c270b11dcbb72841adb0b50f90eb29fc9dfc3b1")
         (dependencies
          .
          (("base" #:version "6.1.1.6")
@@ -19031,7 +19031,7 @@
         (name . "distro-build-server")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/distro-build-server.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/distro-build-server.zip")
         (tags . ())))
  ("distro-build-test"
   .
@@ -19699,7 +19699,7 @@
  ("draw"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "01c66f73767d824fda616fec811bb410e2a1b331")
+        (checksum . "9ba802253b34b7b129f8d89bdcdf1e00ca84adfd")
         (dependencies . ("draw-lib" "draw-doc"))
         (dependency-names . ("draw-lib" "draw-doc"))
         (description . "mflatt@racket-lang.org")
@@ -19707,12 +19707,12 @@
         (name . "draw")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/draw.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/draw.zip")
         (tags . ())))
  ("draw-doc"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "db3174ac62427f9faff8d598351e7f7585e0b459")
+        (checksum . "d67a673b3dfddb29e49042481e42b9b41a1f3fbf")
         (dependencies
          .
          ("gui-doc"
@@ -19740,7 +19740,7 @@
         (name . "draw-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/draw-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/draw-doc.zip")
         (tags . ())))
  ("draw-i386-macosx"
   .
@@ -19893,7 +19893,7 @@
  ("draw-i386-macosx-3"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "83036e0a0f9f65c54aa78b7069fb2b49897cb2dd")
+        (checksum . "6cb594a22c93c062c5e10a06bf1169901f4bb943")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -19901,12 +19901,12 @@
         (name . "draw-i386-macosx-3")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/draw-i386-macosx-3.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/draw-i386-macosx-3.zip")
         (tags . ())))
  ("draw-lib"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "ba488685e7794d299a77e2587d01709c9aa68df3")
+        (checksum . "153941cf72288694efa834fcadabdaa1d95e62f9")
         (dependencies
          .
          (("base" #:version "6.10.1.2")
@@ -19936,7 +19936,7 @@
         (name . "draw-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/draw-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/draw-lib.zip")
         (tags . ())))
  ("draw-ppc-macosx"
   .
@@ -20089,7 +20089,7 @@
  ("draw-ppc-macosx-3"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "e27b578e28f508ce5ed3a3f796e5e523ad3343de")
+        (checksum . "8dbe4128a27d2cd668a3824c86ed3b04f5e8ed01")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -20097,12 +20097,12 @@
         (name . "draw-ppc-macosx-3")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/draw-ppc-macosx-3.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/draw-ppc-macosx-3.zip")
         (tags . ())))
  ("draw-test"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "de98d11ff0fbd209cc341511ffd39a93f2e7324a")
+        (checksum . "550cb1ff993103b3f247d7632e02767afab704f8")
         (dependencies
          .
          ("base"
@@ -20134,12 +20134,12 @@
         (name . "draw-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/draw-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/draw-test.zip")
         (tags . ())))
  ("draw-ttf-x86_64-linux-natipkg"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "43be87314ca3c3330ecc3b80b70c4a6eba300cea")
+        (checksum . "7a88d4aa9e850c03f6908a76ff056c9bd99254b9")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -20147,7 +20147,7 @@
         (name . "draw-ttf-x86_64-linux-natipkg")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/draw-ttf-x86_64-linux-natipkg.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/draw-ttf-x86_64-linux-natipkg.zip")
         (tags . ())))
  ("draw-win32-i386"
   .
@@ -20300,7 +20300,7 @@
  ("draw-win32-i386-3"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "09d785e56364091a4ee2bc5e0a41939a253c6bbb")
+        (checksum . "5fb300056fb42ab605888bc52799f3273f18f090")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -20308,7 +20308,7 @@
         (name . "draw-win32-i386-3")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/draw-win32-i386-3.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/draw-win32-i386-3.zip")
         (tags . ())))
  ("draw-win32-x86_64"
   .
@@ -20461,7 +20461,7 @@
  ("draw-win32-x86_64-3"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "93bfec6bae0d6f451473db7608a8c674cf20f860")
+        (checksum . "a8d57132b627cf2e567ab4c02a5e5210721e612a")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -20469,12 +20469,12 @@
         (name . "draw-win32-x86_64-3")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/draw-win32-x86_64-3.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/draw-win32-x86_64-3.zip")
         (tags . ())))
  ("draw-x11-x86_64-linux-natipkg"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "b34920e723d9e80f7d6e208053efc5dbdb50dd42")
+        (checksum . "657515bd2ad799243cdb536ca3c6b75736db8d1a")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -20482,7 +20482,7 @@
         (name . "draw-x11-x86_64-linux-natipkg")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/draw-x11-x86_64-linux-natipkg.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/draw-x11-x86_64-linux-natipkg.zip")
         (tags . ())))
  ("draw-x86_64-linux-natipkg-2"
   .
@@ -20561,7 +20561,7 @@
  ("draw-x86_64-linux-natipkg-3"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "e06c7ba8fe48bef5f95456171424dd11cc4849b9")
+        (checksum . "34248fcab9228ada34d46867f88c8288c6442fe5")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -20569,7 +20569,7 @@
         (name . "draw-x86_64-linux-natipkg-3")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/draw-x86_64-linux-natipkg-3.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/draw-x86_64-linux-natipkg-3.zip")
         (tags . ())))
  ("draw-x86_64-macosx"
   .
@@ -20722,7 +20722,7 @@
  ("draw-x86_64-macosx-3"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "ca5f2dc2fcb777ceff684ebc6d2a1c362432df75")
+        (checksum . "d40fc3423605c43a63946f7ccb10c594c0eb72a6")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -20730,7 +20730,7 @@
         (name . "draw-x86_64-macosx-3")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/draw-x86_64-macosx-3.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/draw-x86_64-macosx-3.zip")
         (tags . ())))
  ("drbayes"
   .
@@ -21680,7 +21680,7 @@
  ("drracket"
   .
   #hash((author . "robby@racket-lang.org")
-        (checksum . "148d2512e709ca1ac229a0f4dd1b141c0497b024")
+        (checksum . "9f926cfeb988871c83e4d81479638da437c79ffa")
         (dependencies
          .
          ("scheme-lib"
@@ -21721,6 +21721,7 @@
           "pict-snip-lib"
           "option-contract-lib"
           "syntax-color-lib"
+          "quickscript"
           "mzscheme-doc"
           "net-doc"
           "planet-doc"
@@ -21774,6 +21775,7 @@
           "pict-snip-lib"
           "option-contract-lib"
           "syntax-color-lib"
+          "quickscript"
           "mzscheme-doc"
           "net-doc"
           "planet-doc"
@@ -21792,7 +21794,7 @@
         (name . "drracket")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/drracket.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/drracket.zip")
         (tags . ())))
  ("drracket-ayu-mirage"
   .
@@ -22025,7 +22027,7 @@
  ("drracket-plugin-lib"
   .
   #hash((author . "robby@racket-lang.org")
-        (checksum . "25c5098313e5c677642512c3b8c284be24bf4360")
+        (checksum . "21f74a83d8b287310623c6b4ec888e8b0fd39743")
         (dependencies . ("base" "compatibility-lib"))
         (dependency-names . ("base" "compatibility-lib"))
         (description . "robby@racket-lang.org")
@@ -22033,7 +22035,7 @@
         (name . "drracket-plugin-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/drracket-plugin-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/drracket-plugin-lib.zip")
         (tags . ())))
  ("drracket-scheme-dark-green"
   .
@@ -22152,7 +22154,7 @@
  ("drracket-test"
   .
   #hash((author . "robby@racket-lang.org")
-        (checksum . "ca9506e26066f03a0136e97d58356130999b6712")
+        (checksum . "79ccd9fb44414583885ad563966628495243d5df")
         (dependencies
          .
          ("base"
@@ -22188,12 +22190,12 @@
         (name . "drracket-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/drracket-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/drracket-test.zip")
         (tags . ())))
  ("drracket-tool"
   .
   #hash((author . "robby@racket-lang.org")
-        (checksum . "35b2dda8e15f9d52c893f435c55ab816c0371433")
+        (checksum . "0b490b366c52bbf49f7a6ffde36eb02abbfbe7ff")
         (dependencies . ("drracket-tool-lib" "drracket-tool-doc"))
         (dependency-names . ("drracket-tool-lib" "drracket-tool-doc"))
         (description . "robby@racket-lang.org")
@@ -22201,12 +22203,12 @@
         (name . "drracket-tool")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/drracket-tool.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/drracket-tool.zip")
         (tags . ())))
  ("drracket-tool-doc"
   .
   #hash((author . "robby@racket-lang.org")
-        (checksum . "c93dfcd7df497ea22241eeb226045493009a8f0a")
+        (checksum . "a8275c3534626f98e787d33a67b593bcb884ea0c")
         (dependencies
          .
          ("base"
@@ -22230,12 +22232,12 @@
         (name . "drracket-tool-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/drracket-tool-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/drracket-tool-doc.zip")
         (tags . ())))
  ("drracket-tool-lib"
   .
   #hash((author . "robby@racket-lang.org")
-        (checksum . "271eae6cd66a7670020b707b97f3dc304f08a2e6")
+        (checksum . "7054cb11abd6c3efd3381fc61b68ad27a88ff3ee")
         (dependencies
          .
          (("base" #:version "6.2.900.10")
@@ -22261,12 +22263,12 @@
         (name . "drracket-tool-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/drracket-tool-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/drracket-tool-lib.zip")
         (tags . ())))
  ("drracket-tool-test"
   .
   #hash((author . "robby@racket-lang.org")
-        (checksum . "1aa9a765dd7a0cccf4ed888be5e3d1f9661db347")
+        (checksum . "bbe5ca05575fd58a300532be1775cd9eeaefae3f")
         (dependencies . ("base" "rackunit-lib" "drracket-tool-lib"))
         (dependency-names . ("base" "rackunit-lib" "drracket-tool-lib"))
         (description . "robby@racket-lang.org")
@@ -22274,7 +22276,7 @@
         (name . "drracket-tool-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/drracket-tool-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/drracket-tool-test.zip")
         (tags . ())))
  ("drracket-vim-tool"
   .
@@ -22464,7 +22466,7 @@
  ("ds-store"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "c6538ff1c8501f176b78a7ecbb030545e5c477b4")
+        (checksum . "d3348321c9e98c83b4ba3d70ce1efdbcd26cde03")
         (dependencies . ("ds-store-lib" "ds-store-doc" "base"))
         (dependency-names . ("ds-store-lib" "ds-store-doc" "base"))
         (description . "mflatt@racket-lang.org")
@@ -22472,12 +22474,12 @@
         (name . "ds-store")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/ds-store.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/ds-store.zip")
         (tags . ())))
  ("ds-store-doc"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "1cee001e4a45b0e42691fdbebbc860230fee76d5")
+        (checksum . "6681c3f694cfb51c55494392cc9f161958657b6e")
         (dependencies . ("base" "scribble-lib" "racket-doc" "ds-store-lib"))
         (dependency-names
          .
@@ -22487,12 +22489,12 @@
         (name . "ds-store-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/ds-store-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/ds-store-doc.zip")
         (tags . ())))
  ("ds-store-lib"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "60c671aa0929d0caaa8175cf756ad1339f658966")
+        (checksum . "2b24ac817ba86caebc3ed4826cfc5d4b4e13040f")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -22500,7 +22502,7 @@
         (name . "ds-store-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/ds-store-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/ds-store-lib.zip")
         (tags . ())))
  ("dset"
   .
@@ -22852,7 +22854,7 @@
  ("dynext-lib"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "13dff3937c1233ee4622fe8e900c3ae41e6f61ed")
+        (checksum . "ef6c3679a370e7ccbbc4e05c303d6dfe8cad1e79")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -22860,7 +22862,7 @@
         (name . "dynext-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/dynext-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/dynext-lib.zip")
         (tags . ())))
  ("ebml"
   .
@@ -23612,7 +23614,7 @@
  ("eli-tester"
   .
   #hash((author . "eli@racket-lang.org")
-        (checksum . "0f97ea95ba0d9463348d2135ebd1e07b964e0977")
+        (checksum . "fbf8df6c71f4080932b4485b4c2b9a447b1d468a")
         (dependencies . ("base" "rackunit-lib"))
         (dependency-names . ("base" "rackunit-lib"))
         (description . "eli@racket-lang.org")
@@ -23620,7 +23622,7 @@
         (name . "eli-tester")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/eli-tester.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/eli-tester.zip")
         (tags . ())))
  ("emcsabac"
   .
@@ -23789,7 +23791,7 @@
  ("eopl"
   .
   #hash((author . "dvanhorn@racket-lang.org")
-        (checksum . "539c337d511ddc1e720184ed50fd21d2beddfb06")
+        (checksum . "88e1b01144cf4b9b96311b42ca89093b9f5b11dd")
         (dependencies
          .
          ("base"
@@ -23809,14 +23811,14 @@
         (name . "eopl")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/eopl.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/eopl.zip")
         (tags . ())))
  ("errortrace"
   .
   #hash((author
          .
          "mflatt@racket-lang.org robby@racket-lang.org florence@racket-lang.org")
-        (checksum . "5caf77e79b0fee871d3b1f4b6c1f0043f78a8a79")
+        (checksum . "ea2d92c7e6f3f0425449f498d5ff4ddf987c0eba")
         (dependencies . ("errortrace-lib" "errortrace-doc"))
         (dependency-names . ("errortrace-lib" "errortrace-doc"))
         (description
@@ -23826,14 +23828,14 @@
         (name . "errortrace")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/errortrace.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/errortrace.zip")
         (tags . ())))
  ("errortrace-doc"
   .
   #hash((author
          .
          "mflatt@racket-lang.org robby@racket-lang.org florence@racket-lang.org")
-        (checksum . "617c39019695f895f5e14d18dbef95940b6e5b85")
+        (checksum . "3bf67f33f37880189d98b60d49c2acdc1b426447")
         (dependencies . ("racket-doc" "base" "errortrace-lib" "scribble-lib"))
         (dependency-names
          .
@@ -23845,14 +23847,14 @@
         (name . "errortrace-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/errortrace-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/errortrace-doc.zip")
         (tags . ())))
  ("errortrace-lib"
   .
   #hash((author
          .
          "mflatt@racket-lang.org robby@racket-lang.org florence@racket-lang.org")
-        (checksum . "5f513820fedbfd48837943f0f777e690fcaacb71")
+        (checksum . "8ab957b4112f4f1860063e6f7f82187ba7004ad9")
         (dependencies . (("base" #:version "6.6.0.3") "source-syntax"))
         (dependency-names . ("base" "source-syntax"))
         (description
@@ -23862,14 +23864,14 @@
         (name . "errortrace-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/errortrace-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/errortrace-lib.zip")
         (tags . ())))
  ("errortrace-test"
   .
   #hash((author
          .
          "mflatt@racket-lang.org robby@racket-lang.org florence@racket-lang.org")
-        (checksum . "f5369858cbcfbda5d1cf73b4864ab8ef4cde6642")
+        (checksum . "58f7c77c35ead3bb07999e9e8d345a0340d1ec58")
         (dependencies
          .
          ("errortrace-lib"
@@ -23893,7 +23895,7 @@
         (name . "errortrace-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/errortrace-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/errortrace-test.zip")
         (tags . ())))
  ("esc-vp21"
   .
@@ -27077,7 +27079,7 @@
  ("frtime"
   .
   #hash((author . "jay@racket-lang.org gcooper@racket-lang.org")
-        (checksum . "729a339863ad8ee1189b1510b66a4f51f916ec82")
+        (checksum . "c156f4d7fac626f4aadc68b7f7e59827883f71cc")
         (dependencies
          .
          ("srfi-lite-lib"
@@ -27109,7 +27111,7 @@
         (name . "frtime")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/frtime.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/frtime.zip")
         (tags . ())))
  ("ftree"
   .
@@ -27690,7 +27692,7 @@
  ("future-visualizer"
   .
   #hash((author . "jamesswaine@racket-lang.org")
-        (checksum . "19b47179cdd98635f7f0a16241442e391e6975e5")
+        (checksum . "800f8ac309181f63d9a90709f4d360e85ccc8981")
         (dependencies
          .
          ("base"
@@ -27718,12 +27720,12 @@
         (name . "future-visualizer")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/future-visualizer.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/future-visualizer.zip")
         (tags . ())))
  ("future-visualizer-typed"
   .
   #hash((author . "jamesswaine@racket-lang.org")
-        (checksum . "cc20081b73706a41d8369ac6e1e07cfbece0ac05")
+        (checksum . "2f49eaf938a93a37e6108204275974c0db46cc5d")
         (dependencies . ("base" "future-visualizer" "typed-racket-lib"))
         (dependency-names . ("base" "future-visualizer" "typed-racket-lib"))
         (description . "jamesswaine@racket-lang.org")
@@ -27731,7 +27733,7 @@
         (name . "future-visualizer-typed")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/future-visualizer-typed.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/future-visualizer-typed.zip")
         (tags . ())))
  ("g-code-tools"
   .
@@ -27812,7 +27814,7 @@
  ("games"
   .
   #hash((author . "mflatt@racket-lang.org robby@racket-lang.org")
-        (checksum . "58a40045bc434696ed54d332cec2cd9965e33cc2")
+        (checksum . "600cb22f1aef81cf2723e0c08650cbfc0f571fa3")
         (dependencies
          .
          ("base"
@@ -27864,7 +27866,7 @@
         (name . "games")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/games.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/games.zip")
         (tags . ())))
  ("gaming"
   .
@@ -32829,7 +32831,7 @@
  ("gui"
   .
   #hash((author . "mflatt@racket-lang.org robby@racket-lang.org")
-        (checksum . "643404f86d9786fb2abe17e756a95feb49dd70ce")
+        (checksum . "44093de5b6b7540615e230ffaeead4428f6a2924")
         (dependencies . ("gui-lib" "gui-doc"))
         (dependency-names . ("gui-lib" "gui-doc"))
         (description . "mflatt@racket-lang.org robby@racket-lang.org")
@@ -32837,12 +32839,12 @@
         (name . "gui")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/gui.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/gui.zip")
         (tags . ())))
  ("gui-doc"
   .
   #hash((author . "mflatt@racket-lang.org robby@racket-lang.org")
-        (checksum . "77faa51f49684ef9f2ad83365149df23791a3c67")
+        (checksum . "312899a6a8bf6a1728f21ec4f4cfd596d812dbd7")
         (dependencies
          .
          ("base"
@@ -32884,12 +32886,12 @@
         (name . "gui-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/gui-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/gui-doc.zip")
         (tags . ())))
  ("gui-i386-macosx"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "0308df313883aa428adc0efc91bfcc88fc0162f0")
+        (checksum . "a2ee7bebc67f026ab5cc261deaeb7df95e9a6fad")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -32897,12 +32899,12 @@
         (name . "gui-i386-macosx")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/gui-i386-macosx.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/gui-i386-macosx.zip")
         (tags . ())))
  ("gui-lib"
   .
   #hash((author . "mflatt@racket-lang.org robby@racket-lang.org")
-        (checksum . "89eb5002093ffa27c33adc2e6d2093bce880ab49")
+        (checksum . "33a6592d0078283fe463406a277b03c278a1004b")
         (dependencies
          .
          ("srfi-lite-lib"
@@ -32960,7 +32962,7 @@
         (name . "gui-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/gui-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/gui-lib.zip")
         (tags . ())))
  ("gui-pkg-manager"
   .
@@ -33136,7 +33138,7 @@
  ("gui-pkg-manager-lib"
   .
   #hash((author . "mflatt@racket-lang.org robby@racket-lang.org")
-        (checksum . "b37e9e8714628e57addf2be7dc8d8be2ea7790cc")
+        (checksum . "0eacf8f041e668439ea4ebaf1a5ac17a2d727374")
         (dependencies
          .
          ("base" "gui-lib" ("string-constants-lib" #:version "1.9")))
@@ -33146,12 +33148,12 @@
         (name . "gui-pkg-manager-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/gui-pkg-manager-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/gui-pkg-manager-lib.zip")
         (tags . ())))
  ("gui-ppc-macosx"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "bffb82107f1aee3f75543c07c86ad0c2615c3791")
+        (checksum . "2358d8c63039e6e7a6f580ea03bebe146039a4de")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -33159,12 +33161,12 @@
         (name . "gui-ppc-macosx")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/gui-ppc-macosx.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/gui-ppc-macosx.zip")
         (tags . ())))
  ("gui-test"
   .
   #hash((author . "mflatt@racket-lang.org robby@racket-lang.org")
-        (checksum . "094b7cae54e3cfa5cef5bb9e083da10e05b0729b")
+        (checksum . "147868107f64cafba1590a817dbaa4cb8e15251b")
         (dependencies
          .
          ("base"
@@ -33200,7 +33202,7 @@
         (name . "gui-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/gui-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/gui-test.zip")
         (tags . ())))
  ("gui-widget-mixins"
   .
@@ -33287,7 +33289,7 @@
  ("gui-win32-i386"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "be901fc833f63e65e6a31819cdaf96bb699ee35d")
+        (checksum . "d9f4be641d58756e8a3a11db1ef829f945224a9d")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -33295,12 +33297,12 @@
         (name . "gui-win32-i386")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/gui-win32-i386.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/gui-win32-i386.zip")
         (tags . ())))
  ("gui-win32-x86_64"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "655baac1b394fc94a94496a6beab0fb5e6f334d0")
+        (checksum . "dc4f0e5183fff6f356d0e9e058ae534ea8d66141")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -33308,12 +33310,12 @@
         (name . "gui-win32-x86_64")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/gui-win32-x86_64.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/gui-win32-x86_64.zip")
         (tags . ())))
  ("gui-x86_64-linux-natipkg"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "8fb00772ce487693e2f22ea9e5c71aba0995abfc")
+        (checksum . "e098152d1a577abfe9f2df0d22996e3d62d93f9f")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -33321,12 +33323,12 @@
         (name . "gui-x86_64-linux-natipkg")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/gui-x86_64-linux-natipkg.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/gui-x86_64-linux-natipkg.zip")
         (tags . ())))
  ("gui-x86_64-macosx"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "a0510333315ae70091207fbefc13bd5c7858ca02")
+        (checksum . "3edd995ece02fc106ac90d33deb774d0818eda73")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -33334,7 +33336,7 @@
         (name . "gui-x86_64-macosx")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/gui-x86_64-macosx.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/gui-x86_64-macosx.zip")
         (tags . ())))
  ("hackett"
   .
@@ -35237,7 +35239,7 @@
   #hash((author
          .
          "matthias@racket-lang.org mflatt@racket-lang.org robby@racket-lang.org")
-        (checksum . "30ee06a292a61c416f018435ba8909a553b8950e")
+        (checksum . "c64660b9513a013d6d37ca24c14c0613d452ef61")
         (dependencies . ("htdp-lib" "htdp-doc"))
         (dependency-names . ("htdp-lib" "htdp-doc"))
         (description
@@ -35247,21 +35249,21 @@
         (name . "htdp")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/htdp.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/htdp.zip")
         (tags . ())))
  ("htdp-doc"
   .
   #hash((author
          .
          "matthias@racket-lang.org mflatt@racket-lang.org robby@racket-lang.org")
-        (checksum . "0c852905df527f8c78f6c27e20a02af473b95580")
+        (checksum . "018aa935ac4688e20e768012a5ebbf4df926329a")
         (dependencies
          .
          ("base"
           "scribble-lib"
           "at-exp-lib"
           "draw-lib"
-          "gui-lib"
+          ("gui-lib" #:version "1.37")
           "htdp-lib"
           "plai"
           "sandbox-lib"
@@ -35300,7 +35302,7 @@
         (name . "htdp-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/htdp-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/htdp-doc.zip")
         (tags . ())))
  ("htdp-json"
   .
@@ -35369,7 +35371,7 @@
   #hash((author
          .
          "matthias@racket-lang.org mflatt@racket-lang.org robby@racket-lang.org")
-        (checksum . "7d682bf15df41736208591e7cfbfacaefdd65ea7")
+        (checksum . "bee28da51a329762e9128f50da38fdbc8dbb0476")
         (dependencies
          .
          (("base" #:version "6.8.0.2")
@@ -35395,7 +35397,7 @@
           "typed-racket-more"
           "web-server-lib"
           "wxme-lib"
-          ("gui-lib" #:version "1.7")
+          ("gui-lib" #:version "1.36")
           "deinprogramm-signature"
           "pict-lib"
           "racket-index"
@@ -35439,14 +35441,14 @@
         (name . "htdp-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/htdp-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/htdp-lib.zip")
         (tags . ())))
  ("htdp-test"
   .
   #hash((author
          .
          "matthias@racket-lang.org mflatt@racket-lang.org robby@racket-lang.org")
-        (checksum . "c4380a75df6bc56ba1a8fdfdc3e3bea36560446c")
+        (checksum . "fd2ff50302707a46d57c2ce1563cfbc48ee333d5")
         (dependencies
          .
          ("base"
@@ -35480,12 +35482,12 @@
         (name . "htdp-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/htdp-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/htdp-test.zip")
         (tags . ())))
  ("html"
   .
   #hash((author . "jay@racket-lang.org mflatt@racket-lang.org")
-        (checksum . "cb17d1db722a363f426245419f66274f9a0b872f")
+        (checksum . "59dc92c3a301848aba676146e15c0f2cd6aa38a9")
         (dependencies . ("html-lib" "html-doc"))
         (dependency-names . ("html-lib" "html-doc"))
         (description . "jay@racket-lang.org mflatt@racket-lang.org")
@@ -35493,12 +35495,12 @@
         (name . "html")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/html.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/html.zip")
         (tags . ())))
  ("html-doc"
   .
   #hash((author . "jay@racket-lang.org mflatt@racket-lang.org")
-        (checksum . "d56513de3a92a42004f16918be228612d7e853d9")
+        (checksum . "b654a0a3f5e38b78d3226f4000ff1f85de3eb0f6")
         (dependencies . ("base" "scribble-lib" "html-lib" "racket-doc"))
         (dependency-names . ("base" "scribble-lib" "html-lib" "racket-doc"))
         (description . "jay@racket-lang.org mflatt@racket-lang.org")
@@ -35506,12 +35508,12 @@
         (name . "html-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/html-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/html-doc.zip")
         (tags . ())))
  ("html-lib"
   .
   #hash((author . "jay@racket-lang.org mflatt@racket-lang.org")
-        (checksum . "a8a182d29bd77ae473c3c57369a49757dcd9e2b8")
+        (checksum . "9050e4524334429cf2ec3bf9995ebce270941154")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "jay@racket-lang.org mflatt@racket-lang.org")
@@ -35519,7 +35521,7 @@
         (name . "html-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/html-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/html-lib.zip")
         (tags . ())))
  ("html-parsing"
   .
@@ -35667,7 +35669,7 @@
  ("html-test"
   .
   #hash((author . "jay@racket-lang.org mflatt@racket-lang.org")
-        (checksum . "6a3251876c6241eefc01d2c29023ddc89bd8c5bd")
+        (checksum . "f3010cf8e1f2a5b92097200f2cdef27c23173bd4")
         (dependencies . ("racket-index" "base" "html-lib" "rackunit-lib"))
         (dependency-names . ("racket-index" "base" "html-lib" "rackunit-lib"))
         (description . "jay@racket-lang.org mflatt@racket-lang.org")
@@ -35675,7 +35677,7 @@
         (name . "html-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/html-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/html-test.zip")
         (tags . ())))
  ("html-writing"
   .
@@ -36835,7 +36837,7 @@
  ("icons"
   .
   #hash((author . "ntoronto@racket-lang.org")
-        (checksum . "b37f81079262ca665ceb7ac20f89401b8a8327ac")
+        (checksum . "eeb4e49de168865c03b4351a907425f9c1e39078")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "ntoronto@racket-lang.org")
@@ -36843,7 +36845,7 @@
         (name . "icons")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/icons.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/icons.zip")
         (tags . ())))
  ("identikon"
   .
@@ -37003,7 +37005,7 @@
  ("images"
   .
   #hash((author . "ntoronto@racket-lang.org")
-        (checksum . "d383179c2574d98ace8f015942d5428cfb0a7933")
+        (checksum . "c0ddbc44a9760aff9cd1ade13d9fa364ae71c896")
         (dependencies . ("images-lib" "images-gui-lib" "images-doc"))
         (dependency-names . ("images-lib" "images-gui-lib" "images-doc"))
         (description . "ntoronto@racket-lang.org")
@@ -37011,12 +37013,12 @@
         (name . "images")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/images.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/images.zip")
         (tags . ())))
  ("images-doc"
   .
   #hash((author . "ntoronto@racket-lang.org")
-        (checksum . "894f6d951981592ff8634066931326d19986fc46")
+        (checksum . "57bd684325371a0cd5892f7f153abd1d88383aa1")
         (dependencies
          .
          ("base"
@@ -37054,12 +37056,12 @@
         (name . "images-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/images-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/images-doc.zip")
         (tags . ())))
  ("images-gui-lib"
   .
   #hash((author . "ntoronto@racket-lang.org")
-        (checksum . "b64322a0dd6d999a98b7019929f4cf22e713b428")
+        (checksum . "aa9bd3460b81ce9186289f26dd6328ee48f97601")
         (dependencies . ("base" "draw-lib" "gui-lib" "string-constants-lib"))
         (dependency-names
          .
@@ -37069,12 +37071,12 @@
         (name . "images-gui-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/images-gui-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/images-gui-lib.zip")
         (tags . ())))
  ("images-lib"
   .
   #hash((author . "ntoronto@racket-lang.org")
-        (checksum . "082d7911428b5713ef7c81b9565570e9e2ec06d5")
+        (checksum . "c62337be2226a3a8d8b8196154b112da57a91fa7")
         (dependencies . ("base" "draw-lib" "typed-racket-lib" "scribble-lib"))
         (dependency-names
          .
@@ -37084,12 +37086,12 @@
         (name . "images-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/images-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/images-lib.zip")
         (tags . ())))
  ("images-test"
   .
   #hash((author . "ntoronto@racket-lang.org")
-        (checksum . "f47ae42c7d778ac0b5d643c2a11204b14371555e")
+        (checksum . "ef9f18004722a5defe0b96c22f35b9e61fd2132b")
         (dependencies
          .
          ("base" "images-lib" "pict-lib" "slideshow-lib" "racket-doc"))
@@ -37101,7 +37103,7 @@
         (name . "images-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/images-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/images-test.zip")
         (tags . ())))
  ("impl-excl"
   .
@@ -40885,7 +40887,7 @@
  ("lazy"
   .
   #hash((author . "eli@racket-lang.org stchang@racket-lang.org")
-        (checksum . "c30c30b7f954551c7b86159e09160920c1e9430e")
+        (checksum . "7660e1e77bdb63416ef94b902df40b5d82c67387")
         (dependencies
          .
          ("base"
@@ -40915,7 +40917,7 @@
         (name . "lazy")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/lazy.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/lazy.zip")
         (tags . ())))
  ("ldap"
   .
@@ -45033,7 +45035,7 @@
  ("macro-debugger"
   .
   #hash((author . "ryanc@racket-lang.org")
-        (checksum . "60e343d201026bb9d979164731545ed94b9f1c69")
+        (checksum . "f6989b65c75811ab3a6435037eaffe96b71114a2")
         (dependencies
          .
          ("base"
@@ -45071,12 +45073,12 @@
         (name . "macro-debugger")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/macro-debugger.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/macro-debugger.zip")
         (tags . ())))
  ("macro-debugger-text-lib"
   .
   #hash((author . "ryanc@racket-lang.org")
-        (checksum . "11baf1c43f9d5317f3849a0b7d7af8f3ee07b17f")
+        (checksum . "6a4018450a1ba6aebab54c2d3f78063f21c9ce07")
         (dependencies . ("base" "db-lib" "class-iop-lib" "parser-tools-lib"))
         (dependency-names
          .
@@ -45086,7 +45088,7 @@
         (name . "macro-debugger-text-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/macro-debugger-text-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/macro-debugger-text-lib.zip")
         (tags . ())))
  ("macrotypes-example"
   .
@@ -45820,7 +45822,7 @@
   #hash((author
          .
          "eli@racket-lang.org jay@racket-lang.org matthias@racket-lang.org mflatt@racket-lang.org robby@racket-lang.org")
-        (checksum . "107e1b59943f693bcc3aabf120ab9ca05a1df744")
+        (checksum . "4d09880d797bd4f1b69ea043ac228f27806540d9")
         (dependencies
          .
          ("2d"
@@ -45998,14 +46000,14 @@
         (name . "main-distribution")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/main-distribution.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/main-distribution.zip")
         (tags . ())))
  ("main-distribution-test"
   .
   #hash((author
          .
          "eli@racket-lang.org jay@racket-lang.org matthias@racket-lang.org mflatt@racket-lang.org robby@racket-lang.org")
-        (checksum . "2bf511ea9e415db10e06f1f8dab9be1e6cccabdb")
+        (checksum . "88094147743f7c364bf352a6f397a2e9ad290121")
         (dependencies
          .
          ("racket-test"
@@ -46091,12 +46093,12 @@
         (name . "main-distribution-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/main-distribution-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/main-distribution-test.zip")
         (tags . ())))
  ("make"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "682cd9a1ff4f22bd49f5d3c5ec15dcda79773fab")
+        (checksum . "a1aa7d92639a5990ccba1824b0cd2b4f1659653f")
         (dependencies
          .
          ("scheme-lib"
@@ -46120,7 +46122,7 @@
         (name . "make")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/make.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/make.zip")
         (tags . ())))
  ("make-log-interceptor"
   .
@@ -47077,7 +47079,7 @@
  ("math"
   .
   #hash((author . "ntoronto@racket-lang.org")
-        (checksum . "ee56b203391a135225704c338acdb0783575d63c")
+        (checksum . "29e118367f13d86932fc7c3193863545dcd5ade0")
         (dependencies . ("math-lib" "math-doc"))
         (dependency-names . ("math-lib" "math-doc"))
         (description . "ntoronto@racket-lang.org")
@@ -47085,12 +47087,12 @@
         (name . "math")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/math.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/math.zip")
         (tags . ())))
  ("math-doc"
   .
   #hash((author . "ntoronto@racket-lang.org")
-        (checksum . "7f5a1e1609297900d1013829982185ec9f34d9ba")
+        (checksum . "d0a27803b7df926badd94b2fac6001ce267b1374")
         (dependencies
          .
          ("base"
@@ -47122,12 +47124,12 @@
         (name . "math-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/math-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/math-doc.zip")
         (tags . ())))
  ("math-i386-macosx"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "5c511e0bbca0db7009dc50e4e5e752f51941cab2")
+        (checksum . "c9b04e83d4b74b5c64dc78539a7d49f4baaf9c0c")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -47135,12 +47137,12 @@
         (name . "math-i386-macosx")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/math-i386-macosx.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/math-i386-macosx.zip")
         (tags . ())))
  ("math-lib"
   .
   #hash((author . "ntoronto@racket-lang.org")
-        (checksum . "ecb50590c063b619ab37c96556b2dcd9a18ac906")
+        (checksum . "fc7c7d42f6397ae9fb0b46565fdfdc94e1ee000f")
         (dependencies
          .
          (("base" #:version "6.11.0.6")
@@ -47170,12 +47172,12 @@
         (name . "math-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/math-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/math-lib.zip")
         (tags . ())))
  ("math-ppc-macosx"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "a5236bc3b067ea699326c946be0c70535fcb47b0")
+        (checksum . "a74f4e6eaef3eae2c0b54f271175127f6bc49c2f")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -47183,12 +47185,12 @@
         (name . "math-ppc-macosx")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/math-ppc-macosx.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/math-ppc-macosx.zip")
         (tags . ())))
  ("math-test"
   .
   #hash((author . "ntoronto@racket-lang.org")
-        (checksum . "96ba7568a85806222c5673d2e7bdb481890b64e2")
+        (checksum . "597c8cfd5db15135f326cd212789d9c5aed72a77")
         (dependencies
          .
          ("base"
@@ -47210,12 +47212,12 @@
         (name . "math-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/math-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/math-test.zip")
         (tags . ())))
  ("math-win32-i386"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "c36bc4f0b8958e2b6eab3c2366b4deb51ad0f795")
+        (checksum . "6a5233b4aeea7a13da95002a619f3a72a2da8997")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -47223,12 +47225,12 @@
         (name . "math-win32-i386")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/math-win32-i386.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/math-win32-i386.zip")
         (tags . ())))
  ("math-win32-x86_64"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "ff6c1bb3b393473021cc35c1b80c180078b230ec")
+        (checksum . "93159768526a0b7e111bf00985382ada52705e9f")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -47236,12 +47238,12 @@
         (name . "math-win32-x86_64")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/math-win32-x86_64.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/math-win32-x86_64.zip")
         (tags . ())))
  ("math-x86_64-linux-natipkg"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "a1da75266a7f72e3e45362b809e8b09f68cf85d0")
+        (checksum . "321b98a5a731c457c14c7517c7b00176e3efc3e6")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -47249,12 +47251,12 @@
         (name . "math-x86_64-linux-natipkg")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/math-x86_64-linux-natipkg.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/math-x86_64-linux-natipkg.zip")
         (tags . ())))
  ("math-x86_64-macosx"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "080275565b1ed51b0aacc0d940cdd4094565144f")
+        (checksum . "498a74fc889c269718886e1a87a98ff7db631139")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -47262,7 +47264,7 @@
         (name . "math-x86_64-macosx")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/math-x86_64-macosx.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/math-x86_64-macosx.zip")
         (tags . ())))
  ("mboxrd-read"
   .
@@ -51849,7 +51851,7 @@
  ("mysterx"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "6b37ff8a57ca4255869c19d4b8ad8312bc67447e")
+        (checksum . "c80e39384b017bbb8ba6078c212d20b53427d553")
         (dependencies
          .
          ("scheme-lib" "base" "racket-doc" "at-exp-lib" "scribble-lib"))
@@ -51861,12 +51863,12 @@
         (name . "mysterx")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/mysterx.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/mysterx.zip")
         (tags . ())))
  ("mzcom"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "7fc27b5e7ab6a9739880724b71878ca956d60372")
+        (checksum . "f63616f5cbd4d52a4488f42dc88c0afd15a53f41")
         (dependencies
          .
          ("base"
@@ -51888,12 +51890,12 @@
         (name . "mzcom")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/mzcom.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/mzcom.zip")
         (tags . ())))
  ("mzscheme"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "6c069a6999fe6f49053c92aa85343b34ce2b6d36")
+        (checksum . "c29755337ea5b41d363b7b0dab97a5b6ad4623fb")
         (dependencies . ("mzscheme-lib" "mzscheme-doc"))
         (dependency-names . ("mzscheme-lib" "mzscheme-doc"))
         (description . "mflatt@racket-lang.org")
@@ -51901,12 +51903,12 @@
         (name . "mzscheme")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/mzscheme.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/mzscheme.zip")
         (tags . ())))
  ("mzscheme-doc"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "4cc4301b0d2a6eac9491d1d6c31da8a01dcaa13b")
+        (checksum . "1a5787ba3851173354880412cf7db0fb8b539177")
         (dependencies
          .
          ("base"
@@ -51930,12 +51932,12 @@
         (name . "mzscheme-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/mzscheme-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/mzscheme-doc.zip")
         (tags . ())))
  ("mzscheme-lib"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "d635519a0c80724906b32241492bb5d57c598400")
+        (checksum . "147295fb618de988d3cfbf02ba5d155119203d35")
         (dependencies . ("scheme-lib" ("base" #:version "6.5.0.2")))
         (dependency-names . ("scheme-lib" "base"))
         (description . "mflatt@racket-lang.org")
@@ -51943,7 +51945,7 @@
         (name . "mzscheme-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/mzscheme-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/mzscheme-lib.zip")
         (tags . ())))
  ("namespaced-transformer"
   .
@@ -52548,7 +52550,7 @@
  ("net"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "660d2b87ca3f63a6c34b1cd24424095e1604bda8")
+        (checksum . "305df93eaee9f37021321c6559857381d90ddf8f")
         (dependencies . ("net-lib" "net-doc"))
         (dependency-names . ("net-lib" "net-doc"))
         (description . "mflatt@racket-lang.org")
@@ -52556,12 +52558,12 @@
         (name . "net")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/net.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/net.zip")
         (tags . ())))
  ("net-cookies"
   .
   #hash((author . "jmj@fellowhuman.com jay.mccarthy@gmail.com")
-        (checksum . "2f38b9f718152796fd84723ba674fb0ced06632d")
+        (checksum . "37fdf96cc17bdc71ba97c30f53451d12831b996d")
         (dependencies . ("net-cookies-lib" "net-cookies-doc"))
         (dependency-names . ("net-cookies-lib" "net-cookies-doc"))
         (description . "jmj@fellowhuman.com jay.mccarthy@gmail.com")
@@ -52569,12 +52571,12 @@
         (name . "net-cookies")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/net-cookies.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/net-cookies.zip")
         (tags . ())))
  ("net-cookies-doc"
   .
   #hash((author . "jay.mccarthy@gmail.com jmj@fellowhuman.com")
-        (checksum . "ce61d8d01bd55cad00ba35c3151c85229d01998b")
+        (checksum . "9d60d69283b0cf1fab89046b495fb3ede7bc7c35")
         (dependencies
          .
          ("base"
@@ -52598,12 +52600,12 @@
         (name . "net-cookies-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/net-cookies-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/net-cookies-doc.zip")
         (tags . ())))
  ("net-cookies-lib"
   .
   #hash((author . "jay.mccarthy@gmail.com jmj@fellowhuman.com")
-        (checksum . "69100779b90baeee889268971d264aef29f2faa7")
+        (checksum . "cfc340ff7565704a17e0a4aabe7b45c963272e61")
         (dependencies . ("srfi-lite-lib" "base"))
         (dependency-names . ("srfi-lite-lib" "base"))
         (description . "jay.mccarthy@gmail.com jmj@fellowhuman.com")
@@ -52611,12 +52613,12 @@
         (name . "net-cookies-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/net-cookies-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/net-cookies-lib.zip")
         (tags . ())))
  ("net-cookies-test"
   .
   #hash((author . "jay.mccarthy@gmail.com jmj@fellowhuman.com")
-        (checksum . "7007d0565da3001f3b300d3a980273ffe8dcfb1f")
+        (checksum . "ab5f9d3a472b79e4f774ab67b5ed7109cbe12abe")
         (dependencies . ("base" "net-cookies-lib" "rackunit-lib"))
         (dependency-names . ("base" "net-cookies-lib" "rackunit-lib"))
         (description . "jay.mccarthy@gmail.com jmj@fellowhuman.com")
@@ -52624,12 +52626,12 @@
         (name . "net-cookies-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/net-cookies-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/net-cookies-test.zip")
         (tags . ())))
  ("net-doc"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "718236085004e1607955e0aadacd7864c1762e88")
+        (checksum . "a0e46b75bb480dfe18100ed79e43848c02b4afbc")
         (dependencies
          .
          ("base"
@@ -52653,7 +52655,7 @@
         (name . "net-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/net-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/net-doc.zip")
         (tags . ())))
  ("net-ip"
   .
@@ -53086,7 +53088,7 @@
  ("net-lib"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "53d8454e97dfeef62e2c8c1fe081e43789d2a037")
+        (checksum . "9f0ab82754cb36ed44f19bef8f70bb231025d3cc")
         (dependencies . ("srfi-lite-lib" "base"))
         (dependency-names . ("srfi-lite-lib" "base"))
         (description . "mflatt@racket-lang.org")
@@ -53094,12 +53096,12 @@
         (name . "net-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/net-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/net-lib.zip")
         (tags . ())))
  ("net-test"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "09fea5642c01744b10a0589c2c7e1338b8e908fe")
+        (checksum . "82021a2f6c95b6b9d66342bd2c8aab79263ad287")
         (dependencies
          .
          ("base"
@@ -53127,7 +53129,7 @@
         (name . "net-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/net-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/net-test.zip")
         (tags . ())))
  ("net2"
   .
@@ -55443,7 +55445,7 @@
  ("optimization-coach"
   .
   #hash((author . "stamourv@racket-lang.org")
-        (checksum . "0e508ba4126e7ce3585838daf4b634aa654bcf7e")
+        (checksum . "af6d98c959796dab585c0f2ae50b12a8b05a014a")
         (dependencies
          .
          (("base" #:version "6.2.900.6")
@@ -55477,7 +55479,7 @@
         (name . "optimization-coach")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/optimization-coach.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/optimization-coach.zip")
         (tags . ())))
  ("option-bind"
   .
@@ -55559,7 +55561,7 @@
  ("option-contract"
   .
   #hash((author . "chrdimo@seas.harvard.edu robby@racket-lang.org")
-        (checksum . "2425b1a5806823f779f2c5ddf1c76ac47d2ef188")
+        (checksum . "28f07dc6775defc535354fa85186438c6508efb1")
         (dependencies . ("option-contract-lib" "option-contract-doc"))
         (dependency-names . ("option-contract-lib" "option-contract-doc"))
         (description . "chrdimo@seas.harvard.edu robby@racket-lang.org")
@@ -55567,12 +55569,12 @@
         (name . "option-contract")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/option-contract.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/option-contract.zip")
         (tags . ())))
  ("option-contract-doc"
   .
   #hash((author . "chrdimo@seas.harvard.edu robby@racket-lang.org")
-        (checksum . "86ed475395cf48b9fff6e92ddfefa7f0f8a681d6")
+        (checksum . "320ae5715648ae1926f9d0c89c3133fd7c1f01fc")
         (dependencies
          .
          (("base" #:version "6.2.900.17")
@@ -55587,12 +55589,12 @@
         (name . "option-contract-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/option-contract-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/option-contract-doc.zip")
         (tags . ())))
  ("option-contract-lib"
   .
   #hash((author . "chrdimo@seas.harvard.edu robby@racket-lang.org")
-        (checksum . "4e9c34e1bec123a2378834eafd050f9d88e70e12")
+        (checksum . "fa72efcee2df86c26868ce892d64a46223a4600b")
         (dependencies . (("base" #:version "6.2.900.17")))
         (dependency-names . ("base"))
         (description . "chrdimo@seas.harvard.edu robby@racket-lang.org")
@@ -55600,12 +55602,12 @@
         (name . "option-contract-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/option-contract-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/option-contract-lib.zip")
         (tags . ())))
  ("option-contract-test"
   .
   #hash((author . "chrdimo@seas.harvard.edu robby@racket-lang.org")
-        (checksum . "5839d95e4b1bae5ab6743ac0613538679d80cf1b")
+        (checksum . "f9b552b92b9fa74804baa4edeae37be861f0d06f")
         (dependencies
          .
          (("base" #:version "6.2.900.17")
@@ -55617,7 +55619,7 @@
         (name . "option-contract-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/option-contract-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/option-contract-test.zip")
         (tags . ())))
  ("org-mode"
   .
@@ -56866,7 +56868,7 @@
  ("parser-tools"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "10bcc86acfd937ef53efcddd884a7146f76f3d00")
+        (checksum . "9e2986821afdab92acdb99c3c2d7b13ab8d4ba73")
         (dependencies . ("parser-tools-lib" "parser-tools-doc"))
         (dependency-names . ("parser-tools-lib" "parser-tools-doc"))
         (description . "mflatt@racket-lang.org")
@@ -56874,12 +56876,12 @@
         (name . "parser-tools")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/parser-tools.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/parser-tools.zip")
         (tags . ())))
  ("parser-tools-doc"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "aaa8d9c46813df4fbbdaa0aa5772af1aff335ba7")
+        (checksum . "afc80b25e0313dd95412252e46735d23b7564ad2")
         (dependencies
          .
          ("base"
@@ -56901,12 +56903,12 @@
         (name . "parser-tools-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/parser-tools-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/parser-tools-doc.zip")
         (tags . ())))
  ("parser-tools-lib"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "82e89d6ef28f699e959132b04945eb7dd32c1644")
+        (checksum . "d553885950a02faad1791223464192aac3891727")
         (dependencies
          .
          ("scheme-lib" "base" "compatibility-lib" "rackunit-lib"))
@@ -56918,7 +56920,7 @@
         (name . "parser-tools-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/parser-tools-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/parser-tools-lib.zip")
         (tags . ())))
  ("parted"
   .
@@ -57187,7 +57189,7 @@
  ("pconvert-lib"
   .
   #hash((author . "robby@racket-lang.org")
-        (checksum . "7192b4a5f98f06517182406c15a4e1d4248a6905")
+        (checksum . "6b506420a43d764e3bd47723481a19c56be45d72")
         (dependencies . ("base" "compatibility-lib"))
         (dependency-names . ("base" "compatibility-lib"))
         (description . "robby@racket-lang.org")
@@ -57195,12 +57197,12 @@
         (name . "pconvert-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/pconvert-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/pconvert-lib.zip")
         (tags . ())))
  ("pconvert-test"
   .
   #hash((author . "robby@racket-lang.org")
-        (checksum . "033eba9da6a1eaa2e45bae39fc70adae5ddfd073")
+        (checksum . "e5386cece28623b846ba2e39935b4568b89b3434")
         (dependencies . ("base" "compatibility-lib"))
         (dependency-names . ("base" "compatibility-lib"))
         (description . "robby@racket-lang.org")
@@ -57208,7 +57210,7 @@
         (name . "pconvert-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/pconvert-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/pconvert-test.zip")
         (tags . ())))
  ("pdf-read"
   .
@@ -58528,7 +58530,7 @@
  ("pict"
   .
   #hash((author . "mflatt@racket-lang.org robby@racket-lang.org")
-        (checksum . "976304892288632a2d28f1f01d91292949e661ed")
+        (checksum . "d68972270bfa859e5b9d8875d58f3ce5ccbb8cce")
         (dependencies . ("pict-lib" "pict-doc"))
         (dependency-names . ("pict-lib" "pict-doc"))
         (description . "mflatt@racket-lang.org robby@racket-lang.org")
@@ -58536,7 +58538,7 @@
         (name . "pict")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/pict.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/pict.zip")
         (tags . ())))
  ("pict-abbrevs"
   .
@@ -58641,7 +58643,7 @@
  ("pict-doc"
   .
   #hash((author . "mflatt@racket-lang.org robby@racket-lang.org")
-        (checksum . "328b19ab0f7f1cd3807f4d5a8e9bff600048beae")
+        (checksum . "051bf940662f3575a5070c20314a3c0a61ca6b47")
         (dependencies
          .
          ("base"
@@ -58675,12 +58677,12 @@
         (name . "pict-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/pict-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/pict-doc.zip")
         (tags . ())))
  ("pict-lib"
   .
   #hash((author . "mflatt@racket-lang.org robby@racket-lang.org")
-        (checksum . "89f630936500e0791ec54d4c916b359ed803c77f")
+        (checksum . "f74d69145b3b36e092fdaeb295a3775c104fcf21")
         (dependencies
          .
          ("scheme-lib"
@@ -58702,12 +58704,12 @@
         (name . "pict-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/pict-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/pict-lib.zip")
         (tags . ())))
  ("pict-snip"
   .
   #hash((author . "robby@racket-lang.org")
-        (checksum . "f7bb187adbbf2df324d9df38afc93dc6ab2593bc")
+        (checksum . "a51734bfa97c4d4052d099805d269fa90ee547a9")
         (dependencies . ("pict-snip-lib" "pict-snip-doc"))
         (dependency-names . ("pict-snip-lib" "pict-snip-doc"))
         (description . "robby@racket-lang.org")
@@ -58715,12 +58717,12 @@
         (name . "pict-snip")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/pict-snip.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/pict-snip.zip")
         (tags . ())))
  ("pict-snip-doc"
   .
   #hash((author . "robby@racket-lang.org")
-        (checksum . "3d61f8e6ecf90de5618b1c8d9f06af9e677d94bb")
+        (checksum . "9efa5a12911998d3e7670e18ef32040bfe5095ed")
         (dependencies
          .
          ("base"
@@ -58746,12 +58748,12 @@
         (name . "pict-snip-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/pict-snip-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/pict-snip-doc.zip")
         (tags . ())))
  ("pict-snip-lib"
   .
   #hash((author . "robby@racket-lang.org")
-        (checksum . "1d9bf1e1c8c06fb7e99cc60e8cb4259b471b605d")
+        (checksum . "d05571ec3cdc9a70e7026c15b550c64a3b1235e5")
         (dependencies
          .
          ("draw-lib"
@@ -58775,12 +58777,12 @@
         (name . "pict-snip-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/pict-snip-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/pict-snip-lib.zip")
         (tags . ())))
  ("pict-snip-test"
   .
   #hash((author . "robby@racket-lang.org")
-        (checksum . "5ad5b4bc516abcb57bada125f3fd59a5aecfc4b7")
+        (checksum . "b22aa4faea5bd5382ed3420593c3edf5456f8d00")
         (dependencies
          .
          ("base" "pict-snip-lib" "draw-lib" "pict-lib" "rackunit-lib"))
@@ -58792,12 +58794,12 @@
         (name . "pict-snip-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/pict-snip-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/pict-snip-test.zip")
         (tags . ())))
  ("pict-test"
   .
   #hash((author . "mflatt@racket-lang.org robby@racket-lang.org")
-        (checksum . "0dad8e2d4661896ef7c263bc4ad12fc3ebd5be57")
+        (checksum . "fd6313bfb8aff62019ea1675fac668baf3981581")
         (dependencies
          .
          ("base" "pict-lib" "rackunit-lib" "htdp-lib" "draw-lib"))
@@ -58809,7 +58811,7 @@
         (name . "pict-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/pict-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/pict-test.zip")
         (tags . ())))
  ("pict3d"
   .
@@ -59471,7 +59473,7 @@
  ("picturing-programs"
   .
   #hash((author . "sbloch@racket-lang.org")
-        (checksum . "49d9c8a60a43f38ac83f858b77886e9d532708fb")
+        (checksum . "b354c334f1a9f1ece7d35c3956f38c633ed14e12")
         (dependencies
          .
          ("base"
@@ -59497,7 +59499,7 @@
         (name . "picturing-programs")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/picturing-programs.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/picturing-programs.zip")
         (tags . ())))
  ("pidec"
   .
@@ -60316,7 +60318,7 @@
  ("plai"
   .
   #hash((author . "jay@racket-lang.org")
-        (checksum . "dc9bfffd97ba4d28b9ac354ad14abb70cb83282e")
+        (checksum . "1bfa1d3d4621b01c5a8e88f977647a9264333c6b")
         (dependencies . ("plai-doc" "plai-lib" "base"))
         (dependency-names . ("plai-doc" "plai-lib" "base"))
         (description . "jay@racket-lang.org")
@@ -60324,12 +60326,12 @@
         (name . "plai")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/plai.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/plai.zip")
         (tags . ())))
  ("plai-doc"
   .
   #hash((author . "jay@racket-lang.org")
-        (checksum . "09c4b60480230b86201426ffb5e05aa1c35da73b")
+        (checksum . "da815d49fec3c9dc208383588405450095d15bab")
         (dependencies
          .
          ("scheme-lib"
@@ -60369,7 +60371,7 @@
         (name . "plai-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/plai-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/plai-doc.zip")
         (tags . ())))
  ("plai-lazy"
   .
@@ -60462,7 +60464,7 @@
  ("plai-lib"
   .
   #hash((author . "jay@racket-lang.org")
-        (checksum . "fdef570c68e2f67d6c790702e8904b808c8a96a2")
+        (checksum . "c752850c76d5a4de45317c1600fe08ce0a3d96b1")
         (dependencies
          .
          ("scheme-lib"
@@ -60494,7 +60496,7 @@
         (name . "plai-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/plai-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/plai-lib.zip")
         (tags . ())))
  ("plai-math"
   .
@@ -60850,7 +60852,7 @@
  ("planet"
   .
   #hash((author . "mflatt@racket-lang.org robby@racket-lang.org")
-        (checksum . "7f2cf6c810213ef3b84eb354dcf59bda90046cce")
+        (checksum . "dc7473a802e717884ced2b3066bd58c20056caee")
         (dependencies . ("planet-lib" "planet-doc"))
         (dependency-names . ("planet-lib" "planet-doc"))
         (description . "mflatt@racket-lang.org robby@racket-lang.org")
@@ -60858,12 +60860,12 @@
         (name . "planet")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/planet.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/planet.zip")
         (tags . ())))
  ("planet-doc"
   .
   #hash((author . "mflatt@racket-lang.org robby@racket-lang.org")
-        (checksum . "27d7fb8c883f2710756fb59e31f489e8538c6496")
+        (checksum . "3c627cecbacd3c61ff79991701bae619c7090e05")
         (dependencies
          .
          ("planet-lib" "scribble-lib" "base" "racket-doc" "scribble-doc"))
@@ -60875,12 +60877,12 @@
         (name . "planet-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/planet-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/planet-doc.zip")
         (tags . ())))
  ("planet-lib"
   .
   #hash((author . "mflatt@racket-lang.org robby@racket-lang.org")
-        (checksum . "d41e7cdeb84308f502f96b20b9bd9f5f31954c32")
+        (checksum . "b8b1be87b327808465e810110257936a146102fb")
         (dependencies . ("srfi-lite-lib" ("base" #:version "6.2.900.6")))
         (dependency-names . ("srfi-lite-lib" "base"))
         (description . "mflatt@racket-lang.org robby@racket-lang.org")
@@ -60888,12 +60890,12 @@
         (name . "planet-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/planet-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/planet-lib.zip")
         (tags . ())))
  ("planet-test"
   .
   #hash((author . "mflatt@racket-lang.org robby@racket-lang.org")
-        (checksum . "c3b2e7e99cf04952fcc181f7eedca41a04d9fc0e")
+        (checksum . "11130a39834094b620b102c883a024fe0c6fa2f1")
         (dependencies
          .
          ("base"
@@ -60915,7 +60917,7 @@
         (name . "planet-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/planet-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/planet-test.zip")
         (tags . ())))
  ("planet2-example"
   .
@@ -61176,7 +61178,7 @@
  ("plot"
   .
   #hash((author . "ntoronto@racket-lang.org")
-        (checksum . "0b69345c101df224b77cf2375fa69ab90712c39e")
+        (checksum . "e00f63e459ba02b5661190914468aa7b3ae8b3e9")
         (dependencies . ("plot-lib" "plot-gui-lib" "plot-doc"))
         (dependency-names . ("plot-lib" "plot-gui-lib" "plot-doc"))
         (description . "ntoronto@racket-lang.org")
@@ -61184,7 +61186,7 @@
         (name . "plot")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/plot.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/plot.zip")
         (tags . ())))
  ("plot-bestfit"
   .
@@ -61270,7 +61272,7 @@
  ("plot-compat"
   .
   #hash((author . "ntoronto@racket-lang.org")
-        (checksum . "f5718b92ae4c3532e235bd1efdf37f2ae3ff4918")
+        (checksum . "bb92420ad3abcdec6970510c00858556e35ba2dc")
         (dependencies
          .
          ("base" "plot-gui-lib" "draw-lib" "plot-lib" "snip-lib"))
@@ -61282,7 +61284,7 @@
         (name . "plot-compat")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/plot-compat.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/plot-compat.zip")
         (tags . ())))
  ("plot-container"
   .
@@ -61382,7 +61384,7 @@
  ("plot-doc"
   .
   #hash((author . "ntoronto@racket-lang.org")
-        (checksum . "369341a0765dfd1daa4ce43ef086bc5e0cea92c1")
+        (checksum . "2959e650538e90dce5ce328a1acd463c9bbbad61")
         (dependencies
          .
          ("base"
@@ -61426,12 +61428,12 @@
         (name . "plot-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/plot-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/plot-doc.zip")
         (tags . ())))
  ("plot-gui-lib"
   .
   #hash((author . "ntoronto@racket-lang.org")
-        (checksum . "d4db7b1ba87111abf43696e8ce0dc4c626c5e6c2")
+        (checksum . "4c348a296e52f2c8d3c1c5ff2a73feef92af20d0")
         (dependencies
          .
          ("base"
@@ -61455,12 +61457,12 @@
         (name . "plot-gui-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/plot-gui-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/plot-gui-lib.zip")
         (tags . ())))
  ("plot-lib"
   .
   #hash((author . "ntoronto@racket-lang.org")
-        (checksum . "3d8a8e2271a760081b85cd837f24a86ec4994c5b")
+        (checksum . "92cf5468cbd071af0cff281e39444e72f207c529")
         (dependencies
          .
          ("base"
@@ -61488,12 +61490,12 @@
         (name . "plot-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/plot-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/plot-lib.zip")
         (tags . ())))
  ("plot-test"
   .
   #hash((author . "ntoronto@racket-lang.org")
-        (checksum . "b48b2f3a213a9b42496e9f7d747980a55995409e")
+        (checksum . "2894298e51b4e029992c77d989e946ac0992da7e")
         (dependencies
          .
          ("base"
@@ -61525,7 +61527,7 @@
         (name . "plot-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/plot-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/plot-test.zip")
         (tags . ())))
  ("plt-build-plot"
   .
@@ -61934,7 +61936,7 @@
   #hash((author
          .
          "eli@racket-lang.org mflatt@racket-lang.org samth@racket-lang.org")
-        (checksum . "f5015ee84d1a415d22ce727a9bd569a186fe6a77")
+        (checksum . "252870135004fb2244b84f120e0cafcb07f36479")
         (dependencies . ("base" "at-exp-lib" "scribble-html-lib"))
         (dependency-names . ("base" "at-exp-lib" "scribble-html-lib"))
         (description
@@ -61944,7 +61946,7 @@
         (name . "plt-web-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/plt-web-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/plt-web-lib.zip")
         (tags . ())))
  ("pmap"
   .
@@ -64372,7 +64374,7 @@
  ("preprocessor"
   .
   #hash((author . "eli@racket-lang.org")
-        (checksum . "5be6885282c6707f4a746a55cb8f29b90a4de133")
+        (checksum . "74fbded09a09783f84f26959fa485a3102f7fe35")
         (dependencies
          .
          ("scheme-lib"
@@ -64392,7 +64394,7 @@
         (name . "preprocessor")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/preprocessor.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/preprocessor.zip")
         (tags . ())))
  ("pretty-format"
   .
@@ -64609,7 +64611,7 @@
  ("profile"
   .
   #hash((author . "eli@racket-lang.org")
-        (checksum . "fe51d86a8326550a8508970c6d41f064afac840f")
+        (checksum . "2439446b2cde4e37d9bd3c9ea84dd92451e770df")
         (dependencies . ("profile-lib" "profile-doc"))
         (dependency-names . ("profile-lib" "profile-doc"))
         (description . "eli@racket-lang.org")
@@ -64617,12 +64619,12 @@
         (name . "profile")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/profile.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/profile.zip")
         (tags . ())))
  ("profile-doc"
   .
   #hash((author . "eli@racket-lang.org")
-        (checksum . "d0c4ccbcf16665b886d94217e67b0244b9355ac2")
+        (checksum . "7be74567cb2fdab87713902b4ceb0708ff8433a7")
         (dependencies
          .
          ("base"
@@ -64644,7 +64646,7 @@
         (name . "profile-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/profile-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/profile-doc.zip")
         (tags . ())))
  ("profile-flame-graph"
   .
@@ -64738,7 +64740,7 @@
  ("profile-lib"
   .
   #hash((author . "eli@racket-lang.org stamourv@racket-lang.org")
-        (checksum . "8549abc08c799374db02389c97d78111f943f84c")
+        (checksum . "1ac80e8887779156a26404d09d1994a50fca5c2e")
         (dependencies . ("base" "errortrace-lib" "at-exp-lib" "rackunit-lib"))
         (dependency-names
          .
@@ -64748,12 +64750,12 @@
         (name . "profile-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/profile-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/profile-lib.zip")
         (tags . ())))
  ("profile-test"
   .
   #hash((author . "eli@racket-lang.org")
-        (checksum . "22824abf386591c083f2f1add55a68871a8c8957")
+        (checksum . "3651730dd20294f635d318ec1f7723c3f1ba902f")
         (dependencies . ("base" "eli-tester" "profile-lib"))
         (dependency-names . ("base" "eli-tester" "profile-lib"))
         (description . "eli@racket-lang.org")
@@ -64761,7 +64763,7 @@
         (name . "profile-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/profile-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/profile-test.zip")
         (tags . ())))
  ("profj"
   .
@@ -66351,96 +66353,41 @@
                            "http://github.com/ifigueroap/racket-quickcheck/tree/master")))))))
  ("quickscript"
   .
-  #hasheq((author . "laurent.orseau@gmail.com")
-          (authors . ("laurent.orseau@gmail.com"))
-          (build
-           .
-           #hash((conflicts-log . #f)
-                 (dep-failure-log . #f)
-                 (docs
-                  .
-                  (("main"
-                    "quickscript"
-                    "doc/quickscript@quickscript/index.html")))
-                 (failure-log . #f)
-                 (min-failure-log . #f)
-                 (success-log . #f)
-                 (test-failure-log . #f)
-                 (test-success-log . #f)))
-          (checksum . "85d50760a0c51303bf9f6b3285a8831112e37fb1")
-          (checksum-error . #f)
-          (conflicts . ())
-          (dependencies
-           .
-           ("base"
-            "drracket-plugin-lib"
-            "gui-lib"
-            "net-lib"
-            "scribble-lib"
-            "at-exp-lib"
-            "drracket"
-            "gui-doc"
-            "racket-doc"
-            "draw-doc"
-            "rackunit-lib"))
-          (dependency-names
-           .
-           ("base"
-            "drracket-plugin-lib"
-            "gui-lib"
-            "net-lib"
-            "scribble-lib"
-            "at-exp-lib"
-            "drracket"
-            "gui-doc"
-            "racket-doc"
-            "draw-doc"
-            "rackunit-lib"))
-          (description
-           .
-           "Extends DrRacket with scripting capabilities and menu items. The package quickscript-extra contains sample scripts. Successor to script-plugin.")
-          (implies . ())
-          (last-checked . 1557339739)
-          (last-edit . 1518256700)
-          (last-updated . 1549352555)
-          (modules
-           .
-           ((lib "quickscript/main.rkt")
-            (lib "quickscript/library-gui.rkt")
-            (lib "quickscript/library.rkt")
-            (lib "quickscript/scribblings/quickscript.scrbl")
-            (lib "quickscript/script.rkt")
-            (lib "quickscript/shadow-script.rkt")
-            (lib "quickscript/tool.rkt")
-            (lib "quickscript/tests/test-library.rkt")
-            (lib "quickscript/base.rkt")))
-          (name . "quickscript")
-          (nix-sha256
-           .
-           "17krjsj5zbhs9p07sgksmmh9shanibbjkafpl5a2b3asf5ly12kw")
-          (ring . 2)
-          (search-terms
-           .
-           #hasheq((:docs: . #t)
-                   (author:laurent.orseau@gmail.com . #t)
-                   (drracket . #t)
-                   (gui . #t)
-                   (ring:2 . #t)))
-          (source . "https://github.com/Metaxal/quickscript.git")
-          (tags . ("drracket" "gui"))
-          (versions
-           .
-           #hash((default
-                  .
-                  #hasheq((checksum
-                           .
-                           "85d50760a0c51303bf9f6b3285a8831112e37fb1")
-                          (source
-                           .
-                           "https://github.com/Metaxal/quickscript.git")
-                          (source_url
-                           .
-                           "https://github.com/Metaxal/quickscript.git")))))))
+  #hash((author . "laurent.orseau@gmail.com")
+        (checksum . "ea7c3111a714a1ec9f57b569c50067d56a7459a2")
+        (dependencies
+         .
+         ("base"
+          "drracket-plugin-lib"
+          "gui-lib"
+          "net-lib"
+          "scribble-lib"
+          "at-exp-lib"
+          "drracket"
+          "gui-doc"
+          "racket-doc"
+          "draw-doc"
+          "rackunit-lib"))
+        (dependency-names
+         .
+         ("base"
+          "drracket-plugin-lib"
+          "gui-lib"
+          "net-lib"
+          "scribble-lib"
+          "at-exp-lib"
+          "drracket"
+          "gui-doc"
+          "racket-doc"
+          "draw-doc"
+          "rackunit-lib"))
+        (description . "laurent.orseau@gmail.com")
+        (modules . ())
+        (name . "quickscript")
+        (source
+         .
+         "https://download.racket-lang.org/releases/7.2/pkgs/quickscript.zip")
+        (tags . ())))
  ("quickscript-extra"
   .
   #hasheq((author . "laurent.orseau@gmail.com")
@@ -66777,7 +66724,7 @@
  ("r5rs"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "7ee2ee43b829534c3b96069da9b5c4735f85084f")
+        (checksum . "e169e377b48aecfe851890da9e0ae9f5147eb373")
         (dependencies . ("r5rs-lib" "r5rs-doc"))
         (dependency-names . ("r5rs-lib" "r5rs-doc"))
         (description . "mflatt@racket-lang.org")
@@ -66785,12 +66732,12 @@
         (name . "r5rs")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/r5rs.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/r5rs.zip")
         (tags . ())))
  ("r5rs-doc"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "c8161ba35f2dc2c6a9c9ec86f17a378eae5a268e")
+        (checksum . "9572a7bb47f8d90cf827d593aee38c3f493b7461")
         (dependencies
          .
          ("base"
@@ -66814,12 +66761,12 @@
         (name . "r5rs-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/r5rs-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/r5rs-doc.zip")
         (tags . ())))
  ("r5rs-lib"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "b3247f7f7f8f163eb8da2753bdb33338ef9cd130")
+        (checksum . "9e91d2ffe91f285ae4e2f997c3efecdae513eef1")
         (dependencies . ("scheme-lib" "base" "compatibility-lib"))
         (dependency-names . ("scheme-lib" "base" "compatibility-lib"))
         (description . "mflatt@racket-lang.org")
@@ -66827,12 +66774,12 @@
         (name . "r5rs-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/r5rs-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/r5rs-lib.zip")
         (tags . ())))
  ("r6rs"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "914a6b6b2ef736d0729281254fd0bf475e409c01")
+        (checksum . "5e0b6075e802464cea656dcf0205591c372097dc")
         (dependencies . ("r6rs-lib" "r6rs-doc"))
         (dependency-names . ("r6rs-lib" "r6rs-doc"))
         (description . "mflatt@racket-lang.org")
@@ -66840,12 +66787,12 @@
         (name . "r6rs")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/r6rs.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/r6rs.zip")
         (tags . ())))
  ("r6rs-doc"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "e1cd84666ac3a854d940703d9a97e0304e2ff2fb")
+        (checksum . "a694bbab0f1511afa9491bc70cffc0d810404835")
         (dependencies
          .
          ("racket-index"
@@ -66867,12 +66814,12 @@
         (name . "r6rs-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/r6rs-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/r6rs-doc.zip")
         (tags . ())))
  ("r6rs-lib"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "93eb575187cf00f5920390e71f3d6bcd6ad7b649")
+        (checksum . "f7f2b9a6797648b62867bb892c9a70693c69d226")
         (dependencies . ("scheme-lib" "base" "r5rs-lib" "compatibility-lib"))
         (dependency-names
          .
@@ -66882,12 +66829,12 @@
         (name . "r6rs-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/r6rs-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/r6rs-lib.zip")
         (tags . ())))
  ("r6rs-test"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "4b7951f77391d495900ceb2339ab327a58bd0f93")
+        (checksum . "a7ad8031a1a8b5cabdef7a178ec4ef445f8d8c04")
         (dependencies . ("base" "r6rs-lib"))
         (dependency-names . ("base" "r6rs-lib"))
         (description . "mflatt@racket-lang.org")
@@ -66895,7 +66842,7 @@
         (name . "r6rs-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/r6rs-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/r6rs-test.zip")
         (tags . ())))
  ("r7rs"
   .
@@ -67204,7 +67151,7 @@
   #hash((author
          .
          "eli@racket-lang.org jay@racket-lang.org mflatt@racket-lang.org robby@racket-lang.org samth@racket-lang.org stamourv@racket-lang.org")
-        (checksum . "d8ac8251a1725eed47461b5b53e5bd53cb87b837")
+        (checksum . "51c19e180a72964ad60ed02d31f6640f78fde6ec")
         (dependencies
          .
          ("base"
@@ -67230,12 +67177,12 @@
         (name . "racket-benchmarks")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/racket-benchmarks.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/racket-benchmarks.zip")
         (tags . ())))
  ("racket-cheat"
   .
   #hash((author . "jay.mccarthy@gmail.com")
-        (checksum . "cc408301ab8cf74b23fb17dcf319ce7f8f557412")
+        (checksum . "3f3fb93ba20d4bd7627178e51679fc216ecda979")
         (dependencies
          .
          ("base"
@@ -67275,7 +67222,7 @@
         (name . "racket-cheat")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/racket-cheat.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/racket-cheat.zip")
         (tags . ())))
  ("racket-chipmunk"
   .
@@ -67428,7 +67375,7 @@
   #hash((author
          .
          "eli@racket-lang.org jay@racket-lang.org matthias@racket-lang.org mflatt@racket-lang.org robby@racket-lang.org ryanc@racket-lang.org samth@racket-lang.org")
-        (checksum . "2c0620b7fd51bfb42c520befdeee2aaeff4879b7")
+        (checksum . "0c46cf34e5933059bb12e771f6258931926f3337")
         (dependencies
          .
          ("scheme-lib"
@@ -67512,7 +67459,7 @@
         (name . "racket-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/racket-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/racket-doc.zip")
         (tags . ())))
  ("racket-dogstatsd"
   .
@@ -67667,7 +67614,7 @@
  ("racket-i386-macosx-3"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "71e2e3477832a925ef1a09be06cb3ef88415e448")
+        (checksum . "b6d20a55dcc5f6c9f45198d74fe3578fd0480fe7")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -67675,7 +67622,7 @@
         (name . "racket-i386-macosx-3")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/racket-i386-macosx-3.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/racket-i386-macosx-3.zip")
         (tags . ())))
  ("racket-immutable"
   .
@@ -67745,7 +67692,7 @@
   #hash((author
          .
          "eli@racket-lang.org jay@racket-lang.org matthias@racket-lang.org mflatt@racket-lang.org robby@racket-lang.org ryanc@racket-lang.org samth@racket-lang.org")
-        (checksum . "a25b7517b3e344074657776aa8ceca938ead3767")
+        (checksum . "4bc153c2666643a232289b5f806cfe025ca73da5")
         (dependencies . ("base" "scribble-lib" "scheme-lib" "at-exp-lib"))
         (dependency-names . ("base" "scribble-lib" "scheme-lib" "at-exp-lib"))
         (description
@@ -67755,7 +67702,7 @@
         (name . "racket-index")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/racket-index.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/racket-index.zip")
         (tags . ())))
  ("racket-lang-org"
   .
@@ -68148,7 +68095,7 @@
   #hash((author
          .
          "eli@racket-lang.org jay@racket-lang.org matthias@racket-lang.org mflatt@racket-lang.org robby@racket-lang.org ryanc@racket-lang.org samth@racket-lang.org")
-        (checksum . "21fbc2a1a2972f1fd8aa160e105b9937e8e634db")
+        (checksum . "368ea6923f22d9a5f45d6ba5762a9284231d3a26")
         (dependencies
          .
          (("racket-win32-i386-3" #:platform "win32\\i386")
@@ -68171,7 +68118,7 @@
         (name . "racket-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/racket-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/racket-lib.zip")
         (tags . ())))
  ("racket-locale"
   .
@@ -68443,7 +68390,7 @@
  ("racket-ppc-macosx-3"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "d2e5ea176ace73b60afd9bde286ce332029030d6")
+        (checksum . "bdaab4af038bf2c77306d8be8bd6461a9c28863c")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -68451,7 +68398,7 @@
         (name . "racket-ppc-macosx-3")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/racket-ppc-macosx-3.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/racket-ppc-macosx-3.zip")
         (tags . ())))
  ("racket-processing"
   .
@@ -68905,7 +68852,7 @@
   #hash((author
          .
          "eli@racket-lang.org jay@racket-lang.org matthias@racket-lang.org mflatt@racket-lang.org robby@racket-lang.org ryanc@racket-lang.org samth@racket-lang.org")
-        (checksum . "e9cb59e8843f108ec6876a3339007dfeb76d1125")
+        (checksum . "7bd4b838a49bff998adff1aee8bdd3d634fc2b02")
         (dependencies
          .
          ("compiler-lib"
@@ -68959,14 +68906,14 @@
         (name . "racket-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/racket-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/racket-test.zip")
         (tags . ())))
  ("racket-test-core"
   .
   #hash((author
          .
          "eli@racket-lang.org jay@racket-lang.org matthias@racket-lang.org mflatt@racket-lang.org robby@racket-lang.org ryanc@racket-lang.org samth@racket-lang.org")
-        (checksum . "1846caed3cedd8ea654daa6a80022fb6ea13b315")
+        (checksum . "d6f0076f272b9753bdda545f5ca49430d60b7d9b")
         (dependencies
          .
          ("base"
@@ -68990,14 +68937,14 @@
         (name . "racket-test-core")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/racket-test-core.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/racket-test-core.zip")
         (tags . ())))
  ("racket-test-extra"
   .
   #hash((author
          .
          "eli@racket-lang.org jay@racket-lang.org matthias@racket-lang.org mflatt@racket-lang.org robby@racket-lang.org ryanc@racket-lang.org samth@racket-lang.org")
-        (checksum . "decd8a311bc956ef79683f4896963fa4b3120d9a")
+        (checksum . "fcb054d1df805e939f7e1dcfa459911401828d74")
         (dependencies
          .
          ("base"
@@ -69019,7 +68966,7 @@
         (name . "racket-test-extra")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/racket-test-extra.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/racket-test-extra.zip")
         (tags . ())))
  ("racket-to"
   .
@@ -69371,7 +69318,7 @@
  ("racket-win32-i386-3"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "b861509a69dbc3f3a434f5a6dda9a358298b5519")
+        (checksum . "8fb65942b006c4607777ce85322e60e055546089")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -69379,7 +69326,7 @@
         (name . "racket-win32-i386-3")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/racket-win32-i386-3.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/racket-win32-i386-3.zip")
         (tags . ())))
  ("racket-win32-x86_64"
   .
@@ -69532,7 +69479,7 @@
  ("racket-win32-x86_64-3"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "d63081a34e24e45ad1fe6886fef6eb5086bfe731")
+        (checksum . "87bf52d75c188ac5e16e2a316632c362e55776e6")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -69540,7 +69487,7 @@
         (name . "racket-win32-x86_64-3")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/racket-win32-x86_64-3.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/racket-win32-x86_64-3.zip")
         (tags . ())))
  ("racket-x86_64-linux-natipkg-2"
   .
@@ -69619,7 +69566,7 @@
  ("racket-x86_64-linux-natipkg-3"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "84bac9393daf7f028d6d16bc6088a3062ac33868")
+        (checksum . "56ddc2105fef8f6356531c0db7be6a46c62d9ab7")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -69627,7 +69574,7 @@
         (name . "racket-x86_64-linux-natipkg-3")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/racket-x86_64-linux-natipkg-3.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/racket-x86_64-linux-natipkg-3.zip")
         (tags . ())))
  ("racket-x86_64-macosx-2"
   .
@@ -69706,7 +69653,7 @@
  ("racket-x86_64-macosx-3"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "d9df364f3cdbd97b2e980f26c7ddfc0a97b362c9")
+        (checksum . "2fcbbed402e263de322538559d0de6829a3f50c2")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -69714,7 +69661,7 @@
         (name . "racket-x86_64-macosx-3")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/racket-x86_64-macosx-3.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/racket-x86_64-macosx-3.zip")
         (tags . ())))
  ("racketcon-2018-web-devel-workshop"
   .
@@ -70426,7 +70373,7 @@
  ("racklog"
   .
   #hash((author . "jay@racket-lang.org")
-        (checksum . "95886c3236483fd374e8cc28a9ce7604622c6c73")
+        (checksum . "910abb1f5682830aa91e0dca74ceeac2c99328fb")
         (dependencies
          .
          ("base"
@@ -70448,7 +70395,7 @@
         (name . "racklog")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/racklog.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/racklog.zip")
         (tags . ())))
  ("rackonsole"
   .
@@ -70699,7 +70646,7 @@
  ("rackunit"
   .
   #hash((author . "ryanc@racket-lang.org noel@racket-lang.org")
-        (checksum . "f0e023cc1a9b917a1796e2898a875d91d4dd830f")
+        (checksum . "d5c38f0079c397f518b73998abf12d532dc581ac")
         (dependencies
          .
          ("rackunit-lib" "rackunit-doc" "rackunit-gui" "rackunit-plugin-lib"))
@@ -70711,7 +70658,7 @@
         (name . "rackunit")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/rackunit.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/rackunit.zip")
         (tags . ())))
  ("rackunit-abbrevs"
   .
@@ -70864,7 +70811,7 @@
  ("rackunit-doc"
   .
   #hash((author . "noel@racket-lang.org ryanc@racket-lang.org")
-        (checksum . "6ed718196282e50ee84fea242be0cf294da39ce3")
+        (checksum . "c13942e42f805e88bc18612a62e63787aa1dec52")
         (dependencies
          .
          ("base"
@@ -70886,7 +70833,7 @@
         (name . "rackunit-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/rackunit-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/rackunit-doc.zip")
         (tags . ())))
  ("rackunit-grade"
   .
@@ -70965,7 +70912,7 @@
  ("rackunit-gui"
   .
   #hash((author . "ryanc@racket-lang.org")
-        (checksum . "0d27ab4682112c2acad487be0bcb0ae813dc2225")
+        (checksum . "cea9f0ec960bca7b389241c9e64deb35467564d3")
         (dependencies
          .
          ("rackunit-lib" "class-iop-lib" "data-lib" "gui-lib" "base"))
@@ -70977,12 +70924,12 @@
         (name . "rackunit-gui")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/rackunit-gui.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/rackunit-gui.zip")
         (tags . ())))
  ("rackunit-lib"
   .
   #hash((author . "ryanc@racket-lang.org noel@racket-lang.org")
-        (checksum . "8cdb634a7256b9731467ff0fb073316c389e18e6")
+        (checksum . "0490579015cf6d050e928d7065ba6d336a87cfcb")
         (dependencies . ("base" "testing-util-lib"))
         (dependency-names . ("base" "testing-util-lib"))
         (description . "ryanc@racket-lang.org noel@racket-lang.org")
@@ -70990,7 +70937,7 @@
         (name . "rackunit-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/rackunit-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/rackunit-lib.zip")
         (tags . ())))
  ("rackunit-macrotypes-lib"
   .
@@ -71060,7 +71007,7 @@
  ("rackunit-plugin-lib"
   .
   #hash((author . "ryanc@racket-lang.org noel@racket-lang.org")
-        (checksum . "07df63bddd9cd002b40e9f058775613b32ee671c")
+        (checksum . "f49c4fcde92bb1449dd8b189778d2bdde62d4d58")
         (dependencies
          .
          ("base"
@@ -71080,7 +71027,7 @@
         (name . "rackunit-plugin-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/rackunit-plugin-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/rackunit-plugin-lib.zip")
         (tags . ())))
  ("rackunit-spec"
   .
@@ -71150,7 +71097,7 @@
  ("rackunit-test"
   .
   #hash((author . "noel@racket-lang.org ryanc@racket-lang.org")
-        (checksum . "9f306cfc1f5ebb6aae01b1e07a362674ceb04656")
+        (checksum . "5ab6cf8b0f8e26b6e89dd1b58a93ea1472b14adb")
         (dependencies . ("base" "eli-tester" "rackunit-lib" "srfi-lite-lib"))
         (dependency-names
          .
@@ -71160,12 +71107,12 @@
         (name . "rackunit-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/rackunit-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/rackunit-test.zip")
         (tags . ())))
  ("rackunit-typed"
   .
   #hash((author . "jackhfirth@gmail.com samth@racket-lang.org")
-        (checksum . "df15882bb8a542b1baa70a0108d8b976130799c0")
+        (checksum . "ef6c7db2666bc0baf6a8c721c53bccef2f28f5ba")
         (dependencies
          .
          ("racket-index"
@@ -71187,7 +71134,7 @@
         (name . "rackunit-typed")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/rackunit-typed.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/rackunit-typed.zip")
         (tags . ())))
  ("racl"
   .
@@ -72377,7 +72324,7 @@
  ("readline"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "399574b274189be02206010e085542f99b1e418e")
+        (checksum . "ffa26cd69c9cb2fc283607a4fe93a3bcef5e794a")
         (dependencies . ("readline-lib" "readline-doc"))
         (dependency-names . ("readline-lib" "readline-doc"))
         (description . "mflatt@racket-lang.org")
@@ -72385,12 +72332,12 @@
         (name . "readline")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/readline.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/readline.zip")
         (tags . ())))
  ("readline-doc"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "505fc3ef83b5e8a20dbdf0d10a1849156aee0ee0")
+        (checksum . "535f190905e1a2fd4a305a891c7fa3f9d1e8c6d8")
         (dependencies . ("base" "scribble-lib" "readline-lib" "racket-doc"))
         (dependency-names
          .
@@ -72400,7 +72347,7 @@
         (name . "readline-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/readline-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/readline-doc.zip")
         (tags . ())))
  ("readline-gpl"
   .
@@ -72458,7 +72405,7 @@
  ("readline-lib"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "ff50252cce82330d4ed4f794f7b4eaa7f81d85e2")
+        (checksum . "996b83e3be7e6e52e42b93b279fe87d0a2e03e8f")
         (dependencies . (("base" #:version "6.90")))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -72466,12 +72413,12 @@
         (name . "readline-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/readline-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/readline-lib.zip")
         (tags . ())))
  ("realm"
   .
   #hash((author . "matthias@racket-lang.org")
-        (checksum . "1adbca5b01a1a92408bf72ebc5e5843db67e1f71")
+        (checksum . "f3a918ca8d3325e9d33a41a2b16a67cee2f11040")
         (dependencies . ("base" "htdp-lib" "rackunit-lib"))
         (dependency-names . ("base" "htdp-lib" "rackunit-lib"))
         (description . "matthias@racket-lang.org")
@@ -72479,7 +72426,7 @@
         (name . "realm")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/realm.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/realm.zip")
         (tags . ())))
  ("rebellion"
   .
@@ -72802,7 +72749,7 @@
  ("redex"
   .
   #hash((author . "robby@racket-lang.org bfetscher@racket-lang.org")
-        (checksum . "84a91ee7e13603a71629913a8c4d458381bfcd6b")
+        (checksum . "c46896732085530f46d2252c11d804305fda59d0")
         (dependencies
          .
          ("redex-doc" "redex-examples" "redex-lib" "redex-gui-lib"))
@@ -72814,7 +72761,7 @@
         (name . "redex")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/redex.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/redex.zip")
         (tags . ())))
  ("redex-aam-tutorial"
   .
@@ -73090,7 +73037,7 @@
  ("redex-benchmark"
   .
   #hash((author . "robby@racket-lang.org bfetscher@racket-lang.org")
-        (checksum . "0ac10b07242669cdec718fd869063b4d267254d3")
+        (checksum . "7eedfd1f8ea7efc0a116e3a2132b3dd1445ae706")
         (dependencies
          .
          ("base"
@@ -73114,7 +73061,7 @@
         (name . "redex-benchmark")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/redex-benchmark.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/redex-benchmark.zip")
         (tags . ())))
  ("redex-chk"
   .
@@ -73175,7 +73122,7 @@
  ("redex-doc"
   .
   #hash((author . "robby@racket-lang.org bfetscher@racket-lang.org")
-        (checksum . "fbb46076b30f217ea6482670485de02dc751c7dd")
+        (checksum . "6e9754641d693bbdb2e698773e08ed9d5b00e81b")
         (dependencies
          .
          ("base"
@@ -73221,12 +73168,12 @@
         (name . "redex-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/redex-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/redex-doc.zip")
         (tags . ())))
  ("redex-examples"
   .
   #hash((author . "robby@racket-lang.org bfetscher@racket-lang.org")
-        (checksum . "29f604b4d1e3a6b035ec732702d6911f681506c5")
+        (checksum . "6999d735acff19fae2522462c070ce3e38c39be5")
         (dependencies
          .
          ("base"
@@ -73250,12 +73197,12 @@
         (name . "redex-examples")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/redex-examples.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/redex-examples.zip")
         (tags . ())))
  ("redex-gui-lib"
   .
   #hash((author . "robby@racket-lang.org bfetscher@racket-lang.org")
-        (checksum . "738a63a32d76c3ed2e1dea6a6b38e1b097f3d8c2")
+        (checksum . "784b5d7acce8fdd9cd8f99d1f225a8f3098c4daa")
         (dependencies
          .
          ("scheme-lib"
@@ -73285,12 +73232,12 @@
         (name . "redex-gui-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/redex-gui-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/redex-gui-lib.zip")
         (tags . ())))
  ("redex-lib"
   .
   #hash((author . "robby@racket-lang.org bfetscher@racket-lang.org")
-        (checksum . "f6a8252613509b58b7eaa76b3041e961f9b0d2b0")
+        (checksum . "0a0acc5b67d6db9bcb8cd46e14dd6556fe65b9b1")
         (dependencies
          .
          (("data-enumerate-lib" #:version "1.3")
@@ -73322,12 +73269,12 @@
         (name . "redex-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/redex-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/redex-lib.zip")
         (tags . ())))
  ("redex-pict-lib"
   .
   #hash((author . "robby@racket-lang.org bfetscher@racket-lang.org")
-        (checksum . "38f325df9b8b97304532e5dd9497d9e04509c9dc")
+        (checksum . "2bbd7523ef036701d523606b18c70a029d8e0ce7")
         (dependencies
          .
          ("scheme-lib"
@@ -73353,12 +73300,12 @@
         (name . "redex-pict-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/redex-pict-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/redex-pict-lib.zip")
         (tags . ())))
  ("redex-test"
   .
   #hash((author . "robby@racket-lang.org bfetscher@racket-lang.org")
-        (checksum . "74e4c7ff21b4fb58712d18426516875a707e3be6")
+        (checksum . "ef995adc04f81f78d756f20600a20c6297685282")
         (dependencies
          .
          ("base"
@@ -73396,7 +73343,7 @@
         (name . "redex-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/redex-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/redex-test.zip")
         (tags . ())))
  ("redis"
   .
@@ -74316,7 +74263,7 @@
  ("remote-shell-lib"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "fcece24b1f4249958804d637c81f4c8c96c1bffe")
+        (checksum . "47fdd749e01b5ed4fadc3e5727f965dfc33cb352")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -74324,7 +74271,7 @@
         (name . "remote-shell-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/remote-shell-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/remote-shell-lib.zip")
         (tags . ())))
  ("repeated-application"
   .
@@ -78778,7 +78725,7 @@
  ("sandbox-lib"
   .
   #hash((author . "eli@racket-lang.org")
-        (checksum . "efcbe5f2ed5d919804236e5a69a6280f55628aad")
+        (checksum . "5e1ec0d9c2ca9303463b6fdb275715ca18bbc532")
         (dependencies . ("scheme-lib" "base" "errortrace-lib"))
         (dependency-names . ("scheme-lib" "base" "errortrace-lib"))
         (description . "eli@racket-lang.org")
@@ -78786,12 +78733,12 @@
         (name . "sandbox-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/sandbox-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/sandbox-lib.zip")
         (tags . ())))
  ("sasl"
   .
   #hash((author . "ryanc@racket-lang.org")
-        (checksum . "474308d25aa8c1ed7a8e672e295c1259f3e65393")
+        (checksum . "9dc01d162929f57e0507d24cbb8c2620fa635c3f")
         (dependencies . ("sasl-lib" "sasl-doc" "base"))
         (dependency-names . ("sasl-lib" "sasl-doc" "base"))
         (description . "ryanc@racket-lang.org")
@@ -78799,12 +78746,12 @@
         (name . "sasl")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/sasl.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/sasl.zip")
         (tags . ())))
  ("sasl-doc"
   .
   #hash((author . "ryanc@racket-lang.org")
-        (checksum . "06274e670e4bd0f8409910827f4f1ab61a22f21e")
+        (checksum . "9b9e5cf26fc22a6a1dfcebeec40f4642a542134e")
         (dependencies . ("base" "scribble-lib" "sasl-lib" "racket-doc"))
         (dependency-names . ("base" "scribble-lib" "sasl-lib" "racket-doc"))
         (description . "ryanc@racket-lang.org")
@@ -78812,12 +78759,12 @@
         (name . "sasl-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/sasl-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/sasl-doc.zip")
         (tags . ())))
  ("sasl-lib"
   .
   #hash((author . "ryanc@racket-lang.org")
-        (checksum . "baa45c70438e0e359d2801acaa904d7e76c967fe")
+        (checksum . "838eeef99f15c6e842f49d8b0a355b3bc619ce37")
         (dependencies . (("base" #:version "6.10")))
         (dependency-names . ("base"))
         (description . "ryanc@racket-lang.org")
@@ -78825,12 +78772,12 @@
         (name . "sasl-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/sasl-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/sasl-lib.zip")
         (tags . ())))
  ("sasl-test"
   .
   #hash((author . "ryanc@racket-lang.org")
-        (checksum . "cadbe4087278cb0c26ab42e0763e12c185e96310")
+        (checksum . "f1c0cd4030fbb63bab9871be7ff53e5e5019ba6a")
         (dependencies . ("base" "sasl-lib" "rackunit-lib"))
         (dependency-names . ("base" "sasl-lib" "rackunit-lib"))
         (description . "ryanc@racket-lang.org")
@@ -78838,7 +78785,7 @@
         (name . "sasl-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/sasl-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/sasl-test.zip")
         (tags . ())))
  ("sau-cptr-405"
   .
@@ -79126,7 +79073,7 @@
  ("scheme-lib"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "2b1af01095097bf7729dfea8356b7b03b0839015")
+        (checksum . "742d3f2f1df0f0659a3cae395e07dac74c010c25")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -79134,12 +79081,12 @@
         (name . "scheme-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/scheme-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/scheme-lib.zip")
         (tags . ())))
  ("schemeunit"
   .
   #hash((author . "jay@racket-lang.org")
-        (checksum . "b7ab3775051b8e9a1b1f1bf4a16dae234b39c6c7")
+        (checksum . "9b4d0faa18bf1e19eb3a6d2304f1df51ec6c014e")
         (dependencies . ("base" "rackunit-lib" "rackunit-gui"))
         (dependency-names . ("base" "rackunit-lib" "rackunit-gui"))
         (description . "jay@racket-lang.org")
@@ -79147,7 +79094,7 @@
         (name . "schemeunit")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/schemeunit.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/schemeunit.zip")
         (tags . ())))
  ("scope-operations"
   .
@@ -79407,7 +79354,7 @@
  ("scribble"
   .
   #hash((author . "mflatt@racket-lang.org eli@racket-lang.org")
-        (checksum . "c0471cccc466cf098f152a46122687ea41840e95")
+        (checksum . "94a5517b8da3160993ad2881f3623b83565488a2")
         (dependencies . ("scribble-lib" "scribble-doc"))
         (dependency-names . ("scribble-lib" "scribble-doc"))
         (description . "mflatt@racket-lang.org eli@racket-lang.org")
@@ -79415,7 +79362,7 @@
         (name . "scribble")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/scribble.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/scribble.zip")
         (tags . ())))
  ("scribble-abbrevs"
   .
@@ -79731,7 +79678,7 @@
  ("scribble-doc"
   .
   #hash((author . "mflatt@racket-lang.org eli@racket-lang.org")
-        (checksum . "06bb0211f245409aca04310dd89a522c8773ebc9")
+        (checksum . "b5a58e7e5f8b31769b2f689ef8b5ed9b6ab32e1c")
         (dependencies
          .
          ("racket-index"
@@ -79779,7 +79726,7 @@
         (name . "scribble-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/scribble-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/scribble-doc.zip")
         (tags . ())))
  ("scribble-enhanced"
   .
@@ -79897,7 +79844,7 @@
  ("scribble-html-lib"
   .
   #hash((author . "mflatt@racket-lang.org eli@racket-lang.org")
-        (checksum . "3bf8dc15b9f056bac9c31cb458686d03cfa4b7a5")
+        (checksum . "996f99e3b72485d28322260bd6d46ef8e734a887")
         (dependencies
          .
          ("scheme-lib" "base" "at-exp-lib" "scribble-text-lib"))
@@ -79909,12 +79856,12 @@
         (name . "scribble-html-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/scribble-html-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/scribble-html-lib.zip")
         (tags . ())))
  ("scribble-lib"
   .
   #hash((author . "mflatt@racket-lang.org eli@racket-lang.org")
-        (checksum . "9d9891efeeb38b7fcede9d9804768a98d5dd605d")
+        (checksum . "e793baf76c136c13f74a68a4856de37088244198")
         (dependencies
          .
          ("scheme-lib"
@@ -79950,7 +79897,7 @@
         (name . "scribble-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/scribble-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/scribble-lib.zip")
         (tags . ())))
  ("scribble-math"
   .
@@ -80097,7 +80044,7 @@
  ("scribble-test"
   .
   #hash((author . "mflatt@racket-lang.org eli@racket-lang.org")
-        (checksum . "17ba87ff6e8390c2e27828607d366c4d9ff989a6")
+        (checksum . "2ac9d2af6171a917c46319e4360fae9a6e118d26")
         (dependencies
          .
          ("at-exp-lib"
@@ -80125,12 +80072,12 @@
         (name . "scribble-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/scribble-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/scribble-test.zip")
         (tags . ())))
  ("scribble-text-lib"
   .
   #hash((author . "mflatt@racket-lang.org eli@racket-lang.org")
-        (checksum . "a0c8a408b7e1d97f30d040414be5dc4075b2d605")
+        (checksum . "4eac00e3186362f4d82f0be3767427e9e81134c4")
         (dependencies . ("scheme-lib" "base" "at-exp-lib"))
         (dependency-names . ("scheme-lib" "base" "at-exp-lib"))
         (description . "mflatt@racket-lang.org eli@racket-lang.org")
@@ -80138,7 +80085,7 @@
         (name . "scribble-text-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/scribble-text-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/scribble-text-lib.zip")
         (tags . ())))
  ("scriblogify"
   .
@@ -81145,7 +81092,7 @@
  ("serialize-cstruct-lib"
   .
   #hash((author . "tobias.hammer@dlr.de")
-        (checksum . "c3eb2f97c126e39ee676cac63899e10533195462")
+        (checksum . "80b9a9154d8bdc4733026195790b1f98ad1c40a6")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "tobias.hammer@dlr.de")
@@ -81153,7 +81100,7 @@
         (name . "serialize-cstruct-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/serialize-cstruct-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/serialize-cstruct-lib.zip")
         (tags . ())))
  ("serialize-syntax-introducer"
   .
@@ -81593,7 +81540,7 @@
  ("sgl"
   .
   #hash((author . "jay@racket-lang.org")
-        (checksum . "092133a9b41bf4d5c86956522fd7dd748d711f6c")
+        (checksum . "fe90b545bd3c78f370ad3640ceb9789577c9d0c8")
         (dependencies
          .
          ("scheme-lib"
@@ -81619,7 +81566,7 @@
         (name . "sgl")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/sgl.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/sgl.zip")
         (tags . ())))
  ("sha"
   .
@@ -81683,7 +81630,7 @@
   #hash((author
          .
          "samth@racket-lang.org sstrickl@racket-lang.org stamourv@racket-lang.org")
-        (checksum . "783fd7cf3b51cd5a39f7cb943a3fb491da32aafe")
+        (checksum . "72005889b82bdbc29a4ec916a181252d510bc491")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description
@@ -81693,7 +81640,7 @@
         (name . "shell-completion")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/shell-completion.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/shell-completion.zip")
         (tags . ())))
  ("shell-pipeline"
   .
@@ -83073,7 +83020,7 @@
  ("slatex"
   .
   #hash((author . "sstrickl@racket-lang.org")
-        (checksum . "badbf89df1d9bb8471f903e36391e430748b341f")
+        (checksum . "b7ef746195027310345543c7395a575d7c4ded6a")
         (dependencies
          .
          ("scheme-lib"
@@ -83097,12 +83044,12 @@
         (name . "slatex")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/slatex.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/slatex.zip")
         (tags . ())))
  ("slideshow"
   .
   #hash((author . "mflatt@racket-lang.org robby@racket-lang.org")
-        (checksum . "4ef5d69eb39a612e454180e340cad85b138fb676")
+        (checksum . "1a03243e04425da89508cb598ae5a9184faba58a")
         (dependencies
          .
          ("slideshow-lib" "slideshow-exe" "slideshow-plugin" "slideshow-doc"))
@@ -83114,12 +83061,12 @@
         (name . "slideshow")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/slideshow.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/slideshow.zip")
         (tags . ())))
  ("slideshow-doc"
   .
   #hash((author . "mflatt@racket-lang.org robby@racket-lang.org")
-        (checksum . "a69ce47ae99b6bb32f65fb573922095afaefdbc1")
+        (checksum . "075dd70445da81565f422bdad13f479ded7fedf1")
         (dependencies
          .
          ("scheme-lib"
@@ -83155,12 +83102,12 @@
         (name . "slideshow-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/slideshow-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/slideshow-doc.zip")
         (tags . ())))
  ("slideshow-exe"
   .
   #hash((author . "mflatt@racket-lang.org robby@racket-lang.org")
-        (checksum . "7c5211d5e9dfa2318b526331960ccdcc460e1009")
+        (checksum . "b1015af465b66018b36df627a1cd68c3ac62e44f")
         (dependencies
          .
          ("base" "compatibility-lib" "gui-lib" "pict-lib" "slideshow-lib"))
@@ -83172,7 +83119,7 @@
         (name . "slideshow-exe")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/slideshow-exe.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/slideshow-exe.zip")
         (tags . ())))
  ("slideshow-latex"
   .
@@ -83261,7 +83208,7 @@
  ("slideshow-lib"
   .
   #hash((author . "mflatt@racket-lang.org robby@racket-lang.org")
-        (checksum . "c46cf75b647353cdf1bcb5ac025f923d6ccca843")
+        (checksum . "fc69192c5a3d0eb58358e5ab5d98c37dfc699213")
         (dependencies
          .
          ("scheme-lib"
@@ -83283,12 +83230,12 @@
         (name . "slideshow-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/slideshow-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/slideshow-lib.zip")
         (tags . ())))
  ("slideshow-plugin"
   .
   #hash((author . "mflatt@racket-lang.org robby@racket-lang.org")
-        (checksum . "ce07942175b0f75c13bfb0e697b6d95bbcfb3803")
+        (checksum . "ffdbd7ec7c22760c7fe487402b87f7f0d359034e")
         (dependencies
          .
          ("base"
@@ -83312,7 +83259,7 @@
         (name . "slideshow-plugin")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/slideshow-plugin.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/slideshow-plugin.zip")
         (tags . ())))
  ("slideshow-pretty"
   .
@@ -83736,7 +83683,7 @@
  ("snip"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "793ae4b1df2467778b2cdb5b3bb8350a85054d47")
+        (checksum . "b45335a2bed6f78ac43881edf121d27f8e4b1e45")
         (dependencies . ("snip-lib" "gui-doc"))
         (dependency-names . ("snip-lib" "gui-doc"))
         (description . "mflatt@racket-lang.org")
@@ -83744,12 +83691,12 @@
         (name . "snip")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/snip.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/snip.zip")
         (tags . ())))
  ("snip-lib"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "36b6ca725740923cdb0719a5788a1d40bb784769")
+        (checksum . "525434155b94fa830b117ad77b5d373db74cdad6")
         (dependencies . ("base" "draw-lib"))
         (dependency-names . ("base" "draw-lib"))
         (description . "mflatt@racket-lang.org")
@@ -83757,7 +83704,7 @@
         (name . "snip-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/snip-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/snip-lib.zip")
         (tags . ())))
  ("socketcan"
   .
@@ -84053,7 +84000,7 @@
   #hash((author
          .
          "samth@racket-lang.org stamourv@racket-lang.org eli@racket-lang.org")
-        (checksum . "21d26394636109620aa24a2f86139a8e9ca4c3d1")
+        (checksum . "736996db33a9c9ab6597e1f4fd08d76f8f488aa2")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description
@@ -84063,7 +84010,7 @@
         (name . "source-syntax")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/source-syntax.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/source-syntax.zip")
         (tags . ())))
  ("sparse"
   .
@@ -84787,7 +84734,7 @@
   #hash((author
          .
          "mflatt@racket-lang.org noel@racket-lang.org chongkai@racket-lang.org jay@racket-lang.org")
-        (checksum . "1605cf05cb82ab897911664a3d09a58daead7759")
+        (checksum . "63dca22aaab8699aaeb1f8d383a19952fb22de8d")
         (dependencies
          .
          ("srfi-lib" "srfi-lib-nonfree" "srfi-doc" "srfi-doc-nonfree"))
@@ -84801,14 +84748,14 @@
         (name . "srfi")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/srfi.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/srfi.zip")
         (tags . ())))
  ("srfi-doc"
   .
   #hash((author
          .
          "mflatt@racket-lang.org noel@racket-lang.org chongkai@racket-lang.org jay@racket-lang.org")
-        (checksum . "2ba5ff9da59c943d8b3ed331fd2cb89ee8f31be0")
+        (checksum . "e785b773dcdff063a22ce37702e61eb90876708a")
         (dependencies
          .
          ("scheme-lib"
@@ -84846,14 +84793,14 @@
         (name . "srfi-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/srfi-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/srfi-doc.zip")
         (tags . ())))
  ("srfi-doc-nonfree"
   .
   #hash((author
          .
          "mflatt@racket-lang.org noel@racket-lang.org chongkai@racket-lang.org jay@racket-lang.org")
-        (checksum . "233adb29b74c30806510ea00b78f5d59d577b758")
+        (checksum . "0b8d31d6107324c25c8dba2632741c3dac497318")
         (dependencies
          .
          ("mzscheme-doc"
@@ -84885,14 +84832,14 @@
         (name . "srfi-doc-nonfree")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/srfi-doc-nonfree.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/srfi-doc-nonfree.zip")
         (tags . ())))
  ("srfi-lib"
   .
   #hash((author
          .
          "mflatt@racket-lang.org noel@racket-lang.org chongkai@racket-lang.org jay@racket-lang.org")
-        (checksum . "08fb7ab913fbaf5ac157551ab303bc219bca3abc")
+        (checksum . "c91ba54b8388481603624061df5d057e7c04bd23")
         (dependencies
          .
          ("scheme-lib" "base" "srfi-lite-lib" "r6rs-lib" "compatibility-lib"))
@@ -84906,14 +84853,14 @@
         (name . "srfi-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/srfi-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/srfi-lib.zip")
         (tags . ())))
  ("srfi-lib-nonfree"
   .
   #hash((author
          .
          "mflatt@racket-lang.org noel@racket-lang.org chongkai@racket-lang.org jay@racket-lang.org")
-        (checksum . "35674292b8a27e471f6b65e271341051467b59ff")
+        (checksum . "33e6b1b3dbf5acde1dff7391a1f9c69c4817371b")
         (dependencies
          .
          ("scheme-lib" "base" "r6rs-lib" "srfi-lib" "compatibility-lib"))
@@ -84927,12 +84874,12 @@
         (name . "srfi-lib-nonfree")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/srfi-lib-nonfree.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/srfi-lib-nonfree.zip")
         (tags . ())))
  ("srfi-lite-lib"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "be01a1c985dffa74bc0895b7844d3e82b02f543d")
+        (checksum . "2849cb93557ad09f6283762024eb72eb5c753477")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org")
@@ -84940,14 +84887,14 @@
         (name . "srfi-lite-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/srfi-lite-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/srfi-lite-lib.zip")
         (tags . ())))
  ("srfi-test"
   .
   #hash((author
          .
          "mflatt@racket-lang.org noel@racket-lang.org chongkai@racket-lang.org jay@racket-lang.org")
-        (checksum . "0cb3cedaa9d2091f5ff34a5c80667b9b3e09ba26")
+        (checksum . "8ffedc142a509abe4eea2e5ac2e561bc09d0adc3")
         (dependencies
          .
          ("scheme-lib" "base" "compatibility-lib" "rackunit-lib" "srfi-lib"))
@@ -84961,7 +84908,7 @@
         (name . "srfi-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/srfi-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/srfi-test.zip")
         (tags . ())))
  ("ss-rpc-server"
   .
@@ -85784,7 +85731,7 @@
  ("string-constants"
   .
   #hash((author . "robby@racket-lang.org")
-        (checksum . "99377d852571b01fb5b64ecf4da3d24f3801cc98")
+        (checksum . "cc980dcabf6d8c7eaf1f054c7e17efac7df1ec67")
         (dependencies . ("string-constants-lib" "string-constants-doc"))
         (dependency-names . ("string-constants-lib" "string-constants-doc"))
         (description . "robby@racket-lang.org")
@@ -85792,12 +85739,12 @@
         (name . "string-constants")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/string-constants.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/string-constants.zip")
         (tags . ())))
  ("string-constants-doc"
   .
   #hash((author . "robby@racket-lang.org")
-        (checksum . "be7c9aebe3b070e208a213c0fa8cf61f1260c5cc")
+        (checksum . "b0167d272ae4920287be161956992397af0d5f60")
         (dependencies
          .
          ("string-constants-lib" "base" "racket-doc" "scribble-lib"))
@@ -85809,12 +85756,12 @@
         (name . "string-constants-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/string-constants-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/string-constants-doc.zip")
         (tags . ())))
  ("string-constants-lib"
   .
   #hash((author . "robby@racket-lang.org")
-        (checksum . "459e327729dd5562e5c14bec81a962f824d839e8")
+        (checksum . "356bc815c1d1221b2cceb21deae6ac6f720cf23d")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "robby@racket-lang.org")
@@ -85822,7 +85769,7 @@
         (name . "string-constants-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/string-constants-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/string-constants-lib.zip")
         (tags . ())))
  ("string-sexpr"
   .
@@ -87270,7 +87217,7 @@
  ("swindle"
   .
   #hash((author . "eli@racket-lang.org")
-        (checksum . "8e1926627e555925f6ddcd4e0aaff04aa064345b")
+        (checksum . "fa98a87f1898e373d8e0ec4a8ce446d7e437e789")
         (dependencies
          .
          ("scheme-lib"
@@ -87300,7 +87247,7 @@
         (name . "swindle")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/swindle.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/swindle.zip")
         (tags . ())))
  ("sxml"
   .
@@ -88903,7 +88850,7 @@
  ("syntax-color"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "103c8ea3228d39646215c8ad6674cd2b2bce597a")
+        (checksum . "72eff871b5f762ff72210a68fec4ad1e93c2cdaa")
         (dependencies . ("syntax-color-lib" "syntax-color-doc"))
         (dependency-names . ("syntax-color-lib" "syntax-color-doc"))
         (description . "mflatt@racket-lang.org")
@@ -88911,12 +88858,12 @@
         (name . "syntax-color")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/syntax-color.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/syntax-color.zip")
         (tags . ())))
  ("syntax-color-doc"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "0714170fe0cd9ec7df3b1041398c4800fc12cfdd")
+        (checksum . "437e442d61bc51e1e3dd7534465011e698778f96")
         (dependencies
          .
          ("base"
@@ -88940,12 +88887,12 @@
         (name . "syntax-color-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/syntax-color-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/syntax-color-doc.zip")
         (tags . ())))
  ("syntax-color-lib"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "309de7c56d8288bb03956b015d3536a60dea83e2")
+        (checksum . "3b5cd8d5f5a2cc7c6132980e9ac064e583ca65d2")
         (dependencies
          .
          ("scheme-lib"
@@ -88965,12 +88912,12 @@
         (name . "syntax-color-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/syntax-color-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/syntax-color-lib.zip")
         (tags . ())))
  ("syntax-color-test"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "8a168ce6537ac6ef8d4170fea328b540bfc2f47d")
+        (checksum . "e575d6cd251ccade75e7657085d8ea7f26670419")
         (dependencies
          .
          ("base" "rackunit-lib" "scheme-lib" "syntax-color-lib" "gui-lib"))
@@ -88982,7 +88929,7 @@
         (name . "syntax-color-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/syntax-color-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/syntax-color-test.zip")
         (tags . ())))
  ("syntax-lang"
   .
@@ -91179,7 +91126,7 @@
  ("testing-util-lib"
   .
   #hash((author . "florence@racket-lang.org")
-        (checksum . "bb5f5e789d602546924c2f02c8f560b832395d57")
+        (checksum . "21c04c13231c4dd86cef3baa86c0617cdbdde656")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "florence@racket-lang.org")
@@ -91187,7 +91134,7 @@
         (name . "testing-util-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/testing-util-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/testing-util-lib.zip")
         (tags . ())))
  ("tetris"
   .
@@ -91242,7 +91189,7 @@
  ("tex-table"
   .
   #hash((author . "robby@racket-lang.org")
-        (checksum . "5db825e176ef64b2fc7296e3385390cb3da7159f")
+        (checksum . "15efd44bf0e78f4c40af98a8008a5bc090e6f637")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "robby@racket-lang.org")
@@ -91250,7 +91197,7 @@
         (name . "tex-table")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/tex-table.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/tex-table.zip")
         (tags . ())))
  ("texmath"
   .
@@ -92698,7 +92645,7 @@
  ("trace"
   .
   #hash((author . "mflatt@racket-lang.org robby@racket-lang.org")
-        (checksum . "0a0b5107733d1f901fcce638368e9cb1ff8adca3")
+        (checksum . "7a796718a63e519c202084db60720f559ae4f31b")
         (dependencies
          .
          ("scheme-lib"
@@ -92718,7 +92665,7 @@
         (name . "trace")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/trace.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/trace.zip")
         (tags . ())))
  ("traces"
   .
@@ -94684,7 +94631,7 @@
  ("typed-racket"
   .
   #hash((author . "samth@racket-lang.org stamourv@racket-lang.org")
-        (checksum . "f19565b6a4e29d7a1cded65f9e1cb6d1eb7a6d87")
+        (checksum . "3a61a4a96e0296cf50465423eb8756a36733ed9d")
         (dependencies . ("typed-racket-lib" "typed-racket-doc"))
         (dependency-names . ("typed-racket-lib" "typed-racket-doc"))
         (description . "samth@racket-lang.org stamourv@racket-lang.org")
@@ -94692,12 +94639,12 @@
         (name . "typed-racket")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/typed-racket.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/typed-racket.zip")
         (tags . ())))
  ("typed-racket-compatibility"
   .
   #hash((author . "samth@racket-lang.org stamourv@racket-lang.org")
-        (checksum . "eea3279848279478d83b5c6d02b779839e508118")
+        (checksum . "e0e18958fc913182993ae099c96d778e86a4f939")
         (dependencies . ("scheme-lib" "typed-racket-lib" "base"))
         (dependency-names . ("scheme-lib" "typed-racket-lib" "base"))
         (description . "samth@racket-lang.org stamourv@racket-lang.org")
@@ -94705,12 +94652,12 @@
         (name . "typed-racket-compatibility")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/typed-racket-compatibility.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/typed-racket-compatibility.zip")
         (tags . ())))
  ("typed-racket-doc"
   .
   #hash((author . "samth@racket-lang.org stamourv@racket-lang.org")
-        (checksum . "8022f27e1cbeb645fd782b0f82541beabd817504")
+        (checksum . "eb7e366ce9fb7d7ec63dc277d653d19d7765acd8")
         (dependencies
          .
          ("base"
@@ -94724,7 +94671,7 @@
           "at-exp-lib"
           ("scribble-lib" #:version "1.16")
           "pict-lib"
-          ("typed-racket-lib" #:version "1.6")
+          ("typed-racket-lib" #:version "1.10")
           "typed-racket-compatibility"
           "typed-racket-more"
           "racket-doc"
@@ -94752,7 +94699,7 @@
         (name . "typed-racket-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/typed-racket-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/typed-racket-doc.zip")
         (tags . ())))
  ("typed-racket-hacks"
   .
@@ -94822,7 +94769,7 @@
  ("typed-racket-lib"
   .
   #hash((author . "samth@racket-lang.org stamourv@racket-lang.org")
-        (checksum . "f34fc8e5cc00b44132149ff7af68b48c6b4b8e85")
+        (checksum . "867db3bde6e00cae4b7735b7eaa2ad585ef8247b")
         (dependencies
          .
          (("base" #:version "6.90.0.30")
@@ -94837,12 +94784,12 @@
         (name . "typed-racket-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/typed-racket-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/typed-racket-lib.zip")
         (tags . ())))
  ("typed-racket-more"
   .
   #hash((author . "samth@racket-lang.org stamourv@racket-lang.org")
-        (checksum . "acc3b9a6f629b3569b5ab3a3526843251eefce04")
+        (checksum . "655515f68bb21caeaaab474da55b6c9ee011d522")
         (dependencies
          .
          ("srfi-lite-lib"
@@ -94884,7 +94831,7 @@
         (name . "typed-racket-more")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/typed-racket-more.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/typed-racket-more.zip")
         (tags . ())))
  ("typed-racket-stream"
   .
@@ -94973,13 +94920,13 @@
  ("typed-racket-test"
   .
   #hash((author . "samth@racket-lang.org stamourv@racket-lang.org")
-        (checksum . "9eebcd19b1a5830d6c856f81bdb0b269987b8b4d")
+        (checksum . "c03778b4a446ddad49c80c91a4f454293311dc5f")
         (dependencies
          .
          ("redex-lib"
           "sandbox-lib"
           ("base" #:version "6.2.900.16")
-          ("typed-racket-lib" #:version "1.3")
+          ("typed-racket-lib" #:version "1.10")
           "typed-racket-more"
           "typed-racket-compatibility"
           "2d"
@@ -95021,7 +94968,7 @@
         (name . "typed-racket-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/typed-racket-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/typed-racket-test.zip")
         (tags . ())))
  ("typed-rosette"
   .
@@ -95862,7 +95809,7 @@
  ("unix-socket"
   .
   #hash((author . "ryanc@racket-lang.org")
-        (checksum . "220ce698d87ddd6b5a5da2c45614cc362a020565")
+        (checksum . "98a0d29889301a8fb9a6580702d6ed1ab9eb1fe7")
         (dependencies . ("unix-socket-lib" "unix-socket-doc"))
         (dependency-names . ("unix-socket-lib" "unix-socket-doc"))
         (description . "ryanc@racket-lang.org")
@@ -95870,12 +95817,12 @@
         (name . "unix-socket")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/unix-socket.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/unix-socket.zip")
         (tags . ())))
  ("unix-socket-doc"
   .
   #hash((author . "ryanc@racket-lang.org")
-        (checksum . "7649b8a2ad47b5f5d566030d3d5c6f4b9be860cc")
+        (checksum . "ea521fdf0c1fdb2f261ad515da120271240dfddf")
         (dependencies
          .
          ("base"
@@ -95890,12 +95837,12 @@
         (name . "unix-socket-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/unix-socket-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/unix-socket-doc.zip")
         (tags . ())))
  ("unix-socket-lib"
   .
   #hash((author . "ryanc@racket-lang.org")
-        (checksum . "9c5bb019795a229aa2afec6ba61dde1cf0b38000")
+        (checksum . "50f655e24079d4d6845dcddd2d22e5db2148a57e")
         (dependencies . (("base" #:version "6.11.0.5")))
         (dependency-names . ("base"))
         (description . "ryanc@racket-lang.org")
@@ -95903,12 +95850,12 @@
         (name . "unix-socket-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/unix-socket-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/unix-socket-lib.zip")
         (tags . ())))
  ("unix-socket-test"
   .
   #hash((author . "ryanc@racket-lang.org")
-        (checksum . "81ccb7e2196c520453ad8dc836dcd70dc4be4fd8")
+        (checksum . "f8b78e26310292859bc311c09665b7824338d6f3")
         (dependencies
          .
          ("base" "rackunit-lib" ("unix-socket-lib" #:version "1.2")))
@@ -95918,7 +95865,7 @@
         (name . "unix-socket-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/unix-socket-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/unix-socket-test.zip")
         (tags . ())))
  ("unreachable"
   .
@@ -100420,7 +100367,7 @@
  ("web-server"
   .
   #hash((author . "jay@racket-lang.org")
-        (checksum . "97e88b2fc389986989302ae12ab8703a27942dfb")
+        (checksum . "21c4b915b19ea0233de8f13bacd22637c5aa00ab")
         (dependencies . ("web-server-lib" "web-server-doc"))
         (dependency-names . ("web-server-lib" "web-server-doc"))
         (description . "jay@racket-lang.org")
@@ -100428,12 +100375,12 @@
         (name . "web-server")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/web-server.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/web-server.zip")
         (tags . ())))
  ("web-server-doc"
   .
   #hash((author . "jay@racket-lang.org")
-        (checksum . "ec273a1e93a37837a2a45102ccc8bcc97062cf83")
+        (checksum . "23fd20ddd44f5a8b57cc0535cab12c8f163146f4")
         (dependencies
          .
          ("base"
@@ -100475,12 +100422,12 @@
         (name . "web-server-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/web-server-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/web-server-doc.zip")
         (tags . ())))
  ("web-server-lib"
   .
   #hash((author . "jay@racket-lang.org")
-        (checksum . "0f813199af6198fc8f4f657383486b6c0c0b5b38")
+        (checksum . "002063b1609ea4b0da3746241eaaa2c33c6d5181")
         (dependencies
          .
          ("srfi-lite-lib"
@@ -100506,12 +100453,12 @@
         (name . "web-server-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/web-server-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/web-server-lib.zip")
         (tags . ())))
  ("web-server-test"
   .
   #hash((author . "jay@racket-lang.org")
-        (checksum . "7f75fde60a27e1263587a142ffdbfd1ec08a4fe8")
+        (checksum . "62c9a6a6adfa075b20f6a581c1120eca764af106")
         (dependencies
          .
          ("base"
@@ -100535,7 +100482,7 @@
         (name . "web-server-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/web-server-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/web-server-test.zip")
         (tags . ())))
  ("web-sessions"
   .
@@ -101755,7 +101702,7 @@
  ("wxme"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "51dad07a10834ea90a8b275f1b427b4fff195658")
+        (checksum . "1e2f7aadc54188445684d5ec668d1a8b8feee2d1")
         (dependencies . ("wxme-lib" "gui-doc"))
         (dependency-names . ("wxme-lib" "gui-doc"))
         (description . "mflatt@racket-lang.org")
@@ -101763,12 +101710,12 @@
         (name . "wxme")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/wxme.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/wxme.zip")
         (tags . ())))
  ("wxme-lib"
   .
   #hash((author . "mflatt@racket-lang.org")
-        (checksum . "72fa066a6ad51081b048a806a041a96581067844")
+        (checksum . "01b3ca68df92d39739fcb18eb5a0f947fad61f79")
         (dependencies . ("scheme-lib" "base" "compatibility-lib" "snip-lib"))
         (dependency-names
          .
@@ -101778,7 +101725,7 @@
         (name . "wxme-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/wxme-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/wxme-lib.zip")
         (tags . ())))
  ("wxme-test"
   .
@@ -102780,7 +102727,7 @@
  ("xrepl"
   .
   #hash((author . "eli@racket-lang.org")
-        (checksum . "ab3e2fe1807eeceb4fb263a1f955a2990abde463")
+        (checksum . "8749484d6cedecbfb33b70fb66b8993fa019954e")
         (dependencies . ("xrepl-lib" "xrepl-doc"))
         (dependency-names . ("xrepl-lib" "xrepl-doc"))
         (description . "eli@racket-lang.org")
@@ -102788,12 +102735,12 @@
         (name . "xrepl")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/xrepl.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/xrepl.zip")
         (tags . ())))
  ("xrepl-doc"
   .
   #hash((author . "eli@racket-lang.org")
-        (checksum . "ec7682571b9d5d8f4214dc1b2e61518f239326f5")
+        (checksum . "f2eb9a2642c9b5214944ccb9fbb339630025d2f9")
         (dependencies
          .
          ("base"
@@ -102827,12 +102774,12 @@
         (name . "xrepl-doc")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/xrepl-doc.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/xrepl-doc.zip")
         (tags . ())))
  ("xrepl-lib"
   .
   #hash((author . "eli@racket-lang.org")
-        (checksum . "57d155964b38a8e0cc240c867857b9e4567f7057")
+        (checksum . "e6d3de63ebcbf1ed1d09981779a6d36d0041daa4")
         (dependencies . ("base" "readline-lib" "scribble-text-lib"))
         (dependency-names . ("base" "readline-lib" "scribble-text-lib"))
         (description . "eli@racket-lang.org")
@@ -102840,12 +102787,12 @@
         (name . "xrepl-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/xrepl-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/xrepl-lib.zip")
         (tags . ())))
  ("xrepl-test"
   .
   #hash((author . "eli@racket-lang.org")
-        (checksum . "454f5c909bf3a6818830e3f243f63c64fcbb9ea2")
+        (checksum . "61e4cb0e7ac2b5fb3fd5a4bdf7b70a7882077747")
         (dependencies . ("at-exp-lib" "base" "eli-tester" "xrepl-lib"))
         (dependency-names . ("at-exp-lib" "base" "eli-tester" "xrepl-lib"))
         (description . "eli@racket-lang.org")
@@ -102853,7 +102800,7 @@
         (name . "xrepl-test")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/xrepl-test.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/xrepl-test.zip")
         (tags . ())))
  ("yaml"
   .
@@ -103563,7 +103510,7 @@
  ("zo-lib"
   .
   #hash((author . "mflatt@racket-lang.org jay@racket-lang.org")
-        (checksum . "558b68a583fdfa87e00b5479ba09110b6722090f")
+        (checksum . "7fc95552ca466bf7354b78ec3a1904c4f00c7c1b")
         (dependencies . ("base"))
         (dependency-names . ("base"))
         (description . "mflatt@racket-lang.org jay@racket-lang.org")
@@ -103571,7 +103518,7 @@
         (name . "zo-lib")
         (source
          .
-         "https://download.racket-lang.org/releases/7.1/pkgs/zo-lib.zip")
+         "https://download.racket-lang.org/releases/7.2/pkgs/zo-lib.zip")
         (tags . ())))
  ("zordoz"
   .
