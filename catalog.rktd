@@ -18743,7 +18743,7 @@
                (test-success-log
                 .
                 "server/built/test-success/distributed-places-test.txt")))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "490ee40e32cbaa818798aacca89fe4e3b3fc772b")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . ("distributed-places-lib" "base"))
@@ -18764,6 +18764,7 @@
           (lib
            "distributed-places-test/test/racket/place/distributed/tuple.rkt")))
         (name . "distributed-places-test")
+        (nix-sha256 . "009sflz25ps7mj07slv1gw3z9i6b3wzpyxaxn8ji0wbry02w0vvd")
         (ring . 0)
         (search-terms
          .
@@ -18773,7 +18774,7 @@
                  (ring:0 . #t)))
         (source
          .
-         "http://racket-packages.s3-us-west-2.amazonaws.com/pkgs/empty.zip")
+         "git://github.com/racket/distributed-places/?path=distributed-places-test")
         (tags . ("main-tests"))
         (versions
          .
@@ -18831,7 +18832,7 @@
                (test-success-log
                 .
                 "server/built/test-success/distro-build.txt")))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "637f9c575ef40a0b3ceb235e2c98597fd0905e9c")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . ("distro-build-lib" "distro-build-doc"))
@@ -18843,6 +18844,7 @@
         (last-updated . 1555985093)
         (modules . ())
         (name . "distro-build")
+        (nix-sha256 . "1f55kkiamxrqjdcgsvaqwikap08ln7c9ri2pv3rbh16zzmljxpw4")
         (ring . 0)
         (search-terms
          .
@@ -18850,9 +18852,7 @@
                  (:no-tag: . #t)
                  (author:mflatt@racket-lang.org . #t)
                  (ring:0 . #t)))
-        (source
-         .
-         "http://racket-packages.s3-us-west-2.amazonaws.com/pkgs/empty.zip")
+        (source . "git://github.com/racket/distro-build/?path=distro-build")
         (tags . ())
         (versions
          .
@@ -19756,7 +19756,7 @@
                (success-log . #f)
                (test-failure-log . #f)
                (test-success-log . #f)))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "8632512357c53d2d085a68545b2e093a9f9677be")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . ("base"))
@@ -19774,7 +19774,9 @@
          #hasheq((:no-tag: . #t)
                  (author:mflatt@racket-lang.org . #t)
                  (ring:0 . #t)))
-        (source . "https://pkg-sources.racket-lang.org/pkgs/empty.zip")
+        (source
+         .
+         "https://pkg-sources.racket-lang.org/pkgs/8632512357c53d2d085a68545b2e093a9f9677be/draw-i386-macosx.zip")
         (tags . ())
         (versions
          .
@@ -19830,7 +19832,7 @@
                (success-log . #f)
                (test-failure-log . #f)
                (test-success-log . #f)))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "ecd61bfff1daa6e72ab14c73bfa480499717da29")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . ("base"))
@@ -19848,7 +19850,9 @@
          #hasheq((author:mflatt@racket-lang.org . #t)
                  (main-distribution . #t)
                  (ring:0 . #t)))
-        (source . "https://pkg-sources.racket-lang.org/pkgs/empty.zip")
+        (source
+         .
+         "https://pkg-sources.racket-lang.org/pkgs/ecd61bfff1daa6e72ab14c73bfa480499717da29/draw-i386-macosx-2.zip")
         (tags . ("main-distribution"))
         (versions
          .
@@ -19952,7 +19956,7 @@
                (success-log . #f)
                (test-failure-log . #f)
                (test-success-log . #f)))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "552c18b393b3377b051da48aef8b8d6883615029")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . ("base"))
@@ -19970,7 +19974,9 @@
          #hasheq((:no-tag: . #t)
                  (author:mflatt@racket-lang.org . #t)
                  (ring:0 . #t)))
-        (source . "https://pkg-sources.racket-lang.org/pkgs/empty.zip")
+        (source
+         .
+         "https://pkg-sources.racket-lang.org/pkgs/552c18b393b3377b051da48aef8b8d6883615029/draw-ppc-macosx.zip")
         (tags . ())
         (versions
          .
@@ -20026,7 +20032,7 @@
                (success-log . #f)
                (test-failure-log . #f)
                (test-success-log . #f)))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "a68c25d5794dff8f4f46eaccea942d2f04f32ca3")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . ("base"))
@@ -20044,7 +20050,9 @@
          #hasheq((author:mflatt@racket-lang.org . #t)
                  (main-distribution . #t)
                  (ring:0 . #t)))
-        (source . "https://pkg-sources.racket-lang.org/pkgs/empty.zip")
+        (source
+         .
+         "https://pkg-sources.racket-lang.org/pkgs/a68c25d5794dff8f4f46eaccea942d2f04f32ca3/draw-ppc-macosx-2.zip")
         (tags . ("main-distribution"))
         (versions
          .
@@ -20163,7 +20171,7 @@
                (success-log . #f)
                (test-failure-log . #f)
                (test-success-log . #f)))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "915598defe21a2213c2833b45ace0c62fa31b39e")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . ("base"))
@@ -20181,7 +20189,9 @@
          #hasheq((:no-tag: . #t)
                  (author:mflatt@racket-lang.org . #t)
                  (ring:0 . #t)))
-        (source . "https://pkg-sources.racket-lang.org/pkgs/empty.zip")
+        (source
+         .
+         "https://pkg-sources.racket-lang.org/pkgs/915598defe21a2213c2833b45ace0c62fa31b39e/draw-win32-i386.zip")
         (tags . ())
         (versions
          .
@@ -20237,7 +20247,7 @@
                (success-log . #f)
                (test-failure-log . #f)
                (test-success-log . #f)))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "3f5fb8b2e1ce9802a71328ee338e277573eb9cc9")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . ("base"))
@@ -20255,7 +20265,9 @@
          #hasheq((author:mflatt@racket-lang.org . #t)
                  (main-distribution . #t)
                  (ring:0 . #t)))
-        (source . "https://pkg-sources.racket-lang.org/pkgs/empty.zip")
+        (source
+         .
+         "https://pkg-sources.racket-lang.org/pkgs/3f5fb8b2e1ce9802a71328ee338e277573eb9cc9/draw-win32-i386-2.zip")
         (tags . ("main-distribution"))
         (versions
          .
@@ -20324,7 +20336,7 @@
                (success-log . #f)
                (test-failure-log . #f)
                (test-success-log . #f)))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "d5769e02a39715de02b3c91c55a4d366dbbcb7fd")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . ("base"))
@@ -20342,7 +20354,9 @@
          #hasheq((:no-tag: . #t)
                  (author:mflatt@racket-lang.org . #t)
                  (ring:0 . #t)))
-        (source . "https://pkg-sources.racket-lang.org/pkgs/empty.zip")
+        (source
+         .
+         "https://pkg-sources.racket-lang.org/pkgs/d5769e02a39715de02b3c91c55a4d366dbbcb7fd/draw-win32-x86_64.zip")
         (tags . ())
         (versions
          .
@@ -20398,7 +20412,7 @@
                (success-log . #f)
                (test-failure-log . #f)
                (test-success-log . #f)))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "c6c2edb3e086033e24a8121d85675f1bc11b7705")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . ("base"))
@@ -20416,7 +20430,9 @@
          #hasheq((author:mflatt@racket-lang.org . #t)
                  (main-distribution . #t)
                  (ring:0 . #t)))
-        (source . "https://pkg-sources.racket-lang.org/pkgs/empty.zip")
+        (source
+         .
+         "https://pkg-sources.racket-lang.org/pkgs/c6c2edb3e086033e24a8121d85675f1bc11b7705/draw-win32-x86_64-2.zip")
         (tags . ("main-distribution"))
         (versions
          .
@@ -20498,7 +20514,7 @@
                (success-log . #f)
                (test-failure-log . #f)
                (test-success-log . #f)))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "bbbbcdc28aa69e11c7d7796d6796f34acf48b8e9")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . ("base"))
@@ -20516,7 +20532,9 @@
          #hasheq((author:mflatt@racket-lang.org . #t)
                  (main-distribution . #t)
                  (ring:0 . #t)))
-        (source . "https://pkg-sources.racket-lang.org/pkgs/empty.zip")
+        (source
+         .
+         "https://pkg-sources.racket-lang.org/pkgs/bbbbcdc28aa69e11c7d7796d6796f34acf48b8e9/draw-x86_64-linux-natipkg-2.zip")
         (tags . ("main-distribution"))
         (versions
          .
@@ -20585,7 +20603,7 @@
                (success-log . #f)
                (test-failure-log . #f)
                (test-success-log . #f)))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "d47568a60e3e12793f2c49b322ad49c2a8ec8d26")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . ("base"))
@@ -20603,7 +20621,9 @@
          #hasheq((:no-tag: . #t)
                  (author:mflatt@racket-lang.org . #t)
                  (ring:0 . #t)))
-        (source . "https://pkg-sources.racket-lang.org/pkgs/empty.zip")
+        (source
+         .
+         "https://pkg-sources.racket-lang.org/pkgs/d47568a60e3e12793f2c49b322ad49c2a8ec8d26/draw-x86_64-macosx.zip")
         (tags . ())
         (versions
          .
@@ -20659,7 +20679,7 @@
                (success-log . #f)
                (test-failure-log . #f)
                (test-success-log . #f)))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "552725bedd421a4c9979c639b5082ea0352f9ee6")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . ("base"))
@@ -20677,7 +20697,9 @@
          #hasheq((author:mflatt@racket-lang.org . #t)
                  (main-distribution . #t)
                  (ring:0 . #t)))
-        (source . "https://pkg-sources.racket-lang.org/pkgs/empty.zip")
+        (source
+         .
+         "https://pkg-sources.racket-lang.org/pkgs/552725bedd421a4c9979c639b5082ea0352f9ee6/draw-x86_64-macosx-2.zip")
         (tags . ("main-distribution"))
         (versions
          .
@@ -32980,7 +33002,7 @@
                (test-success-log
                 .
                 "server/built/test-success/gui-pkg-manager.txt")))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "eb80f658a4b35757687eb26fa48a16d57685ef82")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies
@@ -32998,6 +33020,7 @@
         (last-updated . 1543477388)
         (modules . ((lib "pkg/gui/start.rkt")))
         (name . "gui-pkg-manager")
+        (nix-sha256 . "1f59a35lw537h5gcg8mhif70mmhaa0kmfw4i6bwv4d15pz3zzrlf")
         (ring . 0)
         (search-terms
          .
@@ -33008,7 +33031,7 @@
                  (ring:0 . #t)))
         (source
          .
-         "http://racket-packages.s3-us-west-2.amazonaws.com/pkgs/empty.zip")
+         "git://github.com/racket/gui-pkg-manager/?path=gui-pkg-manager")
         (tags . ())
         (versions
          .
@@ -33070,7 +33093,7 @@
                (test-success-log
                 .
                 "server/built/test-success/gui-pkg-manager-doc.txt")))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "eb80f658a4b35757687eb26fa48a16d57685ef82")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . ("base" "racket-doc" "scribble-lib"))
@@ -33082,6 +33105,7 @@
         (last-updated . 1543477389)
         (modules . ((lib "pkg/gui/scribblings/gui-pkg-manager.scrbl")))
         (name . "gui-pkg-manager-doc")
+        (nix-sha256 . "1f59a35lw537h5gcg8mhif70mmhaa0kmfw4i6bwv4d15pz3zzrlf")
         (ring . 0)
         (search-terms
          .
@@ -33093,7 +33117,7 @@
                  (ring:0 . #t)))
         (source
          .
-         "http://racket-packages.s3-us-west-2.amazonaws.com/pkgs/empty.zip")
+         "git://github.com/racket/gui-pkg-manager/?path=gui-pkg-manager-doc")
         (tags . ())
         (versions
          .
@@ -33354,7 +33378,7 @@
                  (test-success-log
                   .
                   "server/built/test-success/hackett.txt")))
-          (checksum . "8e4e0e904ac37df58b8c8ef29c0f94ad4151246f")
+          (checksum . "f5a080ebcf9e2ca1fbf5be98517f4991ec2405ea")
           (checksum-error . #f)
           (conflicts . ())
           (date-added . 1548924769)
@@ -33369,7 +33393,7 @@
           (name . "hackett")
           (nix-sha256
            .
-           "0f1darb65qpbdr0f1r4hbbw6g1b55h9fkfhywxnsyw8z2rzc2rpq")
+           "0rfwrm6ddrwzc1j4x8sd1ld5lmnmj9qg34mhknmfi1jn28ya2zib")
           (ring . 1)
           (search-terms
            .
@@ -33379,7 +33403,9 @@
                    (lang . #t)
                    (language . #t)
                    (ring:1 . #t)))
-          (source . "https://github.com/lexi-lambda/hackett.git?path=hackett")
+          (source
+           .
+           "https://github.com/lexi-lambda/hackett.git?path=hackett#f5a080ebcf9e2ca1fbf5be98517f4991ec2405ea")
           (tags . ("lang" "language"))
           (versions
            .
@@ -33454,7 +33480,7 @@
                  (test-success-log
                   .
                   "server/built/test-success/hackett-demo.txt")))
-          (checksum . "8e4e0e904ac37df58b8c8ef29c0f94ad4151246f")
+          (checksum . "f5a080ebcf9e2ca1fbf5be98517f4991ec2405ea")
           (checksum-error . #f)
           (conflicts . ())
           (date-added . 1548924807)
@@ -33489,7 +33515,7 @@
           (name . "hackett-demo")
           (nix-sha256
            .
-           "0f1darb65qpbdr0f1r4hbbw6g1b55h9fkfhywxnsyw8z2rzc2rpq")
+           "0rfwrm6ddrwzc1j4x8sd1ld5lmnmj9qg34mhknmfi1jn28ya2zib")
           (ring . 1)
           (search-terms
            .
@@ -33500,7 +33526,7 @@
                    (ring:1 . #t)))
           (source
            .
-           "https://github.com/lexi-lambda/hackett.git?path=hackett-demo")
+           "https://github.com/lexi-lambda/hackett.git?path=hackett-demo#f5a080ebcf9e2ca1fbf5be98517f4991ec2405ea")
           (tags . ())
           (versions
            .
@@ -33577,7 +33603,7 @@
                  (test-success-log
                   .
                   "server/built/test-success/hackett-doc.txt")))
-          (checksum . "8e4e0e904ac37df58b8c8ef29c0f94ad4151246f")
+          (checksum . "f5a080ebcf9e2ca1fbf5be98517f4991ec2405ea")
           (checksum-error . #f)
           (conflicts . ())
           (date-added . 1548924821)
@@ -33607,7 +33633,7 @@
           (name . "hackett-doc")
           (nix-sha256
            .
-           "0f1darb65qpbdr0f1r4hbbw6g1b55h9fkfhywxnsyw8z2rzc2rpq")
+           "0rfwrm6ddrwzc1j4x8sd1ld5lmnmj9qg34mhknmfi1jn28ya2zib")
           (ring . 1)
           (search-terms
            .
@@ -33619,7 +33645,7 @@
                    (ring:1 . #t)))
           (source
            .
-           "https://github.com/lexi-lambda/hackett.git?path=hackett-doc")
+           "https://github.com/lexi-lambda/hackett.git?path=hackett-doc#f5a080ebcf9e2ca1fbf5be98517f4991ec2405ea")
           (tags . ())
           (versions
            .
@@ -33694,7 +33720,7 @@
                  (test-success-log
                   .
                   "server/built/test-success/hackett-lib.txt")))
-          (checksum . "8e4e0e904ac37df58b8c8ef29c0f94ad4151246f")
+          (checksum . "f5a080ebcf9e2ca1fbf5be98517f4991ec2405ea")
           (checksum-error . #f)
           (conflicts . ())
           (date-added . 1548924837)
@@ -33764,7 +33790,7 @@
           (name . "hackett-lib")
           (nix-sha256
            .
-           "0f1darb65qpbdr0f1r4hbbw6g1b55h9fkfhywxnsyw8z2rzc2rpq")
+           "0rfwrm6ddrwzc1j4x8sd1ld5lmnmj9qg34mhknmfi1jn28ya2zib")
           (ring . 1)
           (search-terms
            .
@@ -33775,7 +33801,7 @@
                    (ring:1 . #t)))
           (source
            .
-           "https://github.com/lexi-lambda/hackett.git?path=hackett-lib")
+           "https://github.com/lexi-lambda/hackett.git?path=hackett-lib#f5a080ebcf9e2ca1fbf5be98517f4991ec2405ea")
           (tags . ())
           (versions
            .
@@ -33850,7 +33876,7 @@
                  (test-success-log
                   .
                   "server/built/test-success/hackett-test.txt")))
-          (checksum . "8e4e0e904ac37df58b8c8ef29c0f94ad4151246f")
+          (checksum . "f5a080ebcf9e2ca1fbf5be98517f4991ec2405ea")
           (checksum-error . #f)
           (conflicts . ())
           (date-added . 1548924852)
@@ -33902,7 +33928,7 @@
           (name . "hackett-test")
           (nix-sha256
            .
-           "0f1darb65qpbdr0f1r4hbbw6g1b55h9fkfhywxnsyw8z2rzc2rpq")
+           "0rfwrm6ddrwzc1j4x8sd1ld5lmnmj9qg34mhknmfi1jn28ya2zib")
           (ring . 1)
           (search-terms
            .
@@ -33913,7 +33939,7 @@
                    (ring:1 . #t)))
           (source
            .
-           "https://github.com/lexi-lambda/hackett.git?path=hackett-test")
+           "https://github.com/lexi-lambda/hackett.git?path=hackett-test#f5a080ebcf9e2ca1fbf5be98517f4991ec2405ea")
           (tags . ())
           (versions
            .
@@ -34065,7 +34091,7 @@
                  (success-log . "server/built/install/handin.txt")
                  (test-failure-log . "server/built/test-fail/handin.txt")
                  (test-success-log . #f)))
-          (checksum . "3c31daccf0f61bb06aa65e36d72acc0ef2f453da")
+          (checksum . "233b17e820bdd9b859f551bf4714204718d04306")
           (checksum-error . #f)
           (conflicts . ())
           (dependencies
@@ -34148,7 +34174,7 @@
           (name . "handin")
           (nix-sha256
            .
-           "09vqljgvz43gymc2q4i40mg551xxhb9pf4zkgnprdrvjhi6ihdss")
+           "1n46sj9wxq22gqbn1jd3q4pjhf3vmdxix5lji2h5zffa0rmakyda")
           (ring . 0)
           (search-terms
            .
@@ -34157,7 +34183,7 @@
                    (:no-tag: . #t)
                    (author:mflatt@cs.utah.edu . #t)
                    (ring:0 . #t)))
-          (source . "github://github.com/plt/handin/for-v5.3.6")
+          (source . "github://github.com/plt/handin/master")
           (tags . ())
           (versions
            .
@@ -35046,7 +35072,7 @@
                (success-log . "server/built/install/honu.txt")
                (test-failure-log . #f)
                (test-success-log . "server/built/test-success/honu.txt")))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "fd89d2af7df5aa3db770049663437484d7700820")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies
@@ -35124,6 +35150,7 @@
           (lib "honu/tests/macros.rkt")
           (lib "honu/tests/check.rkt")))
         (name . "honu")
+        (nix-sha256 . "10ph1fj376drx8p9g4ak5cdjrhmjgwpd4w7h334b6fx4aja2bkss")
         (ring . 0)
         (search-terms
          .
@@ -35133,9 +35160,7 @@
                  (author:mflatt@racket-lang.org . #t)
                  (author:rafkind@racket-lang.org . #t)
                  (ring:0 . #t)))
-        (source
-         .
-         "http://racket-packages.s3-us-west-2.amazonaws.com/pkgs/empty.zip")
+        (source . "git://github.com/racket/honu")
         (tags . ())
         (versions
          .
@@ -60570,7 +60595,7 @@
                  (test-success-log
                   .
                   "server/built/test-success/plai-typed.txt")))
-          (checksum . "e11e7e4cd655b958296055f490ea8eadf5ea5ce7")
+          (checksum . "582728d7a724674b58c6af8d2b20a6513947152a")
           (checksum-error . #f)
           (conflicts . ())
           (dependencies
@@ -60618,7 +60643,7 @@
           (name . "plai-typed")
           (nix-sha256
            .
-           "1sc9xjnqrkq1fv6ymlbln1cnbpw8sxzlwwi93scl8ngqq1wdvff2")
+           "03bqrf53ll6yzzh41slmdaqsffpi92wsshj8vy2i36mbkc7rzy15")
           (ring . 1)
           (search-terms
            .
@@ -60628,7 +60653,7 @@
                    (language . #t)
                    (ring:1 . #t)
                    (textbook . #t)))
-          (source . "github://github.com/mflatt/plai-typed/no-deps")
+          (source . "github://github.com/mflatt/plai-typed/master")
           (tags . ("language" "textbook"))
           (versions
            .
@@ -60687,7 +60712,7 @@
                  (test-success-log
                   .
                   "server/built/test-success/plai-typed-s-exp-match.txt")))
-          (checksum . "e010d9718916394b1b3545cb2f7a49c27904e873")
+          (checksum . "ff05b257cc8739d2f4ad8f33b65440635ab9cce0")
           (checksum-error . #f)
           (conflicts . ())
           (dependencies . ("base" "plai-typed" "racket-doc" "scribble-lib"))
@@ -60708,7 +60733,7 @@
           (name . "plai-typed-s-exp-match")
           (nix-sha256
            .
-           "1rfa6zxngx1x011m7vlizrs6v6r6vn586icwzh0m0gj077dwslww")
+           "0k2knsg04s641aw4gn5ncwbvjp973px0jrm919vxy8gdizlvri22")
           (ring . 1)
           (search-terms
            .
@@ -60719,7 +60744,7 @@
                    (ring:1 . #t)))
           (source
            .
-           "github://github.com/mflatt/plai-typed-s-exp-match/no-deps")
+           "github://github.com/mflatt/plai-typed-s-exp-match/master")
           (tags . ())
           (versions
            .
@@ -61694,7 +61719,7 @@
                (test-success-log
                 .
                 "server/built/test-success/plt-services.txt")))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "b7d738d59ad64efb4602f13136757cb49a6e989b")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . ())
@@ -61708,6 +61733,7 @@
         (last-updated . 1557199560)
         (modules . ())
         (name . "plt-services")
+        (nix-sha256 . "1big24pqdg12p715zh7868v6ngq27g8j6nkp8wx43fxcw5qzay46")
         (ring . 0)
         (search-terms
          .
@@ -61716,9 +61742,7 @@
                  (author:mflatt@racket-lang.org . #t)
                  (deprecated . #t)
                  (ring:0 . #t)))
-        (source
-         .
-         "http://racket-packages.s3-us-west-2.amazonaws.com/pkgs/empty.zip")
+        (source . "git://github.com/racket/racket/?path=pkgs/plt-services")
         (tags . ("deprecated"))
         (versions
          .
@@ -61774,7 +61798,7 @@
                (success-log . "server/built/install/plt-web.txt")
                (test-failure-log . #f)
                (test-success-log . "server/built/test-success/plt-web.txt")))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "5697a81d84117f9341686783b02299f74656918a")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . ("plt-web-lib" "plt-web-doc"))
@@ -61786,6 +61810,7 @@
         (last-updated . 1502816286)
         (modules . ())
         (name . "plt-web")
+        (nix-sha256 . "0hzrp84cg3gl489y9nidzjqdya64wkqd48w2rlarv3w5ldw0nppl")
         (ring . 0)
         (search-terms
          .
@@ -61793,9 +61818,7 @@
                  (:no-tag: . #t)
                  (author:mflatt@racket-lang.org . #t)
                  (ring:0 . #t)))
-        (source
-         .
-         "http://racket-packages.s3-us-west-2.amazonaws.com/pkgs/empty.zip")
+        (source . "git://github.com/racket/plt-web/?path=plt-web")
         (tags . ())
         (versions
          .
@@ -61861,7 +61884,7 @@
                (test-success-log
                 .
                 "server/built/test-success/plt-web-doc.txt")))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "5697a81d84117f9341686783b02299f74656918a")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies
@@ -61877,6 +61900,7 @@
         (last-updated . 1502816287)
         (modules . ((lib "plt-web/plt-web.scrbl")))
         (name . "plt-web-doc")
+        (nix-sha256 . "0hzrp84cg3gl489y9nidzjqdya64wkqd48w2rlarv3w5ldw0nppl")
         (ring . 0)
         (search-terms
          .
@@ -61887,9 +61911,7 @@
                  (author:mflatt@racket-lang.org . #t)
                  (author:samth@racket-lang.org . #t)
                  (ring:0 . #t)))
-        (source
-         .
-         "http://racket-packages.s3-us-west-2.amazonaws.com/pkgs/empty.zip")
+        (source . "git://github.com/racket/plt-web/?path=plt-web-doc")
         (tags . ())
         (versions
          .
@@ -63405,7 +63427,7 @@
                  (success-log . "server/built/install/portaudio.txt")
                  (test-failure-log . "server/built/test-fail/portaudio.txt")
                  (test-success-log . #f)))
-          (checksum . "74dfaf1d6317a9f5479ae5492e874e9e73888a46")
+          (checksum . "3703edda0c6b9f5ef7e7bf39b933cb1d0e9a82b5")
           (checksum-error . #f)
           (conflicts . ())
           (dependencies . ("base" "rackunit-lib" "scribble-lib" "racket-doc"))
@@ -63440,7 +63462,7 @@
           (name . "portaudio")
           (nix-sha256
            .
-           "1zczwx2z5kw85h15bw3xikwnjb4mxw4n4g8x7wkzqfrkvll8xmsb")
+           "1132wfqdapn7yswhkp7rbvc6lymqs1wgala8rnka92j6z5ms8rln")
           (ring . 1)
           (search-terms
            .
@@ -63451,7 +63473,7 @@
                    (ffi . #t)
                    (io . #t)
                    (ring:1 . #t)))
-          (source . "github://github.com/jbclements/portaudio/pre-6/")
+          (source . "github://github.com/jbclements/portaudio/master/")
           (tags . ("audio" "ffi" "io"))
           (versions
            .
@@ -67551,7 +67573,7 @@
                (success-log . #f)
                (test-failure-log . #f)
                (test-success-log . #f)))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "2b0a4a12fc5fc8a304bcba60c09af2f8b75988c5")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . ("base"))
@@ -67569,7 +67591,9 @@
          #hasheq((author:mflatt@racket-lang.org . #t)
                  (main-distribution . #t)
                  (ring:0 . #t)))
-        (source . "https://pkg-sources.racket-lang.org/pkgs/empty.zip")
+        (source
+         .
+         "https://pkg-sources.racket-lang.org/pkgs/2b0a4a12fc5fc8a304bcba60c09af2f8b75988c5/racket-i386-macosx-2.zip")
         (tags . ("main-distribution"))
         (versions
          .
@@ -68327,7 +68351,7 @@
                (success-log . #f)
                (test-failure-log . #f)
                (test-success-log . #f)))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "a36e58d540359092d684bd3a277d0068cff04afa")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . ("base"))
@@ -68345,7 +68369,9 @@
          #hasheq((author:mflatt@racket-lang.org . #t)
                  (main-distribution . #t)
                  (ring:0 . #t)))
-        (source . "https://pkg-sources.racket-lang.org/pkgs/empty.zip")
+        (source
+         .
+         "https://pkg-sources.racket-lang.org/pkgs/a36e58d540359092d684bd3a277d0068cff04afa/racket-ppc-macosx-2.zip")
         (tags . ("main-distribution"))
         (versions
          .
@@ -69181,7 +69207,7 @@
                (success-log . #f)
                (test-failure-log . #f)
                (test-success-log . #f)))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "c57a6dae91081a4284d329364ad566c108d84747")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . ("base"))
@@ -69199,7 +69225,9 @@
          #hasheq((:no-tag: . #t)
                  (author:mflatt@racket-lang.org . #t)
                  (ring:0 . #t)))
-        (source . "https://pkg-sources.racket-lang.org/pkgs/empty.zip")
+        (source
+         .
+         "https://pkg-sources.racket-lang.org/pkgs/c57a6dae91081a4284d329364ad566c108d84747/racket-win32-i386.zip")
         (tags . ())
         (versions
          .
@@ -69255,7 +69283,7 @@
                (success-log . #f)
                (test-failure-log . #f)
                (test-success-log . #f)))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "5eeac0afec99043631567829e4450694c1a913e2")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . ("base"))
@@ -69273,7 +69301,9 @@
          #hasheq((author:mflatt@racket-lang.org . #t)
                  (main-distribution . #t)
                  (ring:0 . #t)))
-        (source . "https://pkg-sources.racket-lang.org/pkgs/empty.zip")
+        (source
+         .
+         "https://pkg-sources.racket-lang.org/pkgs/5eeac0afec99043631567829e4450694c1a913e2/racket-win32-i386-2.zip")
         (tags . ("main-distribution"))
         (versions
          .
@@ -69342,7 +69372,7 @@
                (success-log . #f)
                (test-failure-log . #f)
                (test-success-log . #f)))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "1026e430bb077a696084e702f5e8889f5b7dd55e")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . ("base"))
@@ -69360,7 +69390,9 @@
          #hasheq((:no-tag: . #t)
                  (author:mflatt@racket-lang.org . #t)
                  (ring:0 . #t)))
-        (source . "https://pkg-sources.racket-lang.org/pkgs/empty.zip")
+        (source
+         .
+         "https://pkg-sources.racket-lang.org/pkgs/1026e430bb077a696084e702f5e8889f5b7dd55e/racket-win32-x86_64.zip")
         (tags . ())
         (versions
          .
@@ -69416,7 +69448,7 @@
                (success-log . #f)
                (test-failure-log . #f)
                (test-success-log . #f)))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "cf14b039901df7ede55fa128e206679f44d2f9dd")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . ("base"))
@@ -69434,7 +69466,9 @@
          #hasheq((author:mflatt@racket-lang.org . #t)
                  (main-distribution . #t)
                  (ring:0 . #t)))
-        (source . "https://pkg-sources.racket-lang.org/pkgs/empty.zip")
+        (source
+         .
+         "https://pkg-sources.racket-lang.org/pkgs/cf14b039901df7ede55fa128e206679f44d2f9dd/racket-win32-x86_64-2.zip")
         (tags . ("main-distribution"))
         (versions
          .
@@ -69503,7 +69537,7 @@
                (success-log . #f)
                (test-failure-log . #f)
                (test-success-log . #f)))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "3dff4171c999fbd84f8a4af38446502eeff0ec04")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . ("base"))
@@ -69521,7 +69555,9 @@
          #hasheq((author:mflatt@racket-lang.org . #t)
                  (main-distribution . #t)
                  (ring:0 . #t)))
-        (source . "https://pkg-sources.racket-lang.org/pkgs/empty.zip")
+        (source
+         .
+         "https://pkg-sources.racket-lang.org/pkgs/3dff4171c999fbd84f8a4af38446502eeff0ec04/racket-x86_64-linux-natipkg-2.zip")
         (tags . ("main-distribution"))
         (versions
          .
@@ -69590,7 +69626,7 @@
                (success-log . #f)
                (test-failure-log . #f)
                (test-success-log . #f)))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "ba9215b58db4c38ad60d0fc788f51ff740d79858")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . ("base"))
@@ -69608,7 +69644,9 @@
          #hasheq((author:mflatt@racket-lang.org . #t)
                  (main-distribution . #t)
                  (ring:0 . #t)))
-        (source . "https://pkg-sources.racket-lang.org/pkgs/empty.zip")
+        (source
+         .
+         "https://pkg-sources.racket-lang.org/pkgs/ba9215b58db4c38ad60d0fc788f51ff740d79858/racket-x86_64-macosx-2.zip")
         (tags . ("main-distribution"))
         (versions
          .
@@ -74107,7 +74145,7 @@
                (test-success-log
                 .
                 "server/built/test-success/remote-shell.txt")))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "4829323916d295d4d11faa9af9b60303b599e872")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . ("remote-shell-lib" "remote-shell-doc"))
@@ -74121,6 +74159,7 @@
         (last-updated . 1515435510)
         (modules . ())
         (name . "remote-shell")
+        (nix-sha256 . "02mkd149cxqwnm68qdb6jiyfrjb7ifcmh6xdssx665dazdn0390j")
         (ring . 0)
         (search-terms
          .
@@ -74128,9 +74167,7 @@
                  (:no-tag: . #t)
                  (author:mflatt@racket-lang.org . #t)
                  (ring:0 . #t)))
-        (source
-         .
-         "http://racket-packages.s3-us-west-2.amazonaws.com/pkgs/empty.zip")
+        (source . "git://github.com/racket/remote-shell/?path=remote-shell")
         (tags . ())
         (versions
          .
@@ -74192,7 +74229,7 @@
                (test-success-log
                 .
                 "server/built/test-success/remote-shell-doc.txt")))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "4829323916d295d4d11faa9af9b60303b599e872")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies
@@ -74208,6 +74245,7 @@
         (last-updated . 1515435510)
         (modules . ((lib "remote-shell/remote-shell.scrbl")))
         (name . "remote-shell-doc")
+        (nix-sha256 . "02mkd149cxqwnm68qdb6jiyfrjb7ifcmh6xdssx665dazdn0390j")
         (ring . 0)
         (search-terms
          .
@@ -74218,7 +74256,7 @@
                  (ring:0 . #t)))
         (source
          .
-         "http://racket-packages.s3-us-west-2.amazonaws.com/pkgs/empty.zip")
+         "git://github.com/racket/remote-shell/?path=remote-shell-doc")
         (tags . ())
         (versions
          .
@@ -77688,7 +77726,7 @@
                  (success-log . "server/built/install/rsound.txt")
                  (test-failure-log . "server/built/test-fail/rsound.txt")
                  (test-success-log . #f)))
-          (checksum . "39580725993288d4f8495fd988f3d99e8db60613")
+          (checksum . "f21ce268bca7aabbebc70f9fb10703351cbcf02b")
           (checksum-error . #f)
           (conflicts . ())
           (dependencies
@@ -77825,7 +77863,7 @@
           (name . "rsound")
           (nix-sha256
            .
-           "03q03s60lj365k9nwiglnzdyxmn8j4rq2y7nf4k8z432cym0vv33")
+           "1rfq40h4al5qaj9pggbrf1aiqyx8943kn1q0h1rmsc9dnhxxxaj7")
           (ring . 1)
           (search-terms
            .
@@ -77836,7 +77874,7 @@
                    (ffi . #t)
                    (io . #t)
                    (ring:1 . #t)))
-          (source . "github://github.com/jbclements/RSound/pre-6/")
+          (source . "github://github.com/jbclements/RSound/master/")
           (tags . ("audio" "ffi" "io"))
           (versions
            .
@@ -83720,7 +83758,7 @@
                  (success-log . "server/built/install/socketcan.txt")
                  (test-failure-log . "server/built/test-fail/socketcan.txt")
                  (test-success-log . #f)))
-          (checksum . "e87aa767038b78386d18e3c0af8e9a482ca6e421")
+          (checksum . "744bf37d7a347a55d1ec72885f87d35919f68b7b")
           (checksum-error . #f)
           (conflicts . ())
           (dependencies . ("base" "make" "scribble-lib"))
@@ -83739,7 +83777,7 @@
           (name . "socketcan")
           (nix-sha256
            .
-           "01rn39gsr5ipirgvga8ps9d1433f3n8wyrxqbpfygf2py8rm4nik")
+           "0y005rgkkbaly7z6k40pprj8icxrad5qifh77zy847sd0cg4lciv")
           (ring . 1)
           (search-terms
            .
@@ -83747,9 +83785,7 @@
                    (:no-tag: . #t)
                    (author:abencz@gmail.com . #t)
                    (ring:1 . #t)))
-          (source
-           .
-           "github://github.com/abencz/racket-socketcan/racket_5.3.6")
+          (source . "git://github.com/abencz/racket-socketcan#master")
           (tags . ())
           (versions
            .
@@ -91598,7 +91634,7 @@
                  (test-success-log
                   .
                   "server/built/test-success/threading.txt")))
-          (checksum . "abed5715993ec2e53d201d55c3c9b57be30874fc")
+          (checksum . "de68f80c91b47b5860709a0bb31b462b8300eb09")
           (checksum-error . #f)
           (conflicts . ())
           (dependencies . ("threading-doc" "threading-lib"))
@@ -91612,7 +91648,7 @@
           (name . "threading")
           (nix-sha256
            .
-           "1yd0lqndzpybisj288p1d9z9n5jml10xcd2q2hfdlp8dnpwrqvlb")
+           "03c7z97nn3l6033g99hhjmywrksf3ii4617kxnla8q8jsjpwzf81")
           (ring . 1)
           (search-terms
            .
@@ -91621,9 +91657,7 @@
                    (:no-tag: . #t)
                    (author:lexi.lambda@gmail.com . #t)
                    (ring:1 . #t)))
-          (source
-           .
-           "git://github.com/lexi-lambda/threading#compatibility-5.3.2-to-6.1")
+          (source . "git://github.com/lexi-lambda/threading?path=threading")
           (tags . ())
           (versions
            .
@@ -95952,7 +95986,7 @@
                (success-log . "server/built/install/unstable.txt")
                (test-failure-log . #f)
                (test-success-log . "server/built/test-success/unstable.txt")))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "480535837da0cc72112b9edc601885620ba8a55d")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . ("unstable-lib" "unstable-doc"))
@@ -95964,6 +95998,7 @@
         (last-updated . 1536095099)
         (modules . ())
         (name . "unstable")
+        (nix-sha256 . "1l133jg699d8cn4gylv279vcaanzskna40ffdzapvl3fzn8r5v5s")
         (ring . 0)
         (search-terms
          .
@@ -95974,9 +96009,7 @@
                  (author:samth@racket-lang.org . #t)
                  (ring:0 . #t)
                  (unstable . #t)))
-        (source
-         .
-         "http://racket-packages.s3-us-west-2.amazonaws.com/pkgs/empty.zip")
+        (source . "git://github.com/racket/unstable/?path=unstable")
         (tags . ("unstable"))
         (versions
          .
@@ -96034,7 +96067,7 @@
                (test-success-log
                 .
                 "server/built/test-success/unstable-2d.txt")))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "abe368e38bf860c607a6b11c212e86519ac8f80e")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . ("base" "2d-lib"))
@@ -96052,6 +96085,7 @@
           (lib "unstable/2d/tabular.rkt")
           (lib "unstable/2d/dir-chars.rkt")))
         (name . "unstable-2d")
+        (nix-sha256 . "1vdhglzwzljy03ca4b6h9mdfk6wz89cgyplapiy4xc1ijxh3197l")
         (ring . 0)
         (search-terms
          .
@@ -96059,9 +96093,7 @@
                  (author:robby@racket-lang.org . #t)
                  (ring:0 . #t)
                  (unstable . #t)))
-        (source
-         .
-         "http://racket-packages.s3-us-west-2.amazonaws.com/pkgs/empty.zip")
+        (source . "git://github.com/racket/unstable-2d")
         (tags . ("unstable"))
         (versions
          .
@@ -96119,7 +96151,7 @@
                (test-success-log
                 .
                 "server/built/test-success/unstable-contract-lib.txt")))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "36f4e320c574cef6630ec34ac73f69a2911b86b0")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . ("base"))
@@ -96131,6 +96163,7 @@
         (last-updated . 1502816512)
         (modules . ((lib "unstable/contract.rkt")))
         (name . "unstable-contract-lib")
+        (nix-sha256 . "1m8rp3kqfg6lmm96hlaknns0014dvixik6sm4qxjsf80dfvp57wf")
         (ring . 0)
         (search-terms
          .
@@ -96139,9 +96172,7 @@
                  (author:ryanc@racket-lang.org . #t)
                  (ring:0 . #t)
                  (unstable . #t)))
-        (source
-         .
-         "http://racket-packages.s3-us-west-2.amazonaws.com/pkgs/empty.zip")
+        (source . "git://github.com/racket/unstable-contract-lib")
         (tags . ("unstable"))
         (versions
          .
@@ -96199,7 +96230,7 @@
                (test-success-log
                 .
                 "server/built/test-success/unstable-debug-lib.txt")))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "f72727898e9a59429eeb419752f5c55926d1a6c4")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . (("base" #:version "6.2.900.15")))
@@ -96211,6 +96242,7 @@
         (last-updated . 1502816513)
         (modules . ((lib "unstable/debug.rkt")))
         (name . "unstable-debug-lib")
+        (nix-sha256 . "195bjfbgf42gbrdpay4zscwlq493xpnaik683vzmqms3akdykhxl")
         (ring . 0)
         (search-terms
          .
@@ -96218,9 +96250,7 @@
                  (author:samth@racket-lang.org . #t)
                  (ring:0 . #t)
                  (unstable . #t)))
-        (source
-         .
-         "http://racket-packages.s3-us-west-2.amazonaws.com/pkgs/empty.zip")
+        (source . "git://github.com/racket/unstable-debug-lib")
         (tags . ("unstable"))
         (versions
          .
@@ -96290,7 +96320,7 @@
                (test-success-log
                 .
                 "server/built/test-success/unstable-doc.txt")))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "480535837da0cc72112b9edc601885620ba8a55d")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies
@@ -96414,6 +96444,7 @@
           (lib "unstable/scribblings/list.scrbl")
           (lib "unstable/scribblings/bytes.scrbl")))
         (name . "unstable-doc")
+        (nix-sha256 . "1l133jg699d8cn4gylv279vcaanzskna40ffdzapvl3fzn8r5v5s")
         (ring . 0)
         (search-terms
          .
@@ -96425,9 +96456,7 @@
                  (author:samth@racket-lang.org . #t)
                  (ring:0 . #t)
                  (unstable . #t)))
-        (source
-         .
-         "http://racket-packages.s3-us-west-2.amazonaws.com/pkgs/empty.zip")
+        (source . "git://github.com/racket/unstable/?path=unstable-doc")
         (tags . ("unstable"))
         (versions
          .
@@ -96489,7 +96518,7 @@
                (test-success-log
                 .
                 "server/built/test-success/unstable-flonum-doc.txt")))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "7071d9a3ee0ad60f947c0a597ddd4b64bed3d94a")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies
@@ -96519,6 +96548,7 @@
         (last-updated . 1502816513)
         (modules . ((lib "unstable/unstable-flonum.scrbl")))
         (name . "unstable-flonum-doc")
+        (nix-sha256 . "0ll6mqmyi3pisgpnv8ilji90c91d2kzc6bhqiyqqrm8930kymqld")
         (ring . 0)
         (search-terms
          .
@@ -96529,7 +96559,7 @@
                  (unstable . #t)))
         (source
          .
-         "http://racket-packages.s3-us-west-2.amazonaws.com/pkgs/empty.zip")
+         "git://github.com/racket/unstable-flonum/?path=unstable-flonum-doc")
         (tags . ("unstable"))
         (versions
          .
@@ -96587,7 +96617,7 @@
                (test-success-log
                 .
                 "server/built/test-success/unstable-flonum-lib.txt")))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "7071d9a3ee0ad60f947c0a597ddd4b64bed3d94a")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . ("base"))
@@ -96599,6 +96629,7 @@
         (last-updated . 1502816513)
         (modules . ((lib "unstable/flonum.rkt")))
         (name . "unstable-flonum-lib")
+        (nix-sha256 . "0ll6mqmyi3pisgpnv8ilji90c91d2kzc6bhqiyqqrm8930kymqld")
         (ring . 0)
         (search-terms
          .
@@ -96608,7 +96639,7 @@
                  (unstable . #t)))
         (source
          .
-         "http://racket-packages.s3-us-west-2.amazonaws.com/pkgs/empty.zip")
+         "git://github.com/racket/unstable-flonum/?path=unstable-flonum-lib")
         (tags . ("unstable"))
         (versions
          .
@@ -96668,7 +96699,7 @@
                (test-success-log
                 .
                 "server/built/test-success/unstable-latent-contract-lib.txt")))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "3bd435890dae3365abe90fd1b5f7c62837e3801e")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies
@@ -96686,6 +96717,7 @@
           (lib "unstable/latent-contract.rkt")
           (lib "unstable/latent-contract/serialize-syntax.rkt")))
         (name . "unstable-latent-contract-lib")
+        (nix-sha256 . "0wv0kh6mr97yz16yy3f3zkc7pv1f2jvc41jqs5wlilb7dkqz0csc")
         (ring . 0)
         (search-terms
          .
@@ -96694,9 +96726,7 @@
                  (author:ntoronto@racket-lang.org . #t)
                  (ring:0 . #t)
                  (unstable . #t)))
-        (source
-         .
-         "http://racket-packages.s3-us-west-2.amazonaws.com/pkgs/empty.zip")
+        (source . "git://github.com/racket/unstable-latent-contract-lib")
         (tags . ("unstable"))
         (versions
          .
@@ -96761,7 +96791,7 @@
                (test-success-log
                 .
                 "server/built/test-success/unstable-lib.txt")))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "480535837da0cc72112b9edc601885620ba8a55d")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies
@@ -96844,6 +96874,7 @@
           (lib "unstable/automata/dfa.rkt")
           (lib "unstable/temp-c/monitor.rkt")))
         (name . "unstable-lib")
+        (nix-sha256 . "1l133jg699d8cn4gylv279vcaanzskna40ffdzapvl3fzn8r5v5s")
         (ring . 0)
         (search-terms
          .
@@ -96854,9 +96885,7 @@
                  (author:samth@racket-lang.org . #t)
                  (ring:0 . #t)
                  (unstable . #t)))
-        (source
-         .
-         "http://racket-packages.s3-us-west-2.amazonaws.com/pkgs/empty.zip")
+        (source . "git://github.com/racket/unstable/?path=unstable-lib")
         (tags . ("unstable"))
         (versions
          .
@@ -96914,7 +96943,7 @@
                (test-success-log
                 .
                 "server/built/test-success/unstable-list-lib.txt")))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "a328c5e663072779f70a42a722d2c3e9f2c430c3")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . ("base" "class-iop-lib"))
@@ -96932,6 +96961,7 @@
           (lib "unstable/list.rkt")
           (lib "unstable/function.rkt")))
         (name . "unstable-list-lib")
+        (nix-sha256 . "1vjccqyqysbkb45j5nrdgl3i92vzy99g1mh303lr5gh72h6v6b4h")
         (ring . 0)
         (search-terms
          .
@@ -96940,9 +96970,7 @@
                  (author:samth@racket-lang.org . #t)
                  (ring:0 . #t)
                  (unstable . #t)))
-        (source
-         .
-         "http://racket-packages.s3-us-west-2.amazonaws.com/pkgs/empty.zip")
+        (source . "git://github.com/racket/unstable-list-lib")
         (tags . ("unstable"))
         (versions
          .
@@ -97000,7 +97028,7 @@
                (test-success-log
                 .
                 "server/built/test-success/unstable-macro-testing-lib.txt")))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "92c7c6d8fb35f17fb74ab4f2ad995f487cca0d96")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . (("base" #:version "6.2.900.6")))
@@ -97012,6 +97040,7 @@
         (last-updated . 1502816515)
         (modules . ((lib "unstable/macro-testing.rkt")))
         (name . "unstable-macro-testing-lib")
+        (nix-sha256 . "03x9vl9i2sr4v41wik5zaxljy40dw4srxkbbakskisz8sw25w6q6")
         (ring . 0)
         (search-terms
          .
@@ -97019,9 +97048,7 @@
                  (author:ryanc@racket-lang.org . #t)
                  (ring:0 . #t)
                  (unstable . #t)))
-        (source
-         .
-         "http://racket-packages.s3-us-west-2.amazonaws.com/pkgs/empty.zip")
+        (source . "git://github.com/racket/unstable-macro-testing-lib")
         (tags . ("unstable"))
         (versions
          .
@@ -97079,7 +97106,7 @@
                (test-success-log
                 .
                 "server/built/test-success/unstable-options-lib.txt")))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "1063efe9e8f02ecdf8aefd6200d759ba1f0e8d5c")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . ("base" "option-contract-lib"))
@@ -97091,6 +97118,7 @@
         (last-updated . 1502816515)
         (modules . ((lib "unstable/options.rkt")))
         (name . "unstable-options-lib")
+        (nix-sha256 . "1msq3fqsrqxx93yc1fp7v1wh2bjak19jkkd7i008867hclvw8p5z")
         (ring . 0)
         (search-terms
          .
@@ -97099,9 +97127,7 @@
                  (author:robby@racket-lang.org . #t)
                  (ring:0 . #t)
                  (unstable . #t)))
-        (source
-         .
-         "http://racket-packages.s3-us-west-2.amazonaws.com/pkgs/empty.zip")
+        (source . "git://github.com/racket/unstable-options-lib")
         (tags . ("unstable"))
         (versions
          .
@@ -97161,7 +97187,7 @@
                (test-success-log
                 .
                 "server/built/test-success/unstable-parameter-group-lib.txt")))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "30de3acb3487c9c3ed4e8ef664ca18bb9667be09")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . ("base" ("images-lib" #:version "1.2")))
@@ -97173,6 +97199,7 @@
         (last-updated . 1502816515)
         (modules . ((lib "unstable/parameter-group.rkt")))
         (name . "unstable-parameter-group-lib")
+        (nix-sha256 . "1bxwkf6j6pkm1j4wx6ypx6qs82mgiq0vc00n50brrh72sf4qdv2w")
         (ring . 0)
         (search-terms
          .
@@ -97181,9 +97208,7 @@
                  (author:ntoronto@racket-lang.org . #t)
                  (ring:0 . #t)
                  (unstable . #t)))
-        (source
-         .
-         "http://racket-packages.s3-us-west-2.amazonaws.com/pkgs/empty.zip")
+        (source . "git://github.com/racket/unstable-parameter-group-lib")
         (tags . ("unstable"))
         (versions
          .
@@ -97241,7 +97266,7 @@
                (test-success-log
                 .
                 "server/built/test-success/unstable-pretty-lib.txt")))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "5d6d24be2b0a9c773ac30a22c870b7817ce9f90a")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies . ("base"))
@@ -97253,6 +97278,7 @@
         (last-updated . 1502816515)
         (modules . ((lib "unstable/pretty.rkt")))
         (name . "unstable-pretty-lib")
+        (nix-sha256 . "02nv3l1x0fljqr5isrxf98z25zm3jpjfjiy6827g37vwc7iq6d7r")
         (ring . 0)
         (search-terms
          .
@@ -97260,9 +97286,7 @@
                  (author:cce@racket-lang.org . #t)
                  (ring:0 . #t)
                  (unstable . #t)))
-        (source
-         .
-         "http://racket-packages.s3-us-west-2.amazonaws.com/pkgs/empty.zip")
+        (source . "git://github.com/racket/unstable-pretty-lib")
         (tags . ("unstable"))
         (versions
          .
@@ -97324,7 +97348,7 @@
                (test-success-log
                 .
                 "server/built/test-success/unstable-redex.txt")))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "a132a56200d99be9e3cec3928d8580559402beb6")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies
@@ -97359,6 +97383,7 @@
          ((lib "unstable/gui/redex.rkt")
           (lib "unstable/gui/unstable-redex.scrbl")))
         (name . "unstable-redex")
+        (nix-sha256 . "0f45vjk67hc4fcjpxqmpfrmg8qlzvgsnmx801ifyg74v48dw3s2m")
         (ring . 0)
         (search-terms
          .
@@ -97367,9 +97392,7 @@
                  (author:ryanc@racket-lang.org . #t)
                  (ring:0 . #t)
                  (unstable . #t)))
-        (source
-         .
-         "http://racket-packages.s3-us-west-2.amazonaws.com/pkgs/empty.zip")
+        (source . "git://github.com/racket/unstable-redex")
         (tags . ("unstable"))
         (versions
          .
@@ -97431,7 +97454,7 @@
                (success-log . "server/built/install/unstable-test.txt")
                (test-failure-log . "server/built/test-fail/unstable-test.txt")
                (test-success-log . #f)))
-        (checksum . "9f098dddde7f217879070816090c1e8e74d49432")
+        (checksum . "480535837da0cc72112b9edc601885620ba8a55d")
         (checksum-error . #f)
         (conflicts . ())
         (dependencies
@@ -97498,6 +97521,7 @@
           (lib "tests/unstable/list.rkt")
           (lib "tests/unstable/contract.rkt")))
         (name . "unstable-test")
+        (nix-sha256 . "1l133jg699d8cn4gylv279vcaanzskna40ffdzapvl3fzn8r5v5s")
         (ring . 0)
         (search-terms
          .
@@ -97509,9 +97533,7 @@
                  (author:samth@racket-lang.org . #t)
                  (ring:0 . #t)
                  (unstable . #t)))
-        (source
-         .
-         "http://racket-packages.s3-us-west-2.amazonaws.com/pkgs/empty.zip")
+        (source . "git://github.com/racket/unstable/?path=unstable-test")
         (tags . ("unstable"))
         (versions
          .
@@ -103248,7 +103270,7 @@
                  (test-success-log
                   .
                   "server/built/test-success/zeromq-r-lib.txt")))
-          (checksum . "dfb6fd893f7842319f6d509705f09c4032c19e94")
+          (checksum . "8b1e25f4a7c8de2338d0b2b62bbdc7d5ae2575ca")
           (checksum-error . #f)
           (conflicts . ())
           (date-added . 1553104502)
@@ -103274,7 +103296,7 @@
           (name . "zeromq-r-lib")
           (nix-sha256
            .
-           "0l64lv9b58rg7adwn4yh0gqcf5bmnx4jlpsayymkf2j2cnnf8mh4")
+           "0s1qf547i8h3x1q77psdi2akb2nm12mbq45c4s9d0hh97cjnnanc")
           (ring . 1)
           (search-terms
            .
@@ -103284,7 +103306,7 @@
                    (ring:1 . #t)))
           (source
            .
-           "https://github.com/rmculpepper/racket-zeromq.git?path=zeromq-r-lib")
+           "https://github.com/rmculpepper/racket-zeromq.git?path=zeromq-r-lib#v7.2")
           (tags . ("net"))
           (versions
            .

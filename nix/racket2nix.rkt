@@ -1001,7 +1001,7 @@ EOM
     [export-catalog?
      (pretty-write-sorted-string-hash (maybe-name->catalog
        (if (= 1 (length package-names)) (car package-names) #f)
-       catalog-with-package-dependency-names process-catalog?))]
+       catalog-with-resolved-source process-catalog?))]
     [else
      (display (names->nix-function #:flat? flat? package-names
                                    (calculate-package-relations catalog-with-resolved-source package-names)))]))
