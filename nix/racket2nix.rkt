@@ -15,6 +15,8 @@
   ["make" . ("scribble-lib")]
   ["memoize" . ("scribble-lib")]
   ["racket-index" . ("scribble-lib")]
+  ["scribble-html-lib" . ("scheme-lib" "scribble-text-lib")]
+  ["scribble-text-lib" . ("scheme-lib")]
   ["compatibility+compatibility-doc+data-doc+db-doc+distributed-p..." . ("scribble-lib" "racket-index")]
 ))
 

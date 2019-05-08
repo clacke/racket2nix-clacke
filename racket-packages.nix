@@ -13710,9 +13710,10 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
     url = "https://download.racket-lang.org/releases/7.2/pkgs/scribble-html-lib.zip";
     sha1 = "996f99e3b72485d28322260bd6d46ef8e734a887";
   };
-  racketBuildInputs = [ self."at-exp-lib" self."base" self."racket-lib" self."scheme-lib" self."scribble-text-lib" ];
+  extraSrcs = [ self."scheme-lib".src self."scribble-text-lib".src ];
+  racketBuildInputs = [ self."at-exp-lib" self."base" self."racket-lib" ];
   circularBuildInputs = [  ];
-  reverseCircularBuildInputs = [  ];
+  reverseCircularBuildInputs = [ "scheme-lib" "scribble-text-lib" ];
   };
   "scribble-lib" = self.lib.mkRacketDerivation rec {
   pname = "scribble-lib";
@@ -13764,9 +13765,10 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
     url = "https://download.racket-lang.org/releases/7.2/pkgs/scribble-text-lib.zip";
     sha1 = "4eac00e3186362f4d82f0be3767427e9e81134c4";
   };
-  racketBuildInputs = [ self."at-exp-lib" self."base" self."racket-lib" self."scheme-lib" ];
+  extraSrcs = [ self."scheme-lib".src ];
+  racketBuildInputs = [ self."at-exp-lib" self."base" self."racket-lib" ];
   circularBuildInputs = [  ];
-  reverseCircularBuildInputs = [  ];
+  reverseCircularBuildInputs = [ "scheme-lib" ];
   };
   "scriblogify" = self.lib.mkRacketDerivation rec {
   pname = "scriblogify";
