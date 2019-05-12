@@ -12,11 +12,31 @@
 (define never-dependency-names '("racket"))
 (define terminal-package-names '("racket-lib"))
 (define force-reverse-circular-build-inputs #hash(
+  ["asn1-test" . ("rackunit-lib")]
+  ["auxiliary-macro-context" . ("rackunit-lib")]
+  ["bcrypt" . ("dynext-lib" "rackunit-lib")]
+  ["br-parser-tools" . ("rackunit-lib")]
+  ["cext-lib" . ("compiler-lib" "dynext-lib" "rackunit-lib" "scheme-lib")]
+  ["command-tree" . ("rackunit-lib")]
+  ["compatibility-lib" . ("net-lib" "sandbox-lib" "scheme-lib" "srfi-lite-lib")]
+  ["compiler-lib" . ("scheme-lib")]
+  ["component-test" . ("rackunit-lib")]
+  ["curly-fn-test" . ("rackunit-lib")]
+  ["db-lib" . ("sasl-lib")]
+  ["diff-merge" . ("rackunit-lib")]
+  ["effection-test" . ("rackunit-lib")]
+  ["ejs" . ("rackunit-lib")]
+  ["errortrace-test" . ("errortrace-lib")]
   ["make" . ("scribble-lib")]
   ["memoize" . ("scribble-lib")]
+  ["net-lib" . ("srfi-lite-lib")]
+  ["net-cookies-lib" . ("srfi-lite-lib")]
+  ["profile-lib" . ("errortrace-lib")]
   ["racket-index" . ("scribble-lib")]
+  ["sandbox-lib" . ("scheme-lib")]
   ["scribble-html-lib" . ("scheme-lib" "scribble-text-lib")]
   ["scribble-text-lib" . ("scheme-lib")]
+  ["snip-lib" . ("draw-lib")]
   ["compatibility+compatibility-doc+data-doc+db-doc+distributed-p..." . ("scribble-lib" "racket-index")]
 ))
 
