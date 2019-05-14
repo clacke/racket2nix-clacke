@@ -180,7 +180,7 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
 
     mkdir -p $env/etc/racket $env/share/racket $out
     # Don't use racket-cmd as config.rktd doesn't exist yet.
-    racket ${make-config-rktd} $env ${racket} ${racketConfigBuildInputsStr} > $env/etc/racket/config.rktd
+    racket ${make-config-rktd} $env ${racket} > $env/etc/racket/config.rktd
 
     if [ -n "${circularBuildInputsStr}" ]; then
       echo >&2 NOTE: This derivation intentionally left blank.
@@ -197,8 +197,9 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
     mkdir -p $env/share/racket/pkgs
     for depEnv in $racketConfigBuildInputsStr; do
       if ( shopt -s nullglob; pkgs=($depEnv/share/racket/pkgs/*/); (( ''${#pkgs[@]} > 0 )) ); then
-        cp -frs $depEnv/share/racket/pkgs/*/ $env/share/racket/pkgs/
-        find $env/share/racket/pkgs -type d -print0 | xargs -0 chmod 755
+        for pkg in $depEnv/share/racket/pkgs/*/; do
+          ${raco} pkg install --deps force --installation --no-setup --static-link "$pkg"
+        done 
       fi
     done
 
@@ -251,9 +252,6 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
     runHook postInstall
 
     find $env/share/racket/collects $env/lib/racket -lname "$racket/*" -delete
-    for depEnv in $racketConfigBuildInputsStr; do
-      find $env/share/racket/pkgs -lname "$depEnv/*" -delete
-    done
     find $env/share/racket/collects $env/share/racket/pkgs $env/lib/racket $env/bin -type d -empty -delete
     rm $env/share/racket/include
   '';
