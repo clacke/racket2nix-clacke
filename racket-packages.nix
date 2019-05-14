@@ -200,7 +200,7 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
     for depEnv in $racketConfigBuildInputsStr; do
       if ( shopt -s nullglob; pkgs=($depEnv/share/racket/pkgs/*/); (( ''${#pkgs[@]} > 0 )) ); then
         for pkg in $depEnv/share/racket/pkgs/*/; do
-          (set -x; ${raco} pkg install --deps force --installation --no-setup --static-link "$pkg")
+          ${raco} pkg install --installation --deps force --skip-installed --no-setup --static-link "$pkg"
         done
       fi
     done
