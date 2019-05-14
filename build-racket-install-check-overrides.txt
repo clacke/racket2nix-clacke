@@ -18,7 +18,7 @@ binaryio
 bitsyntax
 bookcover
 br-parser-tools-lib
-brag
+brag-lib
 check-sexp-equal
 choose-out
 colon-kw
