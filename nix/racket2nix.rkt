@@ -12,10 +12,6 @@
 (define never-dependency-names '("racket"))
 (define terminal-package-names '("racket-lib"))
 (define force-reverse-circular-build-inputs #hash(
-  ["make" . ("scribble-lib")]
-  ["memoize" . ("scribble-lib")]
-  ["racket-index" . ("scribble-lib")]
-  ["compatibility+compatibility-doc+data-doc+db-doc+distributed-p..." . ("scribble-lib" "racket-index")]
 ))
 
 (define header-template #<<EOM
@@ -221,7 +217,7 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
     for depEnv in $racketConfigBuildInputsStr; do
       if ( shopt -s nullglob; pkgs=($depEnv/share/racket/pkgs/*/); (( ''${#pkgs[@]} > 0 )) ); then
         for pkg in $depEnv/share/racket/pkgs/*/; do
-          ${raco} pkg install --deps force --installation --no-setup --static-link "$pkg"
+          (set -x; ${raco} pkg install --deps force --installation --no-setup --static-link "$pkg")
         done
       fi
     done
