@@ -16298,9 +16298,10 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
     url = "https://download.racket-lang.org/releases/7.2/pkgs/typed-racket-lib.zip";
     sha1 = "867db3bde6e00cae4b7735b7eaa2ad585ef8247b";
   };
-  racketBuildInputs = [ self."base" self."compatibility-lib" self."errortrace-lib" self."net-lib" self."racket-lib" self."sandbox-lib" self."scheme-lib" self."source-syntax" self."srfi-lite-lib" self."string-constants-lib" ];
+  extraSrcs = [ self."compatibility-lib".src self."net-lib".src self."sandbox-lib".src self."scheme-lib".src self."string-constants-lib".src ];
+  racketBuildInputs = [ self."base" self."errortrace-lib" self."racket-lib" self."source-syntax" self."srfi-lite-lib" ];
   circularBuildInputs = [  ];
-  reverseCircularBuildInputs = [  ];
+  reverseCircularBuildInputs = [ "compatibility-lib" "net-lib" "sandbox-lib" "scheme-lib" "string-constants-lib" ];
   };
   "typed-racket-more" = self.lib.mkRacketDerivation rec {
   pname = "typed-racket-more";

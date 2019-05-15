@@ -37,6 +37,7 @@
   ["scribble-html-lib" . ("scheme-lib" "scribble-text-lib")]
   ["scribble-text-lib" . ("scheme-lib")]
   ["snip-lib" . ("draw-lib")]
+  ["typed-racket-lib" . ("compatibility-lib" "net-lib" "sandbox-lib" "scheme-lib" "string-constants-lib")]
   ["compatibility+compatibility-doc+data-doc+db-doc+distributed-p..." . ("scribble-lib" "racket-index")]
 ))
 
