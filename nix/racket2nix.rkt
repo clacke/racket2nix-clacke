@@ -11,8 +11,7 @@
 
 (define never-dependency-names '("racket"))
 (define terminal-package-names '("racket-lib"))
-(define force-reverse-circular-build-inputs #hash(
-))
+(define force-reverse-circular-build-inputs #hash())
 
 (define header-template #<<EOM
 { pkgs ? import <nixpkgs> {}
