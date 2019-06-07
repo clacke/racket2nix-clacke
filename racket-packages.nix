@@ -122,6 +122,7 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
   inherit (attrs) pname;
   racketBuildInputs = attrs.racketBuildInputs or [] ++ self.lib.resolveThinInputs attrs.racketThinBuildInputs or [];
   buildInputs = [ cacert unzip racket self.lib.make-racket ] ++ racketBuildInputs;
+  inherit (racket) LD_LIBRARY_PATH;
   circularBuildInputs = attrs.circularBuildInputs or [];
   circularBuildInputsStr = lib.concatStringsSep " " circularBuildInputs;
   racketBuildInputsStr = lib.concatStringsSep " " racketBuildInputs;
@@ -260,7 +261,7 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
     testConfigBuildInputsStr = lib.concatStringsSep " " (map (drv: drv.env) testConfigBuildInputs);
   in ''
     runHook preInstallCheck
-    LD_LIBRARY_PATH=''${LD_LIBRARY_PATH:-} make-racket $testEnv $racket $testEnv $testEnv
+    make-racket $testEnv $racket $testEnv $testEnv
 
     mkdir -p $testEnv/share/racket/pkgs
     for depEnv in $racketConfigBuildInputsStr $env ${self.compiler-lib.env}; do
