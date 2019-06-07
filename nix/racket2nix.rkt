@@ -126,7 +126,7 @@ lib.make-racket = writeShellScriptBin "make-racket" ''
         (lib-dir . "$out/lib/racket")
         (lib-search-dirs . ("$out/share/racket/lib"
                             "$racket/lib/racket"
-                            $(if [[ -v LD_LIBRARY_PATH ]] && [[ -n $LD_LIBRARY_PATH ]]; then IFS=: read -r -a libs <<< "\$LD_LIBRARY_PATH"; printf '"%s/lib" ' "''${libs[@]}"; fi)))
+                            $(if [[ -v LD_LIBRARY_PATH ]] && [[ -n $LD_LIBRARY_PATH ]]; then IFS=: read -r -a libs <<< "$LD_LIBRARY_PATH"; printf '"%s/lib" ' "''${libs[@]}"; fi)))
         (collects-search-dirs . ("$out/share/racket/collects"))
         (pkgs-search-dirs . ("$out/share/racket/pkgs" "$lib/share/racket/pkgs"))
         (share-dir . "$lib/share/racket")
