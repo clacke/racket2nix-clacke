@@ -209,6 +209,7 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
         done
       fi
     done
+    ${raco} setup
 
     PATH=$env/bin:$PATH
     export PLT_COMPILED_FILE_CHECK=exists
@@ -271,6 +272,7 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
         done
       fi
     done
+    $testEnv/bin/raco setup
 
     ${findutils}/bin/xargs -I {} -0 -n 1 -P ''${NIX_BUILD_CORES:-1} bash -c '
       set -eu
