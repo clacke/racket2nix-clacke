@@ -274,7 +274,7 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
 
   installCheckFileFinder = ''find "$env"/share/racket/pkgs/"$pname" -name '*.rkt' -print0'';
   installCheckPhase = if !doInstallCheck then null else let
-    testConfigBuildInputs = [ self.compiler-lib ] ++ self.compiler-lib.racketConfigBuildInputs ++
+    testConfigBuildInputs = (self.lib.resolveThinInputs [ self.compiler-lib ]) ++
       (builtins.filter (input: !builtins.elem input reverseCircularBuildInputs) racketBuildInputs);
     testConfigBuildInputsStr = lib.concatStringsSep " " (map (drv: drv.env) testConfigBuildInputs);
   in ''
@@ -282,10 +282,10 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
     make-racket $testEnv $racket $testEnv $testEnv
 
     mkdir -p $testEnv/share/racket/pkgs
-    for depEnv in $racketConfigBuildInputsStr $env ${self.compiler-lib.env}; do
+    for depEnv in ${testConfigBuildInputsStr} $env; do
       if ( shopt -s nullglob; pkgs=($depEnv/share/racket/pkgs/*/); (( ''${#pkgs[@]} > 0 )) ); then
         for pkg in $depEnv/share/racket/pkgs/*/; do
-          ${raco} pkg install --installation --deps force --skip-installed --no-setup --static-link "$pkg"
+          $testEnv/bin/raco pkg install --installation --deps force --skip-installed --no-setup --static-link "$pkg"
         done
       fi
     done
@@ -296,7 +296,7 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
       testpath=''${1#*/share/racket/pkgs/}
       logdir="$test/log/''${testpath%/*}"
       mkdir -p "$logdir"
-      timeout 60 ${time}/bin/time -f "%e s $testpath" racket -G $testEnv/etc/racket -U -l- raco test -q "$1" \
+      timeout 60 ${time}/bin/time -f "%e s $testpath" $testEnv/bin/raco test -q "$1" \
         &> >(grep -v -e "warning: tool .* registered twice" -e "@[(]test-responsible" | tee "$logdir/''${1##*/}")
     ' {} {} < <(runHook installCheckFileFinder)
     runHook postInstallCheck
