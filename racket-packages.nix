@@ -237,8 +237,12 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
       for setup_name in $install_names; do
         setup_names+=" ''${setup_name#./}"
       done
-      ${raco} setup -j $NIX_BUILD_CORES --no-user --no-pkg-deps --fail-fast --only --pkgs $setup_names |&
-        sed -ne '/updating info-domain/,$p'
+      if [[ -v RACKET_SETUP_DEBUG ]] && (( RACKET_SETUP_DEBUG )); then
+        PLTSTDERR=debug ${raco} setup -j 1 --no-user --no-pkg-deps --only --pkgs $setup_names
+      else
+        ${raco} setup -j $NIX_BUILD_CORES --no-user --no-pkg-deps --fail-fast --only --pkgs $setup_names |&
+          sed -ne '/updating info-domain/,$p'
+      fi
     fi
 
     mkdir -p $out/bin
