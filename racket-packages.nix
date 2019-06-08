@@ -210,21 +210,7 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
         done
       fi
     done
-    if ! ${raco} setup --no-docs --no-launcher --no-zo; then
-      echo Setup failed -- going flat as a heavy workaround
-      chmod -R 755 $env
-      rm -rf $env
-      make-racket $env $racket $env $env
-      mkdir -p $env/share/racket/pkgs
-      for depEnv in $racketConfigBuildInputsStr; do
-        if ( shopt -s nullglob; pkgs=($depEnv/share/racket/pkgs/*/); (( ''${#pkgs[@]} > 0 )) ); then
-          for pkg in $depEnv/share/racket/pkgs/*/; do
-            ${raco} pkg install --installation --deps force --skip-installed --no-setup --copy "$pkg"
-          done
-        fi
-      done
-      ${raco} setup --no-docs --no-launcher --no-zo
-    fi
+    ${raco} setup --no-docs --no-launcher --no-zo
 
     PATH=$env/bin:$PATH
 
