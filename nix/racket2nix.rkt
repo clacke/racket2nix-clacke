@@ -226,7 +226,21 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
         done
       fi
     done
-    ${raco} setup --no-docs --no-launcher --no-zo
+    if ! ${raco} setup --no-docs --no-launcher --no-zo; then
+      echo Setup failed -- going flat as a heavy workaround
+      chmod -R 755 $env
+      rm -rf $env
+      make-racket $env $racket $env $env
+      mkdir -p $env/share/racket/pkgs
+      for depEnv in $racketConfigBuildInputsStr; do
+        if ( shopt -s nullglob; pkgs=($depEnv/share/racket/pkgs/*/); (( ''${#pkgs[@]} > 0 )) ); then
+          for pkg in $depEnv/share/racket/pkgs/*/; do
+            ${raco} pkg install --installation --deps force --skip-installed --no-setup --copy "$pkg"
+          done
+        fi
+      done
+      ${raco} setup --no-docs --no-launcher --no-zo
+    fi
 
     PATH=$env/bin:$PATH
 
@@ -254,10 +268,45 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
         setup_names+=" ''${setup_name#./}"
       done
       if [[ -v RACKET_SETUP_DEBUG ]] && (( RACKET_SETUP_DEBUG )); then
-        PLTSTDERR=debug ${raco} setup -j 1 --no-user --no-pkg-deps --only --pkgs $setup_names
+        if ! env PLTSTDERR=debug ${raco} setup -j 1 --no-user --no-pkg-deps --only --pkgs $setup_names; then
+          echo Current package setup failed -- going flat as a heavy workaround
+          chmod -R 755 $env
+          rm -rf $env
+          make-racket $env $racket $env $env
+          mkdir -p $env/share/racket/pkgs
+          for depEnv in $racketConfigBuildInputsStr; do
+            if ( shopt -s nullglob; pkgs=($depEnv/share/racket/pkgs/*/); (( ''${#pkgs[@]} > 0 )) ); then
+              for pkg in $depEnv/share/racket/pkgs/*/; do
+                ${raco} pkg install --installation --deps force --skip-installed --no-setup --copy "$pkg"
+              done
+            fi
+          done
+          ${raco} setup --no-docs --no-launcher --no-zo
+          ${raco} pkg install --no-setup --copy --deps fail --fail-fast --scope installation $install_names |&
+            sed -Ee '/warning: tool "(setup|pkg|link)" registered twice/d'
+          PLTSTDERR=debug ${raco} setup -j 1 --no-user --no-pkg-deps --only --pkgs $setup_names
+        fi
       else
-        ${raco} setup -j $NIX_BUILD_CORES --no-user --no-pkg-deps --fail-fast --only --pkgs $setup_names |&
-          sed -ne '/updating info-domain/,$p'
+        if ! ${raco} setup -j $NIX_BUILD_CORES --no-user --no-pkg-deps --fail-fast --only --pkgs $setup_names &> \
+          >(sed -ne '/updating info-domain/,$p'); then
+          echo Current package setup failed -- going flat as a heavy workaround
+          chmod -R 755 $env
+          rm -rf $env
+          make-racket $env $racket $env $env
+          mkdir -p $env/share/racket/pkgs
+          for depEnv in $racketConfigBuildInputsStr; do
+            if ( shopt -s nullglob; pkgs=($depEnv/share/racket/pkgs/*/); (( ''${#pkgs[@]} > 0 )) ); then
+              for pkg in $depEnv/share/racket/pkgs/*/; do
+                ${raco} pkg install --installation --deps force --skip-installed --no-setup --copy "$pkg"
+              done
+            fi
+          done
+          ${raco} setup --no-docs --no-launcher --no-zo
+          ${raco} pkg install --no-setup --copy --deps fail --fail-fast --scope installation $install_names |&
+            sed -Ee '/warning: tool "(setup|pkg|link)" registered twice/d'
+          ${raco} setup -j $NIX_BUILD_CORES --no-user --no-pkg-deps --fail-fast --only --pkgs $setup_names &> \
+            >(sed -ne '/updating info-domain/,$p')
+        fi
       fi
     fi
 
