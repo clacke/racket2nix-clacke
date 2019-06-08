@@ -76,7 +76,7 @@ lib.make-racket = writeShellScriptBin "make-racket" ''
   bin=$3
   lib=$4
 
-  mkdir -p $out/bin $out/etc/racket $out/lib $out/share/racket
+  mkdir -p $out/bin $out/etc/racket $out/lib $out/share/racket/pkgs
   cp -rs $racket/share/racket/collects $out/share/racket/collects
   ln -s $racket/include/racket $out/share/racket/include
   cp -rs $racket/lib/racket $out/lib/racket
@@ -136,7 +136,7 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
   inherit racket;
   outputs = [ "out" "env" ] ++ lib.optionals doInstallCheck [ "test" "testEnv" ];
 
-  phases = "unpackPhase patchPhase installPhase fixupPhase installCheckPhase";
+  phases = "unpackPhase patchPhase buildPhase installPhase fixupPhase installCheckPhase";
   unpackPhase = ''
     stripSuffix() {
       stripped=$1
@@ -176,9 +176,8 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
   raco = "${racket-cmd} -N raco -l- raco";
   maxFileDescriptors = 3072;
 
-  installPhase = ''
-    runHook preInstall
-
+  buildPhase = ''
+    runHook preBuild
     restore_pipefail=$(shopt -po pipefail)
     set -o pipefail
 
@@ -193,6 +192,99 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
       exit 2
     fi
 
+    install_names=""
+    setup_names=""
+    for install_info in ./*/info.rkt; do
+      install_name=''${install_info%/info.rkt}
+      install_names+=" $install_name"
+      setup_names+=" ''${install_name#./}"
+    done
+
+    function do_raco_env_static() {
+      local racketEnv=$1
+      for depEnv in $racketConfigBuildInputsStr; do
+        if ( shopt -s nullglob; pkgs=($depEnv/share/racket/pkgs/*/); (( ''${#pkgs[@]} > 0 )) ); then
+          for pkg in $depEnv/share/racket/pkgs/*/; do
+            $racketEnv/bin/raco pkg install --installation --deps force --skip-installed --no-setup --static-link "$pkg"
+          done
+        fi
+      done
+      $racketEnv/bin/raco setup --no-docs --no-launcher --no-zo
+    }
+
+    function do_raco_env_flat() {
+      local racketEnv=$1
+      for depEnv in $racketConfigBuildInputsStr; do
+        if ( shopt -s nullglob; pkgs=($depEnv/share/racket/pkgs/*/); (( ''${#pkgs[@]} > 0 )) ); then
+          for pkg in $depEnv/share/racket/pkgs/*/; do
+            $racketEnv/bin/raco pkg install --installation --deps force --skip-installed --no-setup --copy "$pkg"
+          done
+        fi
+      done
+      $racketEnv/bin/raco setup --no-docs --no-launcher --no-zo
+    }
+
+    function do_raco_install() {
+      local racketEnv=$1
+      shift
+
+      $racketEnv/bin/raco pkg install --no-setup --copy --deps fail --fail-fast --scope installation $* &> \
+        >(sed -Ee '/warning: tool "(setup|pkg|link)" registered twice/d')
+    }
+
+    function debug_do_raco_setup() {
+      local racketEnv=$1
+      shift
+
+      PLTSTDERR=debug $racketEnv/bin/raco setup -j 1 --no-user --no-pkg-deps --only --pkgs $*
+    }
+
+    function nondebug_do_raco_setup() {
+      local racketEnv=$1
+      shift
+
+      $racketEnv/bin/raco setup -j $NIX_BUILD_CORES --no-user --no-pkg-deps --fail-fast --only --pkgs $* &> \
+        >(sed -ne '/updating info-domain/,$p')
+    }
+
+    function do_raco_setup() {
+      if [[ -v RACKET_SETUP_DEBUG ]] && (( RACKET_SETUP_DEBUG )); then
+        debug_do_raco_setup $*
+      else
+        nondebug_do_raco_setup $*
+      fi
+    }
+
+
+    racketInstallPackages=""
+    if [ -n "$install_names" ] && [ -z "${circularBuildInputsStr}" ]; then
+      tmpStaticEnv=$(mktemp -d --tmpdir XXXXXX-$pname-env)
+      make-racket $tmpStaticEnv $racket $tmpStaticEnv $tmpStaticEnv
+      do_raco_env_static $tmpStaticEnv
+      do_raco_install $tmpStaticEnv $install_names
+      if do_raco_setup $tmpStaticEnv $setup_names; then
+        racketInstallPackages=$(printf "$tmpStaticEnv/share/racket/pkgs/%s " $setup_names)
+      else
+        echo Quick build failed, falling back to slow build.
+        tmpFlatEnv=$(mktemp -d --tmpdir XXXXXX-$pname-env)
+        make-racket $tmpFlatEnv $racket $tmpFlatEnv $tmpFlatEnv
+        do_raco_env_flat $tmpFlatEnv
+        do_raco_install $tmpFlatEnv $install_names
+        do_raco_setup $tmpFlatEnv $setup_names
+        racketInstallPackages=$(printf "$tmpFlatEnv/share/racket/pkgs/%s " $setup_names)
+      fi
+    fi
+
+    eval "$restore_pipefail"
+    runHook postBuild
+  '';
+
+  installPhase = ''
+    runHook preInstall
+
+    restore_pipefail=$(shopt -po pipefail)
+    set -o pipefail
+
     make-racket $env $racket $env $env
     mkdir $out
 
@@ -202,83 +294,11 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
       exit 0
     fi
 
-    mkdir -p $env/share/racket/pkgs
-    for depEnv in $racketConfigBuildInputsStr; do
-      if ( shopt -s nullglob; pkgs=($depEnv/share/racket/pkgs/*/); (( ''${#pkgs[@]} > 0 )) ); then
-        for pkg in $depEnv/share/racket/pkgs/*/; do
-          ${raco} pkg install --installation --deps force --skip-installed --no-setup --static-link "$pkg"
-        done
-      fi
-    done
-    ${raco} setup --no-docs --no-launcher --no-zo
+    do_raco_env_static $env
+    do_raco_install $env $racketInstallPackages
+    do_raco_setup $env $setup_names
 
     PATH=$env/bin:$PATH
-
-    # install and link us
-    install_names=""
-    for install_info in ./*/info.rkt; do
-      install_name=''${install_info%/info.rkt}
-      if ${racket-cmd} -e "(require pkg/lib)
-                           (define name \"''${install_name#./}\")
-                           (for ((scope (get-all-pkg-scopes)))
-                             (when (member name (installed-pkg-names #:scope scope))
-                                   (eprintf \"WARNING: ~a already installed in ~a -- not installing~n\"
-                                            name scope)
-                                   (exit 1)))"; then
-        install_names+=" $install_name"
-      fi
-    done
-
-    if [ -n "$install_names" ]; then
-      ${raco} pkg install --no-setup --copy --deps fail --fail-fast --scope installation $install_names |&
-        sed -Ee '/warning: tool "(setup|pkg|link)" registered twice/d'
-
-      setup_names=""
-      for setup_name in $install_names; do
-        setup_names+=" ''${setup_name#./}"
-      done
-      if [[ -v RACKET_SETUP_DEBUG ]] && (( RACKET_SETUP_DEBUG )); then
-        if ! env PLTSTDERR=debug ${raco} setup -j 1 --no-user --no-pkg-deps --only --pkgs $setup_names; then
-          echo Current package setup failed -- going flat as a heavy workaround
-          chmod -R 755 $env
-          rm -rf $env
-          make-racket $env $racket $env $env
-          mkdir -p $env/share/racket/pkgs
-          for depEnv in $racketConfigBuildInputsStr; do
-            if ( shopt -s nullglob; pkgs=($depEnv/share/racket/pkgs/*/); (( ''${#pkgs[@]} > 0 )) ); then
-              for pkg in $depEnv/share/racket/pkgs/*/; do
-                ${raco} pkg install --installation --deps force --skip-installed --no-setup --copy "$pkg"
-              done
-            fi
-          done
-          ${raco} setup --no-docs --no-launcher --no-zo
-          ${raco} pkg install --no-setup --copy --deps fail --fail-fast --scope installation $install_names |&
-            sed -Ee '/warning: tool "(setup|pkg|link)" registered twice/d'
-          PLTSTDERR=debug ${raco} setup -j 1 --no-user --no-pkg-deps --only --pkgs $setup_names
-        fi
-      else
-        if ! ${raco} setup -j $NIX_BUILD_CORES --no-user --no-pkg-deps --fail-fast --only --pkgs $setup_names &> \
-          >(sed -ne '/updating info-domain/,$p'); then
-          echo Current package setup failed -- going flat as a heavy workaround
-          chmod -R 755 $env
-          rm -rf $env
-          make-racket $env $racket $env $env
-          mkdir -p $env/share/racket/pkgs
-          for depEnv in $racketConfigBuildInputsStr; do
-            if ( shopt -s nullglob; pkgs=($depEnv/share/racket/pkgs/*/); (( ''${#pkgs[@]} > 0 )) ); then
-              for pkg in $depEnv/share/racket/pkgs/*/; do
-                ${raco} pkg install --installation --deps force --skip-installed --no-setup --copy "$pkg"
-              done
-            fi
-          done
-          ${raco} setup --no-docs --no-launcher --no-zo
-          ${raco} pkg install --no-setup --copy --deps fail --fail-fast --scope installation $install_names |&
-            sed -Ee '/warning: tool "(setup|pkg|link)" registered twice/d'
-          ${raco} setup -j $NIX_BUILD_CORES --no-user --no-pkg-deps --fail-fast --only --pkgs $setup_names &> \
-            >(sed -ne '/updating info-domain/,$p')
-        fi
-      fi
-    fi
 
     mkdir -p $out/bin
     for launcher in $env/bin/*; do
@@ -288,10 +308,11 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
     done
 
     eval "$restore_pipefail"
-    runHook postInstall
 
     find $env/share/racket/collects $env/share/racket/pkgs $env/lib/racket $env/bin -type d -empty -delete
     rm $env/share/racket/include
+
+    runHook postInstall
   '';
 
   installCheckFileFinder = ''find "$env"/share/racket/pkgs/"$pname" -name '*.rkt' -print0'';
