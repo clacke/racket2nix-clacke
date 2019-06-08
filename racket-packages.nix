@@ -296,7 +296,15 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
 
     do_raco_env_static $env
     do_raco_install $env $racketInstallPackages
-    do_raco_setup $env $setup_names
+    if ! do_raco_setup $env $setup_names; then
+      echo Quick install failed, falling back to slow install.
+      chmod 755 -R $env
+      rm -rf $env
+      make-racket $env $racket $env $env
+      do_raco_env_flat $env
+      do_raco_install $env $racketInstallPackages
+      do_raco_setup $env $setup_names
+    fi
 
     PATH=$env/bin:$PATH
 
