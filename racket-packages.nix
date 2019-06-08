@@ -123,6 +123,7 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
   racketBuildInputs = attrs.racketBuildInputs or [] ++ self.lib.resolveThinInputs attrs.racketThinBuildInputs or [];
   buildInputs = [ cacert unzip racket self.lib.make-racket ] ++ racketBuildInputs;
   inherit (racket) LD_LIBRARY_PATH;
+  PLT_COMPILED_FILE_CHECK = "exists";
   circularBuildInputs = attrs.circularBuildInputs or [];
   circularBuildInputsStr = lib.concatStringsSep " " circularBuildInputs;
   racketBuildInputsStr = lib.concatStringsSep " " racketBuildInputs;
@@ -212,7 +213,6 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
     ${raco} setup
 
     PATH=$env/bin:$PATH
-    export PLT_COMPILED_FILE_CHECK=exists
 
     # install and link us
     install_names=""
