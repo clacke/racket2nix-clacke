@@ -150,7 +150,7 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
   srcs = [ src ] ++ attrs.extraSrcs or (map (input: input.src) reverseCircularBuildInputs);
   doInstallCheck = attrs.doInstallCheck or false;
   inherit racket;
-  outputs = [ "out" "env" ] ++ lib.optionals doInstallCheck [ "test" "testEnv" ];
+  outputs = [ "out" "env" "auxEnv" ] ++ lib.optionals doInstallCheck [ "test" "testEnv" ];
 
   phases = "unpackPhase patchPhase buildPhase installPhase fixupPhase installCheckPhase";
   unpackPhase = ''
@@ -302,7 +302,7 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
     set -o pipefail
 
     make-racket $env $racket $env $env
-    mkdir $out
+    mkdir $out $auxEnv
 
     if [ -n "${circularBuildInputsStr}" ]; then
       echo >&2 NOTE: This derivation intentionally left blank.
@@ -316,8 +316,10 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
       echo Quick install failed, falling back to slow install.
       chmod 755 -R $env
       rm -rf $env
-      make-racket $env $racket $env $env
-      do_raco_env_flat $env
+      make-racket $auxEnv $racket $auxEnv $auxEnv
+      make-racket $env $racket $env $auxEnv
+      do_raco_env_flat $auxEnv
+      do_raco_env_static $env
       do_raco_install $env $racketInstallPackages
       do_raco_setup $env $setup_names
     fi
