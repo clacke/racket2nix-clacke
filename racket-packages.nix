@@ -104,16 +104,19 @@ lib.make-racket = writeShellScriptBin "make-racket" ''
   #hash((absolute-installation? . #t)
         (bin-dir . "$bin/bin")
         (gui-bin-dir . "$bin/bin")
-        (doc-search-dirs . ("$racket/share/racket/doc" "$lib/share/racket/doc"))
+        (doc-search-dirs . ("$racket/share/racket/doc" "$out/share/racket/doc" "$lib/share/racket/doc"))
         (installation-name . ".")
         (lib-dir . "$out/lib/racket")
         (lib-search-dirs . ("$out/share/racket/lib"
+                            "$out/lib/racket"
+                            "$lib/share/racket/lib"
+                            "$lib/lib/racket"
                             "$racket/lib/racket"
                             $(if [[ -v LD_LIBRARY_PATH ]] && [[ -n $LD_LIBRARY_PATH ]]; then IFS=: read -r -a libs <<< "$LD_LIBRARY_PATH"; printf '"%s/lib" ' "''${libs[@]}"; fi)))
-        (collects-search-dirs . ("$out/share/racket/collects"))
+        (collects-search-dirs . ("$out/share/racket/collects" "$lib/share/racket/collects"))
         (pkgs-search-dirs . ("$out/share/racket/pkgs" "$lib/share/racket/pkgs"))
-        (share-dir . "$lib/share/racket")
-        (links-search-files . ("$lib/share/racket/links.rktd")))
+        (share-dir . "$out/share/racket")
+        (links-search-files . ("$out/share/racket/links.rktd" "$lib/share/racket/links.rktd")))
   EOF
 '';
 
