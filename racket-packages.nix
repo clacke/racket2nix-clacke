@@ -205,10 +205,12 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
 
     function do_raco_env_static() {
       local racketEnv=$1
-      for depEnv in $racketConfigBuildInputsStr; do
+      local depEnvs=''${2:-$racketConfigBuildInputsStr}
+      for depEnv in $depEnvs; do
         if ( shopt -s nullglob; pkgs=($depEnv/share/racket/pkgs/*/); (( ''${#pkgs[@]} > 0 )) ); then
           for pkg in $depEnv/share/racket/pkgs/*/; do
-            $racketEnv/bin/raco pkg install --installation --deps force --skip-installed --no-setup --static-link "$pkg"
+            $racketEnv/bin/raco pkg install --installation --deps force --skip-installed --no-setup --static-link "$pkg" &> \
+              >(sed -Ee '/warning: tool "(setup|pkg|link)" registered twice/d')
           done
         fi
       done
@@ -220,7 +222,8 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
       for depEnv in $racketConfigBuildInputsStr; do
         if ( shopt -s nullglob; pkgs=($depEnv/share/racket/pkgs/*/); (( ''${#pkgs[@]} > 0 )) ); then
           for pkg in $depEnv/share/racket/pkgs/*/; do
-            $racketEnv/bin/raco pkg install --installation --deps force --skip-installed --no-setup --copy "$pkg"
+            $racketEnv/bin/raco pkg install --installation --deps force --skip-installed --no-setup --copy "$pkg" &> \
+              >(sed -Ee '/warning: tool "(setup|pkg|link)" registered twice/d')
           done
         fi
       done
@@ -305,8 +308,10 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
       rm -rf $env
       make-racket $auxEnv $racket $auxEnv $auxEnv
       make-racket $env $racket $env $auxEnv
+      chmod 755 -R $env/share/racket/collects
+      rm -rf $env/share/racket/collects
       do_raco_env_flat $auxEnv
-      do_raco_env_static $env
+      do_raco_env_static $env $auxEnv
       do_raco_install $env $racketInstallPackages
       do_raco_setup $env $setup_names
     fi
@@ -322,7 +327,7 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
 
     eval "$restore_pipefail"
 
-    find $env/share/racket/collects $env/share/racket/pkgs $env/lib/racket $env/bin -type d -empty -delete
+    find $env/share/racket $env/lib/racket $env/bin -type d -empty -delete
     rm $env/share/racket/include
 
     runHook postInstall
@@ -341,7 +346,8 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
     for depEnv in ${testConfigBuildInputsStr} $env; do
       if ( shopt -s nullglob; pkgs=($depEnv/share/racket/pkgs/*/); (( ''${#pkgs[@]} > 0 )) ); then
         for pkg in $depEnv/share/racket/pkgs/*/; do
-          $testEnv/bin/raco pkg install --installation --deps force --skip-installed --no-setup --static-link "$pkg"
+          $testEnv/bin/raco pkg install --installation --deps force --skip-installed --no-setup --static-link "$pkg" &> \
+            >(sed -Ee '/warning: tool "(setup|pkg|link)" registered twice/d')
         done
       fi
     done
