@@ -34,6 +34,15 @@ lib.optionalAttrs (super ? "raart") { raart = super.raart.overrideAttrs (oldAttr
                 "base"))
  (define build-deps '("sandbox-lib"
 '') ]; }); } //
+{ racktris = self.lib.mkRacketDerivation rec {
+  pname = "racktris";
+  src = self.pkgs.fetchgit {
+    url = "https://gitlab.com/dustyweb/racktris";
+    rev = "935473744d7e11b8445250fb887eebffb43233a4";
+    sha256 = "1x0yqga91g4nmygha62ksm2n84857daypfvql8rfxwzxw33wbwr9";
+  };
+  racketThinBuildInputs = [ self."base" self."raart" self."lux" ];
+};} //
 lib.optionalAttrs (super ? "compatibility+compatibility-doc+data-doc+db-doc+distributed-p...") {
   "compatibility+compatibility-doc+data-doc+db-doc+distributed-p..." = super."compatibility+compatibility-doc+data-doc+db-doc+distributed-p...".overrideAttrs (oldAttrs: {
   buildInputs = oldAttrs.buildInputs or [] ++ builtins.attrValues {

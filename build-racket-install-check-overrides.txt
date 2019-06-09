@@ -16,8 +16,8 @@ binary-class
 binaryio
 bitsyntax
 bookcover
-br-parser-tools-lib
 brag
+br-parser-tools-lib
 check-sexp-equal
 choose-out
 colon-kw
@@ -36,9 +36,9 @@ curly-fn-test
 dan-scheme
 data-enumerate-lib
 data-lib
+datalog
 data-red-black
 data-test
-datalog
 db-test
 ddict
 debug
