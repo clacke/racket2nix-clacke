@@ -61,6 +61,7 @@ expect
 extensible-functions
 peg
 pict-lib
+raart
 reed-solomon
 scribble-lib
 simple-qr
