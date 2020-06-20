@@ -30,7 +30,23 @@
 , time ? pkgs.time
 }:
 
-let mergeCycles = merge: self: attrName: name:
+let makeTransformExtensible = transform: rattrs:
+  let
+    inherit (lib) extends;
+    transformFix = f: let x = f x // { __unfix__ = f; }; in transform x;
+    makeExtensible = rattrs:
+      transformFix rattrs // {
+        extend = f: makeExtensible (extends f rattrs);
+      };
+  in
+  
+let racket-packages = makeTransformExtensible (self: self.lib.transformRacketPackages self) (self: {
+inherit pkgs;
+
+lib.transformRacketPackages = rpkgs:
+  builtins.mapAttrs (name: _: rpkgs.lib.mergeCycles rpkgs.lib.mergeDrvs rpkgs 
+
+lib.mergeCycles = merge: self: attrName: name:
   let
     inherit (lib.trivial) min;
     inherit (lib.lists) sort;
@@ -94,10 +110,6 @@ let mergeCycles = merge: self: attrName: name:
                inherit names; }; in
       iter { inherit names nodes; };
   in (up name (down { inherit name; })).nodes.${name}.node;
-in
-
-let racket-packages = lib.makeExtensible (self: {
-inherit pkgs;
 
 lib.extractPath = lib.makeOverridable ({ path, src }: stdenv.mkDerivation {
   inherit path src;
