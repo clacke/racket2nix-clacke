@@ -30,6 +30,72 @@
 , time ? pkgs.time
 }:
 
+let mergeCycles = merge: self: attrName: name:
+  let
+    inherit (lib.trivial) min;
+    inherit (lib.lists) sort;
+    down = { index ? 0, name, stack ? [], nodes ? {} }:
+      let node = self.${name}; lowlink = index; in
+      let attrs = iter {
+        inherit index lowlink;
+        stack = [ name ] ++ stack;
+        nodes = nodes // { ${name} = {
+          onStack = true;
+          inherit index lowlink;
+          inherit node; }; };
+        rest = node.${attrName};}; in
+      let inherit (attrs) index lowlink stack nodes acc; in
+      let node = self.${name} // { ${attrName} = acc; }; in
+      { inherit index lowlink stack;
+        nodes = nodes // { ${name} = nodes.${name} // { inherit node; }; }; };
+    iter = { index, lowlink, stack, nodes, rest, acc ? [] }:
+      if rest == [] then { inherit index lowlink stack nodes acc; } else
+      let attrs = { current = builtins.head rest; rest = builtins.tail rest; }; in
+      let inherit (attrs) current rest; in
+      if !(builtins.isString current) then
+        iter { acc = acc ++ [ current ];
+               inherit index lowlink stack nodes rest; } else
+      let name = current; in
+      let attrs =
+        if (builtins.hasAttr name nodes) then { inherit index stack nodes; }
+        else up name (down { index = index + 1; inherit name stack nodes; }); in
+      let inherit (attrs) index stack nodes wasOnStack; in
+      if nodes.${name}.onStack then
+        # This breaks the formal definition by Trajan, but is harmless and less awkward.
+        # https://cs.stackexchange.com/a/96671
+        iter { lowlink = min lowlink nodes.${name}.lowlink;
+               inherit index stack nodes rest acc; }
+      else
+        iter { acc = acc ++ [ nodes.${name}.node ];
+               inherit index lowlink stack nodes rest; };
+    up = name: { index, lowlink, stack, nodes }:
+      if lowlink == nodes.${name}.index then popUntil name { inherit index stack nodes; }
+      else { nodes = nodes // { ${name} = nodes.${name} // { inherit lowlink; }; };
+             inherit index stack; };
+    popUntil = name: { index, stack, nodes, names ? [] }:
+      let attrs = { current = builtins.head stack; stack = builtins.tail stack; }; in
+      let inherit (attrs) current stack; in
+      let attrs = { nodes = nodes // { ${current} = nodes.${current} // { onStack = false; }; };
+                    names = names ++ [ current ];  }; in
+      let inherit (attrs) nodes names; in
+      if current == name then {
+        inherit (mergeNodes names nodes) nodes;
+        inherit index stack; }
+      else popUntil name { inherit index stack nodes names; };
+    mergeNodes = names: nodes:
+      let attrs = { names = sort (a: b: a < b) names; }; in
+      let inherit (attrs) names; in
+      let merged = merge (map (name: nodes.${name}.node) names); in
+      let iter = { names, nodes }:
+        if names == [] then { inherit nodes; } else
+        let attrs = { current = builtins.head names; names = builtins.tail names; }; in
+        let inherit (attrs) current names; in
+        iter { nodes = nodes // { ${current} = nodes.${current} // { node = merged; }; };
+               inherit names; }; in
+      iter { inherit names nodes; };
+  in (up name (down { inherit name; })).nodes.${name}.node;
+in
+
 let racket-packages = lib.makeExtensible (self: {
 inherit pkgs;
 
