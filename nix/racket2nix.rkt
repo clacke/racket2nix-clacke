@@ -39,12 +39,37 @@ let makeTransformExtensible = transform: rattrs:
         extend = f: makeExtensible (extends f rattrs);
       };
   in
-  
+    makeExtensible rattrs;
+in
+
 let racket-packages = makeTransformExtensible (self: self.lib.transformRacketPackages self) (self: {
 inherit pkgs;
 
 lib.transformRacketPackages = rpkgs:
-  builtins.mapAttrs (name: _: rpkgs.lib.mergeCycles rpkgs.lib.mergeDrvs rpkgs 
+  builtins.mapAttrs
+    (name: _: rpkgs.lib.mergeCycles rpkgs.lib.mergeRacketDerivations
+                rpkgs "racketThinBuildInputs" name)
+    rpkgs;
+
+lib.mergeRacketDerivations = rpkgs:
+  let acc = builtins.head rpkgs; todo = builtins.tail rpkgs; in
+  if todo == [] then acc else
+  let current = builtins.head todo; rest = builtins.tail todo; in
+  self.lib.mergeRacketDerivations ([
+    acc.overrideRacketDerivation (oldAttrs: {
+      pname = let longName = oldAttrs.pname + "+" + current.pname; in
+        if (builtins.stringLength longName) <= 64 then longName
+        else (builtins.substring 0 61 longName) + "...";
+      racketThinBuildInputs = lib.lists.unique
+        (oldAttrs.racketThinBuildInputs ++ current.racketThinBuildInputs);
+      extraSrcs = acc.srcs ++ current.srcs;
+      doInstallCheck = oldAttrs.doInstallCheck or current.doInstallCheck;
+    }).overrideAttrs (oldAttrs: {
+      buildInputs = lib.lists.unique (oldAttrs.buildInputs ++ current.buildInputs);
+      propagatedBuildInputs = lib.lists.unique (oldAttrs.propagatedBuildInputs ++ current.propagatedBuildInputs);
+      patches = oldAttrs.patches or [] ++ current.patches or [];
+    })
+  ] ++ rest);
 
 lib.mergeCycles = merge: self: attrName: name:
   let
