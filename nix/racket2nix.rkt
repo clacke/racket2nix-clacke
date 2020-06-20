@@ -338,7 +338,7 @@ lib.mkRacketDerivation = suppliedAttrs: let racketDerivation = lib.makeOverridab
       testpath=''${1#*/share/racket/pkgs/}
       logdir="$testEnv/log/''${testpath%/*}"
       mkdir -p "$logdir"
-      timeout 60 ${time}/bin/time -f "%e s $testpath" $testEnv/bin/raco test -q "$1" \
+      timeout ''${installCheckTimeout:-60} ${time}/bin/time -f "%e s $testpath" $testEnv/bin/raco test -q "$1" \
         &> >(grep -v -e "warning: tool .* registered twice" -e "@[(]test-responsible" | tee "$logdir/''${1##*/}")
     ' 'xargs raco test {}' {} < <(runHook installCheckFileFinder)
     runHook postInstallCheck
@@ -806,7 +806,7 @@ EOM
   (format thin-template package-definitions))
 
 (define (cycle-name cycle)
-  (define long-name (string-join cycle "+"))
+  (define long-name (string-join (sort cycle string<?) "+"))
   (if (<= (string-length long-name) 64)
     long-name
     (string-append (substring long-name 0 61) "...")))

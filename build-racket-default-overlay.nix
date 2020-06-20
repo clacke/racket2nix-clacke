@@ -6,18 +6,6 @@ in
 lib.optionalAttrs (super ? "nix") {
   racket2nix = super.nix.overrideRacketDerivation (oldAttrs: { pname = "racket2nix"; });
 } //
-lib.optionalAttrs (super ? "deinprogramm-signature" && super ? "icons") {
-  deinprogramm-signature = super.deinprogramm-signature.overrideRacketDerivation (oldAttrs: { racketThinBuildInputs = oldAttrs.racketThinBuildInputs or [] ++ [ self.icons ]; });
-} //
-lib.optionalAttrs (super ? "deinprogramm-signature+htdp-lib" && super ? "icons") {
-  "deinprogramm-signature+htdp-lib" = super."deinprogramm-signature+htdp-lib".overrideRacketDerivation (oldAttrs: { racketThinBuildInputs = oldAttrs.racketThinBuildInputs or [] ++ [ self.icons ]; });
-} //
-lib.optionalAttrs (super ? "gui-lib" && super ? "icons") {
-  gui-lib = super.gui-lib.overrideRacketDerivation (oldAttrs: { racketThinBuildInputs = oldAttrs.racketThinBuildInputs or [] ++ [ self.icons ]; });
-} //
-lib.optionalAttrs (super ? "htdp-lib" && super ? "icons") {
-  htdp-lib = super.htdp-lib.overrideRacketDerivation (oldAttrs: { racketThinBuildInputs = oldAttrs.racketThinBuildInputs or [] ++ [ self.icons ]; });
-} //
 lib.optionalAttrs (super ? "racket-index") { racket-index = super.racket-index.overrideAttrs (_: {
   patches = [ (builtins.toFile "racket-index.patch" ''
     --- a/racket-index/setup/scribble.rkt
@@ -31,6 +19,9 @@ lib.optionalAttrs (super ? "racket-index") { racket-index = super.racket-index.o
         [latex-dest
          (build-path latex-dest "docindex.sqlite")]
   '') ]; }); } //
+lib.optionalAttrs (super ? "brag-lib") {
+  brag-lib = super.brag-lib.overrideAttrs (oldAttrs: { installCheckTimeout = 120; });
+} //
 lib.optionalAttrs (super ? "compatibility+compatibility-doc+data-doc+db-doc+distributed-p...") {
   "compatibility+compatibility-doc+data-doc+db-doc+distributed-p..." = super."compatibility+compatibility-doc+data-doc+db-doc+distributed-p...".overrideAttrs (oldAttrs: {
   buildInputs = oldAttrs.buildInputs or [] ++ builtins.attrValues {
